@@ -24,7 +24,7 @@ function Footer2() {
               </div>
               <div className="content">
                 <span>Call Any Time</span>
-                <h6><a href="tel: 03232788259">+92-323-2788259</a></h6>
+                <h6><a href="tel:  03232788259">+92-323-2788259</a></h6>
               </div>
             </div>
           </div>

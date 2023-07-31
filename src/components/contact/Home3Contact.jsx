@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
 import Marquee from "react-fast-marquee";
-
 function Home3Contact() {
   const containerStyle = {
   backgroundImage: "url('assets/img/team.jpg')",
@@ -9,7 +8,7 @@ function Home3Contact() {
     backgroundPosition: 'center',
 };
   return (
-    <div className="home3-contact-area sec-mar" style={containerStyle}>
+    <div className="home3-contact-area sec-mar "style={containerStyle}>
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-12">
@@ -24,12 +23,12 @@ function Home3Contact() {
                 </svg>
               </a>
             </Link>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   )
 }
