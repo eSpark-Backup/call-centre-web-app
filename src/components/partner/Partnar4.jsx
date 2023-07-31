@@ -10,22 +10,40 @@ function Partnar4() {
 
         
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/xcitium.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/mavecap.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/nusec.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="#" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/xcitium.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/mavecap.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/nusec.png" alt="" />
+        </div>
+        <div className="single-client">
+          <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" />
         </div>
        
         </Marquee>
