@@ -55,19 +55,7 @@ function Footer2() {
             <a href="mailto: info@epark.com"> info@epark.com</a><br />
             <a href="mailto:Sales@espark.com">Sales@espark.com</a>
           </div>
-          <div className="footer-contact">
-            <h6>See Our New updates</h6>
-            <form>
-              <div className="form-inner">
-                <input type="text" placeholder="Email here..." />
-                <button type="submit">
-                  <svg width={17} height={17} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+        
         </div>
       </div>
       <div className="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">

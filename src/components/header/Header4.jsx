@@ -117,18 +117,13 @@ function Header4() {
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/index2">
-                  <a className={`menu-item-has-children ${currentRoute === "/index2"?"active":""}`}>Customer Services​</a>
+                <Link legacyBehavior href="#">
+                  <a className={`menu-item-has-children`}>Customer Services​</a>
                 </Link>
               </li>
               <li>
                 <Link legacyBehavior href="/index3">
                   <a>Direct Response Call Center​</a>
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="/index4">
-                  <a>Home 04</a>
                 </Link>
               </li>
               <li>
