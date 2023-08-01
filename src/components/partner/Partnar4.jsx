@@ -10,41 +10,27 @@ function Partnar4() {
 
         
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" style={{marginLeft: "80px", marginTop: "-13px"}} />
         </div>
         <div className="single-client">
           <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/xcitium.png" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/xcitium.png" alt=""   />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/mavecap.png" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/mavecap.png" alt="" style={{marginLeft: "170px", marginRight: "120px" }}  />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/nusec.png" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/nusec.png" alt="" style={{marginLeft: "80px"}} />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" />
+          <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" style={{marginLeft: "100px"}}  />
         </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" />
-        </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
-        </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/xcitium.png" alt="" />
-        </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/mavecap.png" alt="" />
-        </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/nusec.png" alt="" />
-        </div>
-        <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" />
-        </div>
+        
+        
+        
+        
        
         </Marquee>
       </div>

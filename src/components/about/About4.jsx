@@ -9,10 +9,10 @@ function About4() {
       <div className="col-lg-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
         <div className="about-left-img-wrap">
           <div className="big-img magnetic-item">
-            <img className="img-fluid" src="assets/img/home-4/about-image-01.png" alt="" />
+            <img className="img-fluid" src="assets/img/call-center/8.jpg" alt="" />
           </div>
           <div className="sm-img  magnetic-item">
-            <img className="img-fluid" src="assets/img/home-4/about-image-02.png" alt="" />
+            <img className="img-fluid" src="assets/img/call-center/5.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ function About4() {
         </div>
         <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
           <div className="about-right-img d-flex justify-content-center  magnetic-item">
-            <img className="img-fluid" src="assets/img/home-4/about-image-03.png" alt="" />
+            <img className="img-fluid" src="assets/img/call-center/3.jpg" alt="" />
           </div>
         </div>
       </div>

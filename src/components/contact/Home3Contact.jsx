@@ -6,10 +6,12 @@ function Home3Contact() {
   backgroundImage: "url('assets/img/team.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    marginBottom:"-10px",
+    
 };
   return (
     <div className="home3-contact-area sec-mar "style={containerStyle}>
-  <div className="container-fluid">
+  <div className="container-fluid " >
     <div className="row">
       <div className="col-lg-12">
         <div className="contact-wrapper text-center">
