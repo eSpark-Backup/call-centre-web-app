@@ -49,7 +49,7 @@ function Banner4() {
           <div className="col-lg-7">
             <div className="banner-content">
               <h1>
-              Say Yes to the 24/7 Active Customer Service Support​
+              Say Yes to the 24/7 Active <a href="#">Customer Service</a> Support​
               </h1>
               <p>
               Meet with an expert team that offers on-time B2B telemarketing, live chat outsourcing, and various customer support services. Time to avail the finest assistance of the best in the business!​
@@ -96,7 +96,7 @@ function Banner4() {
               <div className="banner-sm-img">
                 <img
                   className="img-fluid magnetic-item"
-                  src="assets/img/call-center/6.jpg"
+                  src="assets/img/call-center/6.JPG"
                   alt=""
                 />
                 <div className="down-arrow">

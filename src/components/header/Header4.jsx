@@ -75,7 +75,7 @@ function Header4() {
       <div className="header-logo">
         <Link legacyBehavior href="/">
           <a>
-            <img alt="image" className="img-fluid" src="assets/img/logo2.png" width="70px"  />
+            <img alt="image" className="img-fluid" src="assets/img/Logos.png" width="120px"  />
           </a>
         </Link>
       </div>

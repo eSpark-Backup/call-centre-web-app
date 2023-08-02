@@ -12,7 +12,7 @@ function About4() {
             <img className="img-fluid" src="assets/img/call-center/8.jpg" alt="" />
           </div>
           <div className="sm-img  magnetic-item">
-            <img className="img-fluid" src="assets/img/call-center/5.jpg" alt="" />
+            <img className="img-fluid" src="assets/img/call-center/5.JPG" alt="" />
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ function About4() {
         </div>
         <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
           <div className="about-right-img d-flex justify-content-center  magnetic-item">
-            <img className="img-fluid" src="assets/img/call-center/3.jpg" alt="" />
+            <img className="img-fluid" src="assets/img/call-center/3.JPG" alt="" />
           </div>
         </div>
       </div>
