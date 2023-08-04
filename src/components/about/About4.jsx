@@ -6,16 +6,11 @@ function About4() {
     <div className="home4-about-section sec-mar" id="home4-about-section">
   <div className="container">
     <div className="row g-lg-4 gy-5">
-      <div className="col-lg-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-        <div className="about-left-img-wrap">
-          <div className="big-img magnetic-item">
-            <img className="img-fluid" src="assets/img/call-center/8.jpg" alt="" />
-          </div>
-          <div className="sm-img  magnetic-item">
-            <img className="img-fluid" src="assets/img/call-center/5.JPG" alt="" />
+    <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
+          <div className="about-right-img d-flex justify-content-center  magnetic-item">
+            <img className="img-fluid" src="assets/img/call-center/3.png" alt="" />
           </div>
         </div>
-      </div>
       <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
         <div className="banner-right-content">
           <div className="section-title-4">
@@ -52,11 +47,16 @@ function About4() {
             
           </div>
         </div>
-        <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
-          <div className="about-right-img d-flex justify-content-center  magnetic-item">
-            <img className="img-fluid" src="assets/img/call-center/3.JPG" alt="" />
+        <div className="col-lg-6 wow animate fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+        <div className="about-left-img-wrap">
+          <div className="big-img magnetic-item">
+            <img className="img-fluid" src="assets/img/call-center/4.png" alt="" />
+          </div>
+          <div className="sm-img  magnetic-item">
+            <img className="img-fluid" src="assets/img/call-center/5.png" alt="" />
           </div>
         </div>
+      </div>
       </div>
     </div>
   </div>

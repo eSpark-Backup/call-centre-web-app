@@ -89,14 +89,14 @@ function Banner4() {
               <div className="banner-big-img">
                 <img
                   className="img-fluid magnetic-item"
-                  src="assets/img/call-center/4.jpg"
+                  src="assets/img/call-center/1.png"
                   alt=""
                 />
               </div>
               <div className="banner-sm-img">
                 <img
                   className="img-fluid magnetic-item"
-                  src="assets/img/call-center/6.JPG"
+                  src="assets/img/call-center/2.png"
                   alt=""
                 />
                 <div className="down-arrow">
