@@ -6539,8 +6539,8 @@ video {
   margin: 0;
   padding: 0;
   list-style: none;
-  -moz-columns: 6;
-       columns: 6;
+  -moz-columns: 3;
+       columns: 3;
   gap: 0;
 }
 @media (max-width: 991px) {

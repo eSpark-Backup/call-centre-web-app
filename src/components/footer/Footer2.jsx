@@ -78,7 +78,7 @@ function Footer2() {
           <h6 className="style">Outbound​</h6>
           <div className="menu-container">
             <ul>
-              <li><Link legacyBehavior href="#"><a>B2B Telemarketing​</a></Link></li>
+              <li><Link legacyBehavior href="/B2B"><a>B2B Telemarketing​</a></Link></li>
               <li><Link legacyBehavior href="#"><a>Customer Winback​</a></Link></li>
               <li><Link legacyBehavior href="#"><a>Lead Generation​</a></Link></li>
               </ul>
