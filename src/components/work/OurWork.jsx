@@ -18,7 +18,7 @@ function OurWork() {
             >
               <div className="col-lg-12">
                 <div className="section-title">
-                  <h2>How we work</h2>
+                  <h2>What Comes With Our Demanding Services?</h2>
                 </div>
               </div>
             </div>
@@ -39,10 +39,9 @@ function OurWork() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Requirements Gathering.</h3>
+                      <h3>24/7 Active Assistance</h3>
                       <p>
-                        Interdum et malesuada fames acchiv Etiam europeat
-                        nibhona elementum, accumsan ona.
+                      We are open 24/7 to work for you and offer our professionals.
                       </p>
                     </div>
                   </div>
@@ -60,10 +59,9 @@ function OurWork() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Analysis and Planning.</h3>
+                      <h3>Rapid Response</h3>
                       <p>
-                        Interdum et malesuada fames acchiv Etiam europeat
-                        nibhona elementum, accumsan ona.
+                      We care about your time and give a reply within minutes.
                       </p>
                     </div>
                   </div>
@@ -81,10 +79,9 @@ function OurWork() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Design &amp; Development.</h3>
+                      <h3>Online Chat Support</h3>
                       <p>
-                        Interdum et malesuada fames acchiv Etiam europeat
-                        nibhona elementum, accumsan ona.
+                      We have energetic online chat support to confirm all queries.
                       </p>
                     </div>
                   </div>
@@ -102,10 +99,9 @@ function OurWork() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Testing Device &amp; Release.</h3>
+                      <h3>Pocket Friendly Charges</h3>
                       <p>
-                        Interdum et malesuada fames acchiv Etiam europeat
-                        nibhona elementum, accumsan ona.
+                      We charge less than others and offer the finest customer support services.
                       </p>
                     </div>
                   </div>
@@ -123,10 +119,9 @@ function OurWork() {
                       />
                     </div>
                     <div className="work-content">
-                      <h3>Maintenance and Support.</h3>
+                      <h3>Profitable Deals </h3>
                       <p>
-                        Interdum et malesuada fames acchiv Etiam europeat
-                        nibhona elementum, accumsan ona.
+                      Our professionals are packed with profitable ideas and beneficial business deals.
                       </p>
                     </div>
                   </div>

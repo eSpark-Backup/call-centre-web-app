@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ModalVideo from 'react-modal-video'
 function About5() {
   const [isOpen, setOpen] = useState(false)
   return (
@@ -44,7 +43,7 @@ function About5() {
         <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
           <div className="about-img-wrap">
             <div className="about-img magnetic-item">
-              <img className="img-fluid" src="assets/img/home-5/about-img-1.png" alt="" />
+              <img className="img-fluid" src="assets/img/outbound/B2B/colleagues.jpg" alt="" />
             </div>
             
           </div>

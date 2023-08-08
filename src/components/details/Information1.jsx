@@ -22,7 +22,7 @@ function Information1(){
                   <div className="case-img magnetic-item">
                     <img
                       className="img-fluid"
-                      src="assets/img/inner-pages/case-study-img-02.png"
+                      src="assets/img/outbound/B2B/businesswoman.jpg"
                       alt=""
                     />
                   </div>
@@ -33,7 +33,7 @@ function Information1(){
                   <div className="case-img magnetic-item">
                     <img
                       className="img-fluid"
-                      src="assets/img/inner-pages/case-study-img-03.png"
+                      src="assets/img/outbound/B2B/people-working.jpg"
                       alt=""
                     />
                   </div>

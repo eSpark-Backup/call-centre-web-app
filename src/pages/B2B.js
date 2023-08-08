@@ -110,7 +110,7 @@ function ServicePage() {
                 <div className="service-img magnetic-item">
                   <img
                     className="img-fluid"
-                    src="assets/img/inner-pages/about-service-img.png"
+                    src="assets/img/outbound/B2B/support.jpg"
                     alt=""
                   />
                 </div>
