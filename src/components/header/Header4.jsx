@@ -184,38 +184,6 @@ function Header4() {
           </li>
           <li className="menu-item-has-children">
             <a href="#" className="drop-down">
-            Solutions
-            </a>
-            <i
-              className={`bi bi-plus dropdown-icon ${
-                state.activeMenu === "Solutions" ? "active" : ""
-              }`}
-              onClick={() => toggleMenu("Solutions")}
-            />
-            <ul
-              className={`sub-menu ${
-                state.activeMenu === "Solutions" ? "d-block" : ""
-              }`}
-            >
-              <li>
-                <Link legacyBehavior href="/project">
-                  <a>Project</a>
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="/project-masonary">
-                  <a>Project Masonry</a>
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="/project-details">
-                  <a>Project Details</a>
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li className="menu-item-has-children">
-            <a href="#" className="drop-down">
             Industries
             </a>
             <i
