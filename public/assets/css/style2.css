@@ -9739,7 +9739,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  /* background-color: var(--theme-color); */
+  background-color: var(--theme-color);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -94,7 +94,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/pocket friendly.png"
+                        src="assets/img/outbound/icons/pocket-friendly.png"
                         alt=""
                       />
                     </div>
