@@ -2,15 +2,8 @@ import Link from 'next/link';
 import React from 'react'
 import Marquee from "react-fast-marquee";
 function Home3Contact() {
-  const containerStyle = {
-  backgroundImage: "url('assets/img/team.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    marginBottom:"-10px",
-    
-};
   return (
-    <div className="home3-contact-area sec-mar "style={containerStyle}>
+    <div className="home3-contact-area sec-mar ">
   <div className="container-fluid " >
     <div className="row">
       <div className="col-lg-12">

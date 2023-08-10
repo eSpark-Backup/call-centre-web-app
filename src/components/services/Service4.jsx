@@ -98,7 +98,7 @@ function Service4() {
           <img  src= "./assets/icons/icons-13.png" alt=""style={{ height: 100, width: 100 }} />
             <div className="services-content">
               <h3><Link legacyBehavior href="/service-details"><a>Event Registration​</a></Link></h3>
-              <p style={{ lineHeight: 1.7, fontSize: 13.5 }} >Adopt the change and let our outsourcing customer support professionals bring your needed targeted audience. With our over-the-top event registration services, you can be free from the hassles of spreading the word about your company’s upcoming event. Make it easy for your required participants to reach out through our online event registration service. </p>
+              <p>Adopt the change and let our outsourcing customer support professionals bring your needed targeted audience. With our over-the-top event registration services, you can be free from the hassles of spreading the word about your company’s upcoming event. Make it easy for your required participants to reach out through our online event registration service. </p>
               <div className="services-btn">
               <Link legacyBehavior  href="#">
                   <a className="primary-btn5">
@@ -216,7 +216,7 @@ function Service4() {
           <img  src= "./assets/icons/icons-14.png" alt=""style={{ height: 100, width: 100 }} />
             <div className="services-content">
               <h3><Link legacyBehavior href="/customer-winback"><a>Customer Winback​​</a></Link></h3>
-              <p style={{ fontSize: 13, lineHeight:2}}>Lead generation experts often don’t care about lost customers. But every business wants to win back their old customers. It is not an easy task to reach out to them and offer updated services. But for our offered professional it is a game of few minutes. You can hire our service and let your lost customers learn about new and beneficial services or products. ​ ​</p>
+              <p >Lead generation experts often don’t care about lost customers. But every business wants to win back their old customers. It is not an easy task to reach out to them and offer updated services. But for our offered professional it is a game of few minutes. You can hire our service and let your lost customers learn about new and beneficial services or products. ​ ​</p>
               <div className="services-btn">
               <Link legacyBehavior  href="#">
                   <a className="primary-btn5">
@@ -242,7 +242,7 @@ function Service4() {
           <img  src= "./assets/icons/icons-19.png" alt=""style={{ height: 100, width: 100 }} />
             <div className="services-content">
               <h3><Link legacyBehavior href="/lead-generation"><a>Lead Generation​</a></Link></h3>
-              <p style={{ lineHeight:1.9 }}>Producing lead generation comes under the expertise of our professionals. If you think that your business requires an energetic pickup. This is the ultimate opportunity to hire our agents to earn lots of leads. Our lead generation team will help expand your business and earn outsourcing professional opportunities. ​</p>
+              <p >Producing lead generation comes under the expertise of our professionals. If you think that your business requires an energetic pickup. This is the ultimate opportunity to hire our agents to earn lots of leads. Our lead generation team will help expand your business and earn outsourcing professional opportunities. ​</p>
               <div className="services-btn">
               <Link legacyBehavior  href="#">
                   <a className="primary-btn5">
