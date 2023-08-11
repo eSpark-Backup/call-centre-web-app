@@ -8,7 +8,7 @@ function About6() {
         <div className="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
           <div className="about-content">
             <div className="section-title-5">
-              <h2>Manage Strong Connections With Your Old Consumers Through Our Customer Winback Service.</h2>
+              <h2 style={{fontSize:"40px"}}>Manage Strong Connections With Your Old Consumers Through Our Customer Winback Service.</h2>
             </div>
             <p> Let’s join hands and help your small business grow. It is up to you to select the best customer winback service deal. Our certified team has been associated with some of the giants in this market. They are running telemarketing, lead generation, and customer winback campaigns for multinational profitable companies.</p>
             <ul className="about-featue">

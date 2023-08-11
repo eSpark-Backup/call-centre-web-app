@@ -3,9 +3,6 @@ import React from 'react'
 import Marquee from "react-fast-marquee";
 function Home3Contact() {
   const containerStyle = {
-  backgroundImage: "url('assets/img/team.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
     marginBottom:"-10px",
     
 };

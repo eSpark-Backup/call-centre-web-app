@@ -85,9 +85,9 @@ function Footer2() {
               </div>
         </div>
       </div>
-      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center footer-size">
         <div className="footer-widget">
-          <div className="widget-title">
+          <div className="widget-title ">
             <h4>Industries</h4>
           </div>
           <div className="menu-container">

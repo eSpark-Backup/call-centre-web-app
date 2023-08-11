@@ -25,7 +25,7 @@ function OurWork() {
           </div>
           <div className="work-item">
             <div className="container-fluid">
-              <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-5 justify-content-center">
+              <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-5 ">
                 <div
                   className="col magnetic-item wow animate fadeInUp"
                   data-wow-delay="200ms"

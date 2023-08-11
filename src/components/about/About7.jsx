@@ -8,7 +8,7 @@ function About7() {
         <div className="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
           <div className="about-content">
             <div className="section-title-5">
-              <h2>Open The Door of Daily Profitable Deals Through Our Lead Generation</h2>
+              <h2 style={{fontSize:"38px"}}>Open The Door of Daily Profitable Deals Through Our Lead Generation</h2>
             </div>
             <p> The gate towards successful profit-earning ventures is open for you and your business. Our team is here to foster the sales cycle of your business. Time to be opportunistic and collaborate with us. Companies earn profits on a daily basis when they figure out their targeted customers and employ experienced lead-generation customer support teams. This is your chance to collab and grow faster by earning daily profits.</p>
             <ul className="about-featue">
