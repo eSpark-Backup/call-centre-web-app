@@ -7,9 +7,6 @@ function Partnar4() {
     <div className="marque-wrap">
       <div className="marquee_text">
         <Marquee>
-
-        
-        
         <div className="single-client">
           <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
         </div>
@@ -26,7 +23,7 @@ function Partnar4() {
           <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" style={{marginLeft: "100px"}}  />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" style={{marginLeft: "80px", marginTop: "-7px"}} />
+          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" style={{marginLeft: "80px", marginTop:"-3px"}} />
         </div>
         <div className="single-client">
           <img className="img-fluid" src="assets/img/client-logo/nu.png" alt="" />
@@ -44,20 +41,15 @@ function Partnar4() {
           <img className="img-fluid" src="assets/img/client-logo/itarian.png" alt="" style={{marginLeft: "100px"}}  />
         </div>
         <div className="single-client">
-          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" style={{marginLeft: "80px", marginTop: "-7px"}} />
+          <img className="img-fluid" src="assets/img/client-logo/ezlo.png" alt="" style={{marginLeft: "80px", marginTop:"-3px"}} />
         </div>
-        
-        
-        
-        
-        
-        
-       
         </Marquee>
       </div>
     </div>
   </div>
   )
 }
+
+
 
 export default Partnar4

@@ -2149,9 +2149,17 @@ video {
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 1000px){
+  .banner-area4 .banner-content .banner-btn{
+    margin-left: 380px;
+  }
+}
+
 .banner-area4 .banner-content .banner-btn {
   position: relative;
   z-index: 1;
+  
 }
 .banner-area4 .banner-img {
   position: relative;
@@ -2162,12 +2170,25 @@ video {
     margin-left: 50px;
   }
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .banner-area4 .banner-img {
     display: none;
     visibility: hidden;
   }
+} */
+
+@media screen and (max-width: 500px){
+  .banner-area4 .banner-img {
+    margin-left: 20px;
+  }
+  .banner-area4 .banner-img .banner-big-img img {
+    width: 250px;
+  }
+  .banner-area4 .banner-img .banner-sm-img img {
+    max-width: 100px;
+  }
 }
+
 .banner-area4 .banner-img .banner-big-img {
   border-radius: 260px;
   position: relative;
@@ -2238,8 +2259,8 @@ video {
   background-color: rgba(23, 22, 26, 0.3);
 }
 .banner-area4 .banner-img .banner-sm-img img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -2248,12 +2269,12 @@ video {
     height: 120px;
   }
 }
-@media (max-width: 1399px) {
+/* @media (max-width: 1399px) {
   .banner-area4 .banner-img .banner-sm-img img {
     width: 120px;
     height: 120px;
   }
-}
+} */
 .banner-area4 .banner-img .banner-sm-img .down-arrow {
   position: absolute;
   right: -75px;
@@ -4607,6 +4628,8 @@ video {
 .home-dark2 {
   background: #0F0F0F;
 }
+
+
 
 .home3-partner-area {
   background: #1B1F23;
