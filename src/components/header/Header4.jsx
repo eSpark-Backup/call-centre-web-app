@@ -112,7 +112,7 @@ function Header4() {
               }`}
             >
               <li>
-                <Link legacyBehavior href="/">
+                <Link legacyBehavior href="/business-call-service">
                   <a>Business Call Screening​</a>
                 </Link>
               </li>

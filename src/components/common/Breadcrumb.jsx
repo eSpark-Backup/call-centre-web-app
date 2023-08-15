@@ -5,12 +5,6 @@ function Breadcrumb({ title, pageName, pageList }) {
   return (
     <section className="breadcrumbs">
       <div className="breadcrumb-sm-images">
-        <div className="inner-banner-1 magnetic-item">
-          <img src="assets/img/inner-pages/inner-banner-1.png" alt="" />
-        </div>
-        <div className="inner-banner-2 magnetic-item">
-          <img src="assets/img/inner-pages/inner-banner-2.png" alt="" />
-        </div>
       </div>
       <div className="container">
         <div className="row">
