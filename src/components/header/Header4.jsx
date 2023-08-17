@@ -273,7 +273,7 @@ function Header4() {
               <div className="hotline-info">
                 <span>Call Us Now</span>
                 <h6>
-                  <a href="tel:29658718617">2-965-871-8617</a>
+                  <a href="tel:3232788259">+92-323-2788259</a>
                 </h6>
               </div>
             </div>
@@ -293,14 +293,15 @@ function Header4() {
               <div className="email-info">
                 <span>Email Now</span>
                 <h6>
-                  <a href="mailto:example@gmail.com">example@gmail.com</a>
+                  <a href="mailto:info@epark.com">info@epark.com</a>
+                  <a href="mailto:Sales@espark.com">Sales@espark.com</a>
                 </h6>
               </div>
             </div>
           </form>
-          <div className="header-btn5">
+          <div className="header-btn5 header-btn ">
             <Link legacyBehavior href="/contact">
-              <a className="primary-btn3">Get A Quote</a>
+              <a>Connect with us</a>
             </Link>
           </div>
         </div>

@@ -2156,6 +2156,7 @@ video {
   }
 }
 
+
 .banner-area4 .banner-content .banner-btn {
   position: relative;
   z-index: 1;
@@ -2165,17 +2166,16 @@ video {
   position: relative;
   display: inline-block;
 }
-@media (max-width: 1399px) {
+/* @media (max-width: 1399px) {
   .banner-area4 .banner-img {
     margin-left: 50px;
   }
-}
-/* @media (max-width: 991px) {
-  .banner-area4 .banner-img {
-    display: none;
-    visibility: hidden;
-  }
 } */
+@media (max-width: 800px) {
+  .banner-area4 .banner-img {
+    margin-left: 200px;
+  }
+}
 
 @media screen and (max-width: 500px){
   .banner-area4 .banner-img {
@@ -2243,11 +2243,13 @@ video {
     top: -90px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 500px) {
   .banner-area4 .banner-img .banner-sm-img {
-    right: -30px;
+    right: -45px;
   }
 }
+
+
 .banner-area4 .banner-img .banner-sm-img::after {
   content: "";
   height: 100%;
