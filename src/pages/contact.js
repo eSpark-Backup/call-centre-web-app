@@ -6,9 +6,9 @@ function Contactpage() {
   return (
     <Layout>
       <Breadcrumb
-        pageList="Contact"
-        title="For Any Querry"
-        pageName="CONTACT"
+        pageList="Contact Us"
+        title="Talk to Us & Get The Services​"
+        pageName="CONTACT US"
       />
       <div className="contact-page-wrap sec-mar">
         <div className="container">
