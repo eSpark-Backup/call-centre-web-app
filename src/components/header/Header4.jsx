@@ -166,17 +166,17 @@ function Header4() {
               }`}
             >
               <li>
-                <Link legacyBehavior href="/service">
+                <Link legacyBehavior href="/B2B">
                   <a>B2B Telemarketing​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/service2">
+                <Link legacyBehavior href="/customer-winback">
                   <a>Customer Winback​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/service3">
+                <Link legacyBehavior href="/lead-generation">
                   <a>Lead Generation​</a>
                 </Link>
               </li>

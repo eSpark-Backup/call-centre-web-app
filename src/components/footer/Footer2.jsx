@@ -78,16 +78,16 @@ function Footer2() {
           <h6 className="style">Outbound​</h6>
           <div className="menu-container">
             <ul>
-              <li><Link legacyBehavior href="#"><a>B2B Telemarketing​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Customer Winback​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Lead Generation​</a></Link></li>
+              <li><Link legacyBehavior href="/B2B"><a>B2B Telemarketing​</a></Link></li>
+              <li><Link legacyBehavior href="customer-winback"><a>Customer Winback​</a></Link></li>
+              <li><Link legacyBehavior href="lead-generation"><a>Lead Generation​</a></Link></li>
               </ul>
               </div>
         </div>
       </div>
-      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center footer-size">
         <div className="footer-widget">
-          <div className="widget-title">
+          <div className="widget-title ">
             <h4>Industries</h4>
           </div>
           <div className="menu-container">
