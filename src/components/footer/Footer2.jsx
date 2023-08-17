@@ -1,3 +1,4 @@
+import { Address } from '@/constants/Constants'
 import Link from 'next/link'
 import React from 'react'
 
@@ -43,7 +44,7 @@ function Footer2() {
               </svg>
               Address
             </h4>
-            <a href="#">301/B 3rd Floor & 401/A 4th Floor, Blossom Trade Centre, Block 1 Gulistan-e-Johar, Karachi, 74300</a>
+            <a href="#">{Address}</a>
           </div>
           <div className="footer-contact mb-40">
             <h4>
