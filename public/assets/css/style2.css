@@ -2295,6 +2295,12 @@ video {
   bottom: 180px;
   width: 100%;
 }
+
+.banner-area4 .background-text-slider h2 .space
+{
+  padding-right: 35px; 
+}
+
 .banner-area4 .background-text-slider h2 {
   font-family: var(--font-saira);
   font-weight: 700;
