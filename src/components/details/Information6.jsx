@@ -22,7 +22,7 @@ function Information6(){
                   <div className="case-img magnetic-item">
                     <img
                       className="img-fluid"
-                      src="assets/img/inbound/direct-response/3.png"
+                      src="assets/img/inbound/direct-response/2.png"
                       alt=""
                     />
                   </div>

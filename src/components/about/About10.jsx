@@ -44,7 +44,7 @@ The application of the campaigns may look easy. But you will need experienced ha
         <div className="col-lg-6 wow animate fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
           <div className="about-img-wrap">
             <div className="about-img magnetic-item">
-              <img className="img-fluid" src="assets/img/inbound/direct-response/2.png" alt="" />
+              <img className="img-fluid" src="assets/img/inbound/direct-response/3.png" alt="" />
             </div>
           </div>
         </div>
