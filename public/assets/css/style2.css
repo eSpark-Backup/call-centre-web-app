@@ -299,6 +299,9 @@ video {
   margin-bottom: 0;
   padding-top: 20px;
 }
+
+
+
 .section-title-4 .about-btn {
   padding-top: 35px;
 }
@@ -4637,8 +4640,6 @@ video {
   background: #0F0F0F;
 }
 
-
-
 .home3-partner-area {
   background: #1B1F23;
   padding: 30px 65px;
@@ -5646,12 +5647,6 @@ video {
   color: #1B1F23;
 }
 
-@media screen and (min-width: 1600px) {
-  .home3-contact-area{
-    height: 775px;
-  }
-}
-
 .home3-contact-area {
   background-image: url(../img/team.jpg);
   background-size: cover;
@@ -6063,14 +6058,6 @@ video {
   color: #B5B5B5;
   padding-top: 5px;
 }
-
-@media screen and (max-width: 990px) and (min-width: 576px){
-
-.footer-size{
-  margin-top: -100px;
-}
-}
-
 .home3-blog-area .single-blog .blog-content .blog-footer {
   display: flex;
   align-items: center;
@@ -6252,15 +6239,16 @@ video {
   display: block;
   z-index: 1;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .home5-about-area .about-img-wrap .about-img {
     display: none;
     visibility: hidden;
   }
-}
+} */
 @media (max-width: 1199px) {
-  .home5-about-area .about-img-wrap .about-img img {
-    height: 95%;
+  .home5-about-area .about-img-wrap .about-img::before {
+    height: 105%;
+    
   }
 }
 .home5-about-area .about-img-wrap .about-img::after {
@@ -6599,8 +6587,8 @@ video {
   margin: 0;
   padding: 0;
   list-style: none;
-  -moz-columns: 6;
-       columns: 6;
+  -moz-columns: 3;
+       columns: 3;
   gap: 0;
 }
 @media (max-width: 991px) {

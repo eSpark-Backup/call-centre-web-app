@@ -2,6 +2,10 @@ import Link from 'next/link';
 import React from 'react'
 import Marquee from "react-fast-marquee";
 function Home3Contact() {
+  const containerStyle = {
+    marginBottom:"-10px",
+    
+};
   return (
     <div className="home3-contact-area sec-mar ">
   <div className="container-fluid " >
