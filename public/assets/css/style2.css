@@ -7575,6 +7575,12 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   background-color: var(--theme-color);
 }
 
+@media (max-width:990px) and (min-width:500px) {
+  .footer-size{
+    margin-top: -100px;
+  }
+}
+
 .bg-6 {
   background: #161519;
 }
