@@ -66,12 +66,12 @@ function Footer2() {
           <h6 className="style">Inbound</h6>
           <div className="menu-container">
             <ul>
-              <li><Link legacyBehavior href="#"><a>Business Call Screening​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Customer Services​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Direct Response Call Center​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Event Registration​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Help Desk Call Center​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Live Chat Outsourcing​</a></Link></li>
+              <li><Link legacyBehavior href="business-call-screening"><a>Business Call Screening​</a></Link></li>
+              <li><Link legacyBehavior href="customer-service"><a>Customer Services​</a></Link></li>
+              <li><Link legacyBehavior href="direct-response"><a>Direct Response Call Center​</a></Link></li>
+              <li><Link legacyBehavior href="event-registration"><a>Event Registration​</a></Link></li>
+              <li><Link legacyBehavior href="help-desk"><a>Help Desk Call Center​</a></Link></li>
+              <li><Link legacyBehavior href="live-chat"><a>Live Chat Outsourcing​</a></Link></li>
             </ul> 
           </div>
           <br></br>

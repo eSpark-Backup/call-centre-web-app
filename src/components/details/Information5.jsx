@@ -1,3 +1,4 @@
+import { Information5_Heading, Information5_Heading2, Information5_para, Information5_para2, Information5_para3, Information5_para4 } from '@/constants/Constants'
 import React from 'react'
 
 function Information5(){
@@ -9,11 +10,9 @@ function Information5(){
               <div className="row g-lg-4 gy-5 mb-120">
                 <div className="col-lg-6 d-flex align-items-center">
                   <div className="case-content">
-                    <h2> No More Call Delay, Just Rapid Response! ​</h2>
-                    <p>
-                    Call delays and unavailability of the agent on time are some of the common issues. Our inventive and observant professionals have spotted these issues and have working solutions for them. You can connect with our services and offer quick responses to your customers anytime, anywhere.                     </p>
-                    <p>
-                    A rapid response doesn’t mean replying to customers with casual and informal words. True customer support representatives who have proven themselves will always make sure to confirm all queries with formal, friendly, and respectful gestures.  ​                    </p>
+                    <h2>{Information5_Heading}</h2>
+                    <p>{Information5_para}</p>
+                    <p>{Information5_para2}</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -38,11 +37,9 @@ function Information5(){
                 </div>
                 <div className="col-lg-6 d-flex align-items-center">
                   <div className="case-content">
-                    <h2>Your Customers are Fortune, Retain Them With Our Active Customer Service. ​</h2>
-                    <p>
-                    Customer support representatives serve more than a hundred customers every day. It becomes a challenging task to convince consumers and end the call with a friendly goodbye. But you are on a platform that is surrounded by trained talent who will not let down your trust in our services. We serve our clients by offering the best-outsourced customer support service. ​                    </p>
-                    <p>
-                    Retainership of the customers doesn’t only involve beneficial offers and discounts. The customer support team will need to respond on time to win the approval and trust of the customers. Your products and services will entail the proper representation, and our team is expert in it.​                    </p>
+                    <h2>{Information5_Heading2} ​</h2>
+                    <p>{Information5_para3}</p>
+                    <p>{Information5_para4}</p>
                   </div>
                 </div>
               </div>
