@@ -299,6 +299,9 @@ video {
   margin-bottom: 0;
   padding-top: 20px;
 }
+
+
+
 .section-title-4 .about-btn {
   padding-top: 35px;
 }
@@ -4593,6 +4596,12 @@ video {
   background: #0F0F0F;
 }
 
+@media (min-width: 320px) and (max-width: 992px){
+  .home5-partner-area img{
+    max-width: 120px;
+  }
+}
+
 .home3-partner-area {
   background: #1B1F23;
   padding: 30px 65px;
@@ -5607,7 +5616,7 @@ video {
 }
 
 .home3-contact-area {
-  background-image: url(../img/home-3/home3-contact-bg.png);
+  background-image: url(../img/team.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6016,6 +6025,15 @@ video {
   color: #B5B5B5;
   padding-top: 5px;
 }
+
+@media screen and (max-width: 990px) and (min-width: 576px){
+
+  .footer-size{
+    margin-top: -120px;
+  }
+  }
+  
+
 .home3-blog-area .single-blog .blog-content .blog-footer {
   display: flex;
   align-items: center;
@@ -6197,15 +6215,16 @@ video {
   display: block;
   z-index: 1;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .home5-about-area .about-img-wrap .about-img {
     display: none;
     visibility: hidden;
   }
-}
+} */
 @media (max-width: 1199px) {
-  .home5-about-area .about-img-wrap .about-img img {
-    height: 95%;
+  .home5-about-area .about-img-wrap .about-img::before {
+    height: 105%;
+    
   }
 }
 .home5-about-area .about-img-wrap .about-img::after {

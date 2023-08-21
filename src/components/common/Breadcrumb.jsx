@@ -4,8 +4,6 @@ import React from "react";
 function Breadcrumb({ title, pageName, pageList }) {
   return (
     <section className="breadcrumbs">
-      <div className="breadcrumb-sm-images">
-      </div>
       <div className="container">
         <div className="row">
           <div className="col-12">
