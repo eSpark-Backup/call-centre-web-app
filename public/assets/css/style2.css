@@ -2180,15 +2180,21 @@ video {
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 535px){
   .banner-area4 .banner-img {
     margin-left: 20px;
   }
   .banner-area4 .banner-img .banner-big-img img {
     width: 250px;
   }
-  .banner-area4 .banner-img .banner-sm-img img {
-    max-width: 100px;
+}
+
+@media screen and (max-width: 650px) and (min-width: 500px){
+  .banner-area4 .banner-img {
+    
+  }
+  .banner-area4 .banner-img .banner-big-img img {
+    width: 250px;
   }
 }
 
