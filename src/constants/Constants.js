@@ -31,7 +31,7 @@ export const Inviting_Scripts  ="Inviting Scripts";
 export const Tele_Sales  ="Tele-Sales";
 export const Affordable_Telemarketing_Campaigns  ="Affordable Telemarketing Campaigns";
 export const Get_in_Touch ="Get in Touch";
-export const Contact_H2  ="Connect With Us & Hire Our Services Now";
+export const Contact_H2  ="Connect With Us & Hire Our Services Now!";
 export const Contact_p ="Take advantage of our 24/7 active assistance. Our vibrant customer support team is here to confirm all your queries and help you hire the best professionals in minutes.";
 export const Address ="301/B 3rd Floor & 401/A 4th Floor, Blossom Trade Centre, Block 1 Gulistan-e-Johar, Karachi, 74300​";
 
