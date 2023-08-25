@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About6 from "@/components/about/About6";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
+import AboutSection from "@/components/about/AboutSection";
 import OurWork from "@/components/work/OurWork";
-import Information2 from "@/components/details/Information2";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Hot_Leads, Loyalty_Programs, Outbound_Campaigns, Product_Updates, Special_Offers, Unlimited_Calls } from "@/constants/Constants";
+import { About6_Heading, About6_Para, About6_Para2, B2B_Campaigns, Customer_Heading, Customer_Para, Customer_Retention, Discount_Offers, Hot_Leads, Information2_Heading, Information2_Heading2, Information2_Para, Information2_Para2, Information2_Para3, Information2_Para4, Loyalty_Programs, Outbound_Campaigns, Product_Updates, Rejoining_Rewards, Special_Offers, Unlimited_Calls } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+
+const aboutUsPoints = [Customer_Retention, B2B_Campaigns, Discount_Offers, Rejoining_Rewards ];
 
 function CustomerWinback() {
   return (
@@ -29,11 +30,9 @@ function CustomerWinback() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>How Do We Acquire Approvals With Customer Winback Service?</h2>
+                    <h2>{Customer_Heading}</h2>
                   </div>
-                  <p>
-                  Winning the respected approval of old clients is one of the toughest tasks. Companies aim for experienced customer service platforms to get their ex-customers back. The reconnection with old customers will always need time and patience. We have a team of specialists who offer the utmost customer winback services that not only get back the consumers but also sell the services and products at a high value. 
-                  </p>
+                  <p>{Customer_Para}</p>
                   <ul className="about-featue">
                     <li>
                     <ListSvg />
@@ -79,11 +78,11 @@ function CustomerWinback() {
           </div>
         </div>
         </div>
-        <About6 />
-  <Information2 />
+      <AboutSection heading={About6_Heading} aboutPara1={About6_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About6_Para2} imagePath={"assets/img/outbound/customer-winback/making-deal.jpg"} />
+      <Information heading={Information2_Heading} informationPara={Information2_Para} informationParaTwo={Information2_Para2} imagePath={"assets/img/outbound/customer-winback/two-business-men.jpg"} imagePath2={"assets/img/outbound/customer-winback/customer-service.jpg"} headingTwo={Information2_Heading2} informationParaThree={Information2_Para3} informationParaFour={Information2_Para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }

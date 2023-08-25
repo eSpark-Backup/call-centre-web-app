@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import Home3Contact from "@/components/contact/Home3Contact";
-import Link from "next/link";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
-import Information9 from "@/components/details/Information9";
-import About13 from "@/components/about/About13";
+import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Automate_Response, Automated_Response, Broadband_Internet, Feedback_Survey_Tools, Inbound_page6_Heading, Inbound_page6_para, Natural_Conversation, Online_Communication_System, Reporting_Dashboard } from "@/constants/Constants";
+import { About13_Heading, About13_para, About13_para2, Active_Chat, Automated_Response, Broadband_Devices, Broadband_Internet, Feedback_Survey_Tools, Human_Communication, Inbound_page6_Heading, Inbound_page6_para, Information9_Heading, Information9_Heading2, Information9_para, Information9_para2, Information9_para3, Information9_para4, Natural_Conversation, Online_Communication_System, Reporting_Dashboard, Timely_Response } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [Human_Communication, Active_Chat, Timely_Response, Broadband_Devices ];
 
 function LiveChat() {
   return (
@@ -77,11 +78,11 @@ function LiveChat() {
           </div>
         </div>
         </div>
-        <About13 />
-  <Information9 />
+      <AboutSection heading={About13_Heading} aboutPara1={About13_para} aboutUsPoints={aboutUsPoints} aboutPara2={About13_para2} imagePath={"assets/img/inbound/live-chat/2.png"} />
+      <Information heading={Information9_Heading} informationPara={Information9_para} informationParaTwo={Information9_para2} imagePath={"assets/img/inbound/live-chat/1.png"} imagePath2={"assets/img/inbound/live-chat/3.png"} headingTwo={Information9_Heading2} informationParaThree={Information9_para3} informationParaFour={Information9_para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact /> 
+      <ServicesPartnerSection />
+      <ContactUsSection /> 
     </Layout>
   );
 }

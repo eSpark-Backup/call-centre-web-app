@@ -1,15 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About8 from "@/components/about/About8";
-import Home3Contact from "@/components/contact/Home3Contact";
-import Link from "next/link";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
-import Information4 from "@/components/details/Information4";
+import Information from "@/components/details/Information";
+import AboutSection from "@/components/about/AboutSection";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Automated_Response, Automatic_Call_Distribution, CNAM, Caller_Identification, Inbound_page1_Heading, Inbound_page1_para, Interactive_Voice_Response, VoIP } from "@/constants/Constants";
+import { About8_Heading, About8_para, About8_para2, Automated_Response, Automatic_Call_Distribution, Broadband_Phone_Service, CNAM, Caller_Identification, Customer_Data_Security, Effortless_Campaign, Inbound_page1_Heading, Inbound_page1_para, Information4_Heading, Information4_Heading2, Information4_para, Information4_para2, Information4_para3, Information4_para4, Interactive_Voice_Response, Rapid_Call_Transfer, Spam_Protection, VoIP } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
 
+const aboutUsPoints = [Spam_Protection, Customer_Data_Security, Rapid_Call_Transfer, Broadband_Phone_Service ];
 function ServicePage() {
   return (
     <Layout>
@@ -18,7 +18,9 @@ function ServicePage() {
         title="Business Call Screening​​"
         pageName="Inbound"
       />
-      <About8 />
+      <div className="business-space">
+<AboutSection heading={About8_Heading} aboutPara1={About8_para} aboutUsPoints={aboutUsPoints} aboutPara2={About8_para2} imagePath={"assets/img/inbound/business-call-screening/4.png"} />
+</div>
       <div className="service-details ">
         <div className="about-services sec-mar">
           <div className="container">
@@ -77,10 +79,10 @@ function ServicePage() {
           </div>
         </div>
         </div>
-  <Information4 />
+  <Information heading={Information4_Heading} informationPara={Information4_para} informationParaTwo={Information4_para2} imagePath={"assets/img/inbound/business-call-screening/2.png"} imagePath2={"assets/img/inbound/business-call-screening/3.png"} headingTwo={Information4_Heading2} informationParaThree={Information4_para3} informationParaFour={Information4_para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact /> 
+      <ServicesPartnerSection />
+      <ContactUsSection /> 
     </Layout>
   );
 }

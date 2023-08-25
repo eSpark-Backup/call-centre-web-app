@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import Home3Contact from "@/components/contact/Home3Contact";
-import Link from "next/link";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
-import Information8 from "@/components/details/Information8";
-import About12 from "@/components/about/About12";
+import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import {Billing_inquiries, IT_Solutions, Inbound_page5_Heading, Inbound_page5_para, IoT_Related_Assistance, Logistic_Support, Technical_Support, Warranty_Support } from "@/constants/Constants";
+import {About12_Heading, About12_para, About12_para2, Billing_inquiries, Escalation_Management, IT_Solutions, Inbound_page5_Heading, Inbound_page5_para, Information8_Heading, Information8_Heading2, Information8_para, Information8_para2, Information8_para3, Information8_para4, IoT_Related_Assistance, Logistic_Support, Product_Information, Service_Information, Technical_Support, Technical_Troubleshooting, Warranty_Support } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [Product_Information, Service_Information, Technical_Troubleshooting, Escalation_Management ];
 
 function HelpDesk() {
   return (
@@ -77,11 +78,11 @@ function HelpDesk() {
           </div>
         </div>
         </div>
-        <About12 />
-  <Information8 />
+      <AboutSection heading={About12_Heading} aboutPara1={About12_para} aboutUsPoints={aboutUsPoints} aboutPara2={About12_para2} imagePath={"assets/img/inbound/help-desk/3.png"} />
+      <Information heading={Information8_Heading} informationPara={Information8_para} informationParaTwo={Information8_para2} imagePath={"assets/img/inbound/help-desk/4.png"} imagePath2={"assets/img/inbound/help-desk/2.png"} headingTwo={Information8_Heading2} informationParaThree={Information8_para3} informationParaFour={Information8_para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact /> 
+      <ServicesPartnerSection />
+      <ContactUsSection /> 
     </Layout>
   );
 }

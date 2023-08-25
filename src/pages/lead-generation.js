@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About7 from "@/components/about/About7";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import OurWork from "@/components/work/OurWork";
-import Information3 from "@/components/details/Information3";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Audience_Segmentation, Brand_Awareness, High_Quality_Leads, Lead_Generation_Strategies, Lead_Lifecycle, Lead_Nurturing } from "@/constants/Constants";
+import { About7_Heading, About7_Para, About7_Para2, Audience_Segmentation, Brand_Awareness, High_Quality_Leads, Information3_Heading, Information3_Heading2, Information3_Para, Information3_Para2, Information3_Para3, Information3_Para4, Landing_Pages, Lead_Capture, Lead_Generation_Strategies, Lead_Heading, Lead_Lifecycle, Lead_Magnets, Lead_Nurturing, Lead_Para, Lead_Scoring } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [Lead_Capture, Landing_Pages, Lead_Magnets, Lead_Scoring ];
 
 function LeadGeneration() {
   return (
@@ -29,11 +30,9 @@ function LeadGeneration() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>Let’s Reach Out to Your Company’s Potential Customers Through Our Lead Generation Services.</h2>
+                    <h2>{Lead_Heading}</h2>
                   </div>
-                  <p>
-                  Newly established privately owned companies need instant leads to expand their network and be stable in the market. The rapid flow of leads creates a colossal impact on the growth of agencies. That is the reason the demand for our offered service of lead generation is increasing every passing day. We employ modern techniques to reach out to potential customers and promote products and services.
-                  </p>
+                  <p>{Lead_Para}</p>
                   <ul className="about-featue">
                     <li>
                     <ListSvg />
@@ -79,11 +78,11 @@ function LeadGeneration() {
           </div>
         </div>
         </div>
-        <About7 />
-  <Information3 />
+        <AboutSection heading={About7_Heading} aboutPara1={About7_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About7_Para2} imagePath={"assets/img/outbound/lead-generation/good-news.jpg"} />
+        <Information heading={Information3_Heading} informationPara={Information3_Para} informationParaTwo={Information3_Para2} imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"} imagePath2={"assets/img/outbound/lead-generation/focused-team-leader.jpg"} headingTwo={Information3_Heading2} informationParaThree={Information3_Para3} informationParaFour={Information3_Para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }

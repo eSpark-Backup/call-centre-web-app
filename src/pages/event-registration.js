@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import Home3Contact from "@/components/contact/Home3Contact";
-import Link from "next/link";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
-import Information7 from "@/components/details/Information7";
-import About11 from "@/components/about/About11";
+import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Business_Event_Registrations, Conference_Registration, Festival_Registrations, Inbound_page4_Heading, Inbound_page4_para, Seminar_Registration, Trade_Shows_Registrations, Webinar_Registration } from "@/constants/Constants";
+import { About11_Heading, About11_para, About11_para2, Business_Event_Registrations, Conference_Registration, Easy_process, Event_Attendees_Guide, Event_Marketing, Festival_Registrations, Inbound_page4_Heading, Inbound_page4_para, Information7_Heading, Information7_Heading2, Information7_para, Information7_para2, Information7_para3, Information7_para4, Live_Phone_Support, Seminar_Registration, Trade_Shows_Registrations, Webinar_Registration } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [Easy_process, Live_Phone_Support, Event_Marketing, Event_Attendees_Guide ];
 
 function EventRegistration() {
   return (
@@ -77,11 +78,11 @@ function EventRegistration() {
           </div>
         </div>
         </div>
-        <About11 />
-  <Information7 />
+        <AboutSection heading={About11_Heading} aboutPara1={About11_para} aboutUsPoints={aboutUsPoints} aboutPara2={About11_para2} imagePath={"assets/img/inbound/event-registration/2.jpg"} />
+        <Information heading={Information7_Heading} informationPara={Information7_para} informationParaTwo={Information7_para2} imagePath={"assets/img/inbound/event-registration/3.png"} imagePath2={"assets/img/inbound/event-registration/4.jpg"} headingTwo={Information7_Heading2} informationParaThree={Information7_para3} informationParaFour={Information7_para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact /> 
+      <ServicesPartnerSection />
+      <ContactUsSection /> 
     </Layout>
   );
 }

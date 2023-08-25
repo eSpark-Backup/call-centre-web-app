@@ -1,14 +1,16 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About9 from "@/components/about/About9";
-import Home3Contact from "@/components/contact/Home3Contact";
-import Link from "next/link";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
-import Information5 from "@/components/details/Information5";
+import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { CRM_System, Inbound_Call_Tracking, Inbound_Dialing, Inbound_Leads, Inbound_page2_Heading, Inbound_page2_para, Live_Chat_Software, Trained_Agents } from "@/constants/Constants";
+import { About9_Heading, About9_para, About9_para2, CRM_System, Convincing_Product_Pitches, Friendly_Response, Inbound_Call_Tracking, Inbound_Dialing, Inbound_Leads, Inbound_Sales_Strategies, Inbound_page2_Heading, Inbound_page2_para, Information5_Heading, Information5_Heading2, Information5_para, Information5_para2, Information5_para3, Information5_para4, Live_Chat_Software, Positive_Brand_Massage, Trained_Agents } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+
+const aboutUsPoints = [Friendly_Response, Inbound_Sales_Strategies, Positive_Brand_Massage, Convincing_Product_Pitches ];
 
 function CustomerService() {
   return (
@@ -76,11 +78,10 @@ function CustomerService() {
           </div>
         </div>
         </div>
-        <About9 />
-  <Information5 />
-      <OurWork />
-      <Partner5 />
-      <Home3Contact /> 
+      <AboutSection heading={About9_Heading} aboutPara1={About9_para} aboutUsPoints={aboutUsPoints} aboutPara2={About9_para2} imagePath={"assets/img/inbound/customer-service/2.png"}/>
+      <Information heading={Information5_Heading} informationPara={Information5_para} informationParaTwo={Information5_para2} imagePath={"assets/img/inbound/customer-service/3.png"} imagePath2={"assets/img/inbound/customer-service/4.png"} headingTwo={Information5_Heading2} informationParaThree={Information5_para3} informationParaFour={Information5_para4}  />      <OurWork />
+      <ServicesPartnerSection />
+      <ContactUsSection /> 
     </Layout>
   );
 }

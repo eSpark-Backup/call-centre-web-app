@@ -1,14 +1,15 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About5 from "@/components/about/About5";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import OurWork from "@/components/work/OurWork";
-import Information1 from "@/components/details/Information1";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Active_Management, Affordable_Telemarketing_Campaigns, Call_Recording, Customer_Retention_Campaigns, Inviting_Scripts, Tele_Sales } from "@/constants/Constants";
+import { About5_Heading, About5_Para, About5_Para2, Active_Management, Affordable_Telemarketing_Campaigns, B2B_Heading, B2B_Para, Call_Recording, Convincing_Product_Pitches, Customer_Retention_Campaigns, Information1_Heading, Information1_Heading2, Information1_Para, Information1_Para2, Information1_Para3, Information1_Para4, Inviting_Scripts, Modern_Dialer_Experts, Positive_Brand_Massage, Profit_Guaranteed, Tele_Sales } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [Profit_Guaranteed, Modern_Dialer_Experts, Positive_Brand_Massage, Convincing_Product_Pitches ];
 
 function ServicePage() {
   return (
@@ -29,11 +30,9 @@ function ServicePage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>How Do We Spread Network Through B2B Telemarketing?</h2>
+                    <h2>{B2B_Heading}</h2>
                   </div>
-                  <p>
-                  Our team builds convincing conversations to market the offered services or products of our clients. With the updated features of B2B telemarketing, we ensure the running of successful campaigns involving welcoming regards, product info, and sales speech. Today’s market demands various services, and our platform is packed with customer-grabbing strategies and tools.​
-                  </p>
+                  <p>{B2B_Para}</p>
                   <ul className="about-featue">
                     <li>
                       <ListSvg />
@@ -79,11 +78,11 @@ function ServicePage() {
           </div>
         </div>
         </div>
-        <About5 />
-  <Information1 />
+      <AboutSection heading={About5_Heading} aboutPara1={About5_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About5_Para2} imagePath={"assets/img/outbound/B2B/colleagues.jpg"} />
+      <Information heading={Information1_Heading} informationPara={Information1_Para} informationParaTwo={Information1_Para2} imagePath={"assets/img/outbound/B2B/businesswoman.jpg"} imagePath2={"assets/img/outbound/B2B/people-working.jpg"} headingTwo={Information1_Heading2} informationParaThree={Information1_Para3} informationParaFour={Information1_Para4}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }

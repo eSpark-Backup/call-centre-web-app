@@ -9667,6 +9667,10 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
+.business-space{
+  padding-top: 100px;
+}
+
 .service-details .about-content .section-title-5 {
   margin-bottom: 20px;
 }

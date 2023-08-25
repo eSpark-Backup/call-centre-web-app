@@ -1,7 +1,6 @@
-import { Information5_Heading, Information5_Heading2, Information5_para, Information5_para2, Information5_para3, Information5_para4 } from '@/constants/Constants'
 import React from 'react'
 
-function Information5(){
+function Information4({heading, informationPara, informationParaTwo, imagePath, imagePath2, headingTwo, informationParaThree, informationParaFour}){
     return(
         <div className="case-study-details ">
         <div className="container">
@@ -10,16 +9,16 @@ function Information5(){
               <div className="row g-lg-4 gy-5 mb-120">
                 <div className="col-lg-6 d-flex align-items-center">
                   <div className="case-content">
-                    <h2>{Information5_Heading}</h2>
-                    <p>{Information5_para}</p>
-                    <p>{Information5_para2}</p>
+                    <h2>{heading} ​</h2>
+                    <p>{informationPara}</p>
+                    <p>{informationParaTwo}</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="case-img magnetic-item">
                     <img
                       className="img-fluid"
-                      src="assets/img/inbound/customer-service/3.png"
+                      src={imagePath}
                       alt=""
                     />
                   </div>
@@ -30,16 +29,16 @@ function Information5(){
                   <div className="case-img magnetic-item">
                     <img
                       className="img-fluid"
-                      src="assets/img/inbound/customer-service/4.png"
+                      src={imagePath2}
                       alt=""
                     />
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex align-items-center">
                   <div className="case-content">
-                    <h2>{Information5_Heading2} ​</h2>
-                    <p>{Information5_para3}</p>
-                    <p>{Information5_para4}</p>
+                    <h2>{headingTwo}</h2>
+                    <p>{informationParaThree}</p>
+                    <p>{informationParaFour}</p>
                   </div>
                 </div>
               </div>
@@ -50,4 +49,4 @@ function Information5(){
     )
 }
 
-export default Information5
+export default Information4
