@@ -1,6 +1,6 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
-function Partnar4() {
+function PartnarSlider() {
   return (
     <div className="home4-trusted-client-area sec-mar">
     <p>We take care of more than 1.5k Trusted Allies</p>
@@ -39,4 +39,4 @@ function Partnar4() {
   )
 }
 
-export default Partnar4
+export default PartnarSlider

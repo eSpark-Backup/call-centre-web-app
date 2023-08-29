@@ -198,7 +198,7 @@ function Header4() {
               }`}
             >
               <li>
-                <Link legacyBehavior href="/contact">
+                <Link legacyBehavior href="/automotive">
                   <a>Automotive</a>
                 </Link>
               </li>

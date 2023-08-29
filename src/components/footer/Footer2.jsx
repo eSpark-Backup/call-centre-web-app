@@ -92,7 +92,7 @@ function Footer2() {
           </div>
           <div className="menu-container">
             <ul>
-              <li><Link legacyBehavior href="#"><a>Automotive​</a></Link></li>
+              <li><Link legacyBehavior href="/automotive"><a>Automotive​</a></Link></li>
               <li><Link legacyBehavior href="#"><a>Financial</a></Link></li>
               <li><Link legacyBehavior href="#"><a>Healthcare​</a></Link></li>
               <li><Link legacyBehavior href="#"><a>Hospitality</a></Link></li>
