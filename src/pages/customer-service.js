@@ -5,12 +5,13 @@ import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About9_Heading, About9_para, About9_para2, CRM_System, Convincing_Product_Pitches, Friendly_Response, Inbound_Call_Tracking, Inbound_Dialing, Inbound_Leads, Inbound_Sales_Strategies, Inbound_page2_Heading, Inbound_page2_para, Information5_Heading, Information5_Heading2, Information5_para, Information5_para2, Information5_para3, Information5_para4, Live_Chat_Software, Positive_Brand_Massage, Trained_Agents } from "@/constants/Constants";
+import { cRMSystem, convincingProductPitches, customerAboutHeading, customerAboutPara, customerAboutParaTwo, customerInformationHeading, customerInformationHeadingTwo, customerInformationPara, customerInformationParaFour, customerInformationParaThree, customerInformationParaTwo, customerServiceHeading, customerServicePara, friendlyResponse, inboundCallTracking, inboundDialing, inboundLeads, inboundSalesStrategies, liveChatSoftware, positiveBrandMassage, trainedAgents } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
 
-const aboutUsPoints = [Friendly_Response, Inbound_Sales_Strategies, Positive_Brand_Massage, Convincing_Product_Pitches ];
+const aboutUsPoints = [friendlyResponse, inboundSalesStrategies, positiveBrandMassage, convincingProductPitches ];
+const servicePoints = [trainedAgents, cRMSystem, liveChatSoftware, inboundDialing, inboundCallTracking, inboundLeads ];
 
 function CustomerService() {
   return (
@@ -31,34 +32,17 @@ function CustomerService() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Inbound_page2_Heading}​</h2>
+                    <h2>{customerServiceHeading}​</h2>
                   </div>
-                  <p>{Inbound_page2_para}</p>
+                  <p>{customerServicePara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                    {Trained_Agents}
-                   </li>
-                    <li>
-                    <ListSvg />
-                    {CRM_System}</li>
-                    <li>
-                    <ListSvg />
-                    {Live_Chat_Software}​
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                    {Inbound_Dialing} ​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Inbound_Call_Tracking} ​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Inbound_Leads}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,8 +62,9 @@ function CustomerService() {
           </div>
         </div>
         </div>
-      <AboutSection heading={About9_Heading} aboutPara1={About9_para} aboutUsPoints={aboutUsPoints} aboutPara2={About9_para2} imagePath={"assets/img/inbound/customer-service/2.png"}/>
-      <Information heading={Information5_Heading} informationPara={Information5_para} informationParaTwo={Information5_para2} imagePath={"assets/img/inbound/customer-service/3.png"} imagePath2={"assets/img/inbound/customer-service/4.png"} headingTwo={Information5_Heading2} informationParaThree={Information5_para3} informationParaFour={Information5_para4}  />      <OurWork />
+      <AboutSection heading={customerAboutHeading} aboutPara1={customerAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={customerAboutParaTwo} imagePath={"assets/img/inbound/customer-service/2.png"}/>
+      <Information heading={customerInformationHeading} informationPara={customerInformationPara} informationParaTwo={customerInformationParaTwo} imagePath={"assets/img/inbound/customer-service/3.png"} imagePath2={"assets/img/inbound/customer-service/4.png"} headingTwo={customerInformationHeadingTwo} informationParaThree={customerInformationParaThree} informationParaFour={customerInformationParaFour}  />      
+      <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection /> 
     </Layout>

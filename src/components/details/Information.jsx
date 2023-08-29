@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Information4({heading, informationPara, informationParaTwo, imagePath, imagePath2, headingTwo, informationParaThree, informationParaFour}){
+function Information({heading, informationPara, informationParaTwo, imagePath, imagePath2, headingTwo, informationParaThree, informationParaFour}){
     return(
         <div className="case-study-details ">
         <div className="container">
@@ -49,4 +49,4 @@ function Information4({heading, informationPara, informationParaTwo, imagePath, 
     )
 }
 
-export default Information4
+export default Information

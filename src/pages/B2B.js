@@ -5,12 +5,12 @@ import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About5_Heading, About5_Para, About5_Para2, Active_Management, Affordable_Telemarketing_Campaigns, B2B_Heading, B2B_Para, Call_Recording, Convincing_Product_Pitches, Customer_Retention_Campaigns, Information1_Heading, Information1_Heading2, Information1_Para, Information1_Para2, Information1_Para3, Information1_Para4, Inviting_Scripts, Modern_Dialer_Experts, Positive_Brand_Massage, Profit_Guaranteed, Tele_Sales } from "@/constants/Constants";
+import { activeManagement, affordableTelemarketingCampaigns, b2BAboutHeading, b2BAboutPara, b2BAboutParaTwo, b2BInformationHeading, b2BInformationHeadingTwo, b2BInformationPara, b2BInformationParaFour, b2BInformationParaThree, b2BInformationParaTwo, b2B_Heading, b2B_Para, callRecording, convincingProductPitches, customerRetentionCampaigns, invitingScripts, modernDialerExperts, positiveBrandMassage, profitGuaranteed, teleSales } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [Profit_Guaranteed, Modern_Dialer_Experts, Positive_Brand_Massage, Convincing_Product_Pitches ];
-
+const aboutUsPoints = [profitGuaranteed, modernDialerExperts, positiveBrandMassage, convincingProductPitches ];
+const servicePoints = [activeManagement, customerRetentionCampaigns, callRecording, invitingScripts, teleSales, affordableTelemarketingCampaigns ];
 function ServicePage() {
   return (
     <Layout>
@@ -19,67 +19,49 @@ function ServicePage() {
         title="B2B Telemarketing​"
         pageName="Outbound"
       />
-      <div className="service-details ">
-        <div className="about-services sec-mar">
-          <div className="container">
-            <div className="row gy-5">
-              <div
-                className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
-                data-wow-delay="200ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="about-content">
-                  <div className="section-title-5">
-                    <h2>{B2B_Heading}</h2>
-                  </div>
-                  <p>{B2B_Para}</p>
-                  <ul className="about-featue">
-                    <li>
+      <div className="service-details">
+      <div className="about-services sec-mar">
+        <div className="container">
+          <div className="row gy-5">
+            <div
+              className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+            >
+              <div className="about-content">
+                <div className="section-title-5">
+                  <h2>{b2B_Heading}</h2>
+                </div>
+                <p>{b2B_Para}</p>
+                <ul className="about-featue">
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
                       <ListSvg />
-                  {Active_Management}
-                   </li>
-                    <li>
-                    <ListSvg />
-                    {Customer_Retention_Campaigns}
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                      {Call_Recording}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Inviting_Scripts}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Tele_Sales}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Affordable_Telemarketing_Campaigns}
-                    </li>
-                  </ul>
-                </div>
+                  ))}
+                </ul>
               </div>
-              <div
-                className="col-lg-6 wow animate fadeInRight"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="service-img magnetic-item">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/outbound/B2B/support.jpg"
-                    alt=""
-                  />
-                </div>
+            </div>
+            <div
+              className="col-lg-6 wow animate fadeInRight"
+              data-wow-delay="300ms"
+              data-wow-duration="1500ms"
+            >
+              <div className="service-img magnetic-item">
+                <img
+                  className="img-fluid"
+                  src="assets/img/outbound/B2B/support.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
-        </div>
-      <AboutSection heading={About5_Heading} aboutPara1={About5_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About5_Para2} imagePath={"assets/img/outbound/B2B/colleagues.jpg"} />
-      <Information heading={Information1_Heading} informationPara={Information1_Para} informationParaTwo={Information1_Para2} imagePath={"assets/img/outbound/B2B/businesswoman.jpg"} imagePath2={"assets/img/outbound/B2B/people-working.jpg"} headingTwo={Information1_Heading2} informationParaThree={Information1_Para3} informationParaFour={Information1_Para4}  />
+      </div>
+    </div>
+      <AboutSection heading={b2BAboutHeading} aboutPara1={b2BAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={b2BAboutParaTwo} imagePath={"assets/img/outbound/B2B/colleagues.jpg"} />
+      <Information heading={b2BInformationHeading} informationPara={b2BInformationPara} informationParaTwo={b2BInformationParaTwo} imagePath={"assets/img/outbound/B2B/businesswoman.jpg"} imagePath2={"assets/img/outbound/B2B/people-working.jpg"} headingTwo={b2BInformationHeadingTwo} informationParaThree={b2BInformationParaThree} informationParaFour={b2BInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection />

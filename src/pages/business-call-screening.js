@@ -6,11 +6,12 @@ import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import AboutSection from "@/components/about/AboutSection";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About8_Heading, About8_para, About8_para2, Automated_Response, Automatic_Call_Distribution, Broadband_Phone_Service, CNAM, Caller_Identification, Customer_Data_Security, Effortless_Campaign, Inbound_page1_Heading, Inbound_page1_para, Information4_Heading, Information4_Heading2, Information4_para, Information4_para2, Information4_para3, Information4_para4, Interactive_Voice_Response, Rapid_Call_Transfer, Spam_Protection, VoIP } from "@/constants/Constants";
+import {CNAM, VoIP, automatedResponse, automaticCallDistribution, broadbandPhoneService, businessAboutHeading, businessAboutPara, businessAboutParaTwo, businessHeading, businessInformationHeading, businessInformationHeadingTwo, businessInformationPara, businessInformationParaFour, businessInformationParaThree, businessInformationParaTwo, businessPara, callerIdentification, customerDataSecurity, interactiveVoiceResponse, rapidCallTransfer, spamProtection } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 
-const aboutUsPoints = [Spam_Protection, Customer_Data_Security, Rapid_Call_Transfer, Broadband_Phone_Service ];
-function ServicePage() {
+const aboutUsPoints = [spamProtection, customerDataSecurity, rapidCallTransfer, broadbandPhoneService ];
+const servicePoints = [callerIdentification, automatedResponse, VoIP, interactiveVoiceResponse, automaticCallDistribution, CNAM ];
+function BusinessCall() {
   return (
     <Layout>
       <Breadcrumb
@@ -19,7 +20,7 @@ function ServicePage() {
         pageName="Inbound"
       />
       <div className="business-space">
-<AboutSection heading={About8_Heading} aboutPara1={About8_para} aboutUsPoints={aboutUsPoints} aboutPara2={About8_para2} imagePath={"assets/img/inbound/business-call-screening/4.png"} />
+<AboutSection heading={businessAboutHeading} aboutPara1={businessAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={businessAboutParaTwo} imagePath={"assets/img/inbound/business-call-screening/4.png"} />
 </div>
       <div className="service-details ">
         <div className="about-services sec-mar">
@@ -32,34 +33,17 @@ function ServicePage() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Inbound_page1_Heading}</h2>
+                    <h2>{businessHeading}</h2>
                   </div>
-                  <p>{Inbound_page1_para} </p>
+                  <p>{businessPara} </p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                    {Caller_Identification}
-                   </li>
-                    <li>
-                    <ListSvg />
-                    {Automated_Response}</li>
-                    <li>
-                    <ListSvg />
-                    {VoIP}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                    {Interactive_Voice_Response}
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Automatic_Call_Distribution}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {CNAM}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -79,7 +63,7 @@ function ServicePage() {
           </div>
         </div>
         </div>
-  <Information heading={Information4_Heading} informationPara={Information4_para} informationParaTwo={Information4_para2} imagePath={"assets/img/inbound/business-call-screening/2.png"} imagePath2={"assets/img/inbound/business-call-screening/3.png"} headingTwo={Information4_Heading2} informationParaThree={Information4_para3} informationParaFour={Information4_para4}  />
+  <Information heading={businessInformationHeading} informationPara={businessInformationPara} informationParaTwo={businessInformationParaTwo} imagePath={"assets/img/inbound/business-call-screening/2.png"} imagePath2={"assets/img/inbound/business-call-screening/3.png"} headingTwo={businessInformationHeadingTwo} informationParaThree={businessInformationParaThree} informationParaFour={businessInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection /> 
@@ -87,4 +71,4 @@ function ServicePage() {
   );
 }
 
-export default ServicePage;
+export default BusinessCall;

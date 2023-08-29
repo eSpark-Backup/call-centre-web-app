@@ -5,11 +5,12 @@ import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import {About12_Heading, About12_para, About12_para2, Billing_inquiries, Escalation_Management, IT_Solutions, Inbound_page5_Heading, Inbound_page5_para, Information8_Heading, Information8_Heading2, Information8_para, Information8_para2, Information8_para3, Information8_para4, IoT_Related_Assistance, Logistic_Support, Product_Information, Service_Information, Technical_Support, Technical_Troubleshooting, Warranty_Support } from "@/constants/Constants";
+import {billingInquiries, escalationManagement, helpAboutHeading, helpAboutPara, helpAboutParaTwo, helpDeskHeading, helpDeskPara, helpInformationHeading, helpInformationHeadingTwo, helpInformationPara, helpInformationParaFour, helpInformationParaThree, helpInformationParaTwo, iTSolutions, ioTRelatedAssistance, logisticSupport, productInformation, serviceInformation, technicalSupport, technicalTroubleshooting, warrantySupport } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [Product_Information, Service_Information, Technical_Troubleshooting, Escalation_Management ];
+const aboutUsPoints = [productInformation, serviceInformation, technicalTroubleshooting, escalationManagement ];
+const servicePoints = [iTSolutions, ioTRelatedAssistance, billingInquiries, logisticSupport, technicalSupport, warrantySupport ];
 
 function HelpDesk() {
   return (
@@ -30,35 +31,17 @@ function HelpDesk() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Inbound_page5_Heading}</h2>
+                    <h2>{helpDeskHeading}</h2>
                   </div>
-                  <p>{Inbound_page5_para}</p>
+                  <p>{helpDeskPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                    {IT_Solutions} ​
-                     </li>
-                    <li>
-                    <ListSvg />
-                    {IoT_Related_Assistance}​
-                      </li>
-                    <li>
-                    <ListSvg />
-                    {Billing_inquiries}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                    {Logistic_Support}​​​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Technical_Support} ​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Warranty_Support}​
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,8 +61,8 @@ function HelpDesk() {
           </div>
         </div>
         </div>
-      <AboutSection heading={About12_Heading} aboutPara1={About12_para} aboutUsPoints={aboutUsPoints} aboutPara2={About12_para2} imagePath={"assets/img/inbound/help-desk/3.png"} />
-      <Information heading={Information8_Heading} informationPara={Information8_para} informationParaTwo={Information8_para2} imagePath={"assets/img/inbound/help-desk/4.png"} imagePath2={"assets/img/inbound/help-desk/2.png"} headingTwo={Information8_Heading2} informationParaThree={Information8_para3} informationParaFour={Information8_para4}  />
+      <AboutSection heading={helpAboutHeading} aboutPara1={helpAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={helpAboutParaTwo} imagePath={"assets/img/inbound/help-desk/3.png"} />
+      <Information heading={helpInformationHeading} informationPara={helpInformationPara} informationParaTwo={helpInformationParaTwo} imagePath={"assets/img/inbound/help-desk/4.png"} imagePath2={"assets/img/inbound/help-desk/2.png"} headingTwo={helpInformationHeadingTwo} informationParaThree={helpInformationParaThree} informationParaFour={helpInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection /> 

@@ -6,10 +6,11 @@ import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About6_Heading, About6_Para, About6_Para2, B2B_Campaigns, Customer_Heading, Customer_Para, Customer_Retention, Discount_Offers, Hot_Leads, Information2_Heading, Information2_Heading2, Information2_Para, Information2_Para2, Information2_Para3, Information2_Para4, Loyalty_Programs, Outbound_Campaigns, Product_Updates, Rejoining_Rewards, Special_Offers, Unlimited_Calls } from "@/constants/Constants";
+import {b2BCampaigns, customerHeading, customerPara, customerRetention, customerWinbackAboutHeading, customerWinbackAboutPara, customerWinbackAboutParaTwo, customerWinbackInformationHeading, customerWinbackInformationHeadingTwo, customerWinbackInformationPara, customerWinbackInformationParaFour, customerWinbackInformationParaThree, customerWinbackInformationParaTwo, discountOffers, hotLeads, loyaltyPrograms, outboundCampaigns, productUpdates, rejoiningRewards, specialOffers, unlimitedCalls } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 
-const aboutUsPoints = [Customer_Retention, B2B_Campaigns, Discount_Offers, Rejoining_Rewards ];
+const aboutUsPoints = [customerRetention, b2BCampaigns, discountOffers, rejoiningRewards ];
+const servicePoints = [unlimitedCalls, outboundCampaigns, hotLeads, productUpdates, loyaltyPrograms, specialOffers ];
 
 function CustomerWinback() {
   return (
@@ -30,35 +31,17 @@ function CustomerWinback() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Customer_Heading}</h2>
+                    <h2>{customerHeading}</h2>
                   </div>
-                  <p>{Customer_Para}</p>
+                  <p>{customerPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                      {Unlimited_Calls}
-                   </li>
-                    <li>
-                    <ListSvg />
-                      {Outbound_Campaigns}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                     {Hot_Leads}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Product_Updates}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Loyalty_Programs}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Special_Offers}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,8 +61,8 @@ function CustomerWinback() {
           </div>
         </div>
         </div>
-      <AboutSection heading={About6_Heading} aboutPara1={About6_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About6_Para2} imagePath={"assets/img/outbound/customer-winback/making-deal.jpg"} />
-      <Information heading={Information2_Heading} informationPara={Information2_Para} informationParaTwo={Information2_Para2} imagePath={"assets/img/outbound/customer-winback/two-business-men.jpg"} imagePath2={"assets/img/outbound/customer-winback/customer-service.jpg"} headingTwo={Information2_Heading2} informationParaThree={Information2_Para3} informationParaFour={Information2_Para4}  />
+      <AboutSection heading={customerWinbackAboutHeading} aboutPara1={customerWinbackAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={customerWinbackAboutParaTwo} imagePath={"assets/img/outbound/customer-winback/making-deal.jpg"} />
+      <Information heading={customerWinbackInformationHeading} informationPara={customerWinbackInformationPara} informationParaTwo={customerWinbackInformationParaTwo} imagePath={"assets/img/outbound/customer-winback/two-business-men.jpg"} imagePath2={"assets/img/outbound/customer-winback/customer-service.jpg"} headingTwo={customerWinbackInformationHeadingTwo} informationParaThree={customerWinbackInformationParaThree} informationParaFour={customerWinbackInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection />

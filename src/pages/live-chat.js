@@ -5,11 +5,12 @@ import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About13_Heading, About13_para, About13_para2, Active_Chat, Automated_Response, Broadband_Devices, Broadband_Internet, Feedback_Survey_Tools, Human_Communication, Inbound_page6_Heading, Inbound_page6_para, Information9_Heading, Information9_Heading2, Information9_para, Information9_para2, Information9_para3, Information9_para4, Natural_Conversation, Online_Communication_System, Reporting_Dashboard, Timely_Response } from "@/constants/Constants";
+import { activeChat, automatedResponse, broadbandDevices, broadbandInternet, feedbackSurveyTools, humanCommunication, liveChatAboutHeading, liveChatAboutPara, liveChatAboutParaTwo, liveChatHeading, liveChatInformationHeading, liveChatInformationHeadingTwo, liveChatInformationPara, liveChatInformationParaFour, liveChatInformationParaThree, liveChatInformationParaTwo, liveChatPara, naturalConversation, onlineCommunicationSystem, reportingDashboard, timelyResponse } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [Human_Communication, Active_Chat, Timely_Response, Broadband_Devices ];
+const aboutUsPoints = [humanCommunication, activeChat, timelyResponse, broadbandDevices ];
+const servicePoints = [naturalConversation, automatedResponse, onlineCommunicationSystem, reportingDashboard, broadbandInternet, feedbackSurveyTools ];
 
 function LiveChat() {
   return (
@@ -30,35 +31,17 @@ function LiveChat() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Inbound_page6_Heading}</h2>
+                    <h2>{liveChatHeading}</h2>
                   </div>
-                  <p>{Inbound_page6_para}</p>
+                  <p>{liveChatPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                    {Natural_Conversation} ​​
-                     </li>
-                    <li>
-                    <ListSvg />
-                    {Automated_Response}​​
-                      </li>
-                    <li>
-                    <ListSvg />
-                    {Online_Communication_System}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                    {Reporting_Dashboard} ​​​​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Broadband_Internet}​​
-                    </li>
-                    <li>
-                    <ListSvg />
-                    {Feedback_Survey_Tools}​​
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,8 +61,8 @@ function LiveChat() {
           </div>
         </div>
         </div>
-      <AboutSection heading={About13_Heading} aboutPara1={About13_para} aboutUsPoints={aboutUsPoints} aboutPara2={About13_para2} imagePath={"assets/img/inbound/live-chat/2.png"} />
-      <Information heading={Information9_Heading} informationPara={Information9_para} informationParaTwo={Information9_para2} imagePath={"assets/img/inbound/live-chat/1.png"} imagePath2={"assets/img/inbound/live-chat/3.png"} headingTwo={Information9_Heading2} informationParaThree={Information9_para3} informationParaFour={Information9_para4}  />
+      <AboutSection heading={liveChatAboutHeading} aboutPara1={liveChatAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={liveChatAboutParaTwo} imagePath={"assets/img/inbound/live-chat/2.png"} />
+      <Information heading={liveChatInformationHeading} informationPara={liveChatInformationPara} informationParaTwo={liveChatInformationParaTwo} imagePath={"assets/img/inbound/live-chat/1.png"} imagePath2={"assets/img/inbound/live-chat/3.png"} headingTwo={liveChatInformationHeadingTwo} informationParaThree={liveChatInformationParaThree} informationParaFour={liveChatInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection /> 

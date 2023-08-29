@@ -5,11 +5,12 @@ import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { About7_Heading, About7_Para, About7_Para2, Audience_Segmentation, Brand_Awareness, High_Quality_Leads, Information3_Heading, Information3_Heading2, Information3_Para, Information3_Para2, Information3_Para3, Information3_Para4, Landing_Pages, Lead_Capture, Lead_Generation_Strategies, Lead_Heading, Lead_Lifecycle, Lead_Magnets, Lead_Nurturing, Lead_Para, Lead_Scoring } from "@/constants/Constants";
+import {  audienceSegmentation, brandAwareness, highQualityLeads, landingPages, leadAboutHeading, leadAboutPara, leadAboutParaTwo, leadCapture, leadGenerationStrategies, leadHeading, leadInformationHeading, leadInformationHeadingTwo, leadInformationPara, leadInformationParaFour, leadInformationParaThree, leadInformationParaTwo, leadLifecycle, leadMagnets, leadNurturing, leadPara, leadScoring } from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [Lead_Capture, Landing_Pages, Lead_Magnets, Lead_Scoring ];
+const aboutUsPoints = [leadCapture, landingPages, leadMagnets, leadScoring ];
+const servicePoints = [brandAwareness, highQualityLeads, leadGenerationStrategies, audienceSegmentation, leadNurturing, leadLifecycle ];
 
 function LeadGeneration() {
   return (
@@ -30,35 +31,17 @@ function LeadGeneration() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>{Lead_Heading}</h2>
+                    <h2>{leadHeading}</h2>
                   </div>
-                  <p>{Lead_Para}</p>
+                  <p>{leadPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                      {Brand_Awareness}
-                   </li>
-                    <li>
-                    <ListSvg />
-                      {High_Quality_Leads}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Generation_Strategies}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Audience_Segmentation}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Nurturing}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Lifecycle}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,8 +61,8 @@ function LeadGeneration() {
           </div>
         </div>
         </div>
-        <AboutSection heading={About7_Heading} aboutPara1={About7_Para} aboutUsPoints={aboutUsPoints} aboutPara2={About7_Para2} imagePath={"assets/img/outbound/lead-generation/good-news.jpg"} />
-        <Information heading={Information3_Heading} informationPara={Information3_Para} informationParaTwo={Information3_Para2} imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"} imagePath2={"assets/img/outbound/lead-generation/focused-team-leader.jpg"} headingTwo={Information3_Heading2} informationParaThree={Information3_Para3} informationParaFour={Information3_Para4}  />
+        <AboutSection heading={leadAboutHeading} aboutPara1={leadAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={leadAboutParaTwo} imagePath={"assets/img/outbound/lead-generation/good-news.jpg"} />
+        <Information heading={leadInformationHeading} informationPara={leadInformationPara} informationParaTwo={leadInformationParaTwo} imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"} imagePath2={"assets/img/outbound/lead-generation/focused-team-leader.jpg"} headingTwo={leadInformationHeadingTwo} informationParaThree={leadInformationParaThree} informationParaFour={leadInformationParaFour}  />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection />
