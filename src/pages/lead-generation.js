@@ -4,7 +4,6 @@ import Partner5 from "@/components/partner/Partner5";
 import About7 from "@/components/about/About7";
 import Home3Contact from "@/components/contact/Home3Contact";
 import OurWork from "@/components/work/OurWork";
-import Information3 from "@/components/details/Information3";
 import Link from "next/link";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
@@ -80,7 +79,6 @@ function LeadGeneration() {
         </div>
         </div>
         <About7 />
-  <Information3 />
       <OurWork />
       <Partner5 />
       <Home3Contact />

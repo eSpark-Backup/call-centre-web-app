@@ -4,7 +4,6 @@ import Partner5 from "@/components/partner/Partner5";
 import About5 from "@/components/about/About5";
 import Home3Contact from "@/components/contact/Home3Contact";
 import OurWork from "@/components/work/OurWork";
-import Information1 from "@/components/details/Information1";
 import Link from "next/link";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
@@ -80,7 +79,6 @@ function ServicePage() {
         </div>
         </div>
         <About5 />
-  <Information1 />
       <OurWork />
       <Partner5 />
       <Home3Contact />

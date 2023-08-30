@@ -4,7 +4,6 @@ import Partner5 from "@/components/partner/Partner5";
 import About6 from "@/components/about/About6";
 import Home3Contact from "@/components/contact/Home3Contact";
 import OurWork from "@/components/work/OurWork";
-import Information2 from "@/components/details/Information2";
 import Link from "next/link";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
@@ -80,7 +79,6 @@ function CustomerWinback() {
         </div>
         </div>
         <About6 />
-  <Information2 />
       <OurWork />
       <Partner5 />
       <Home3Contact />
