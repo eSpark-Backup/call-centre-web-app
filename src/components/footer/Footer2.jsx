@@ -93,14 +93,14 @@ function Footer2() {
           <div className="menu-container">
             <ul>
               <li><Link legacyBehavior href="/automotive"><a>Automotive​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Financial</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Healthcare​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Hospitality</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Insurance</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Non-Profit​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Retail</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Telecom</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Utilities</a></Link></li>
+              <li><Link legacyBehavior href="/financial"><a>Financial</a></Link></li>
+              <li><Link legacyBehavior href="/healthcare"><a>Healthcare​</a></Link></li>
+              <li><Link legacyBehavior href="/hospitality"><a>Hospitality</a></Link></li>
+              <li><Link legacyBehavior href="/insurance"><a>Insurance</a></Link></li>
+              <li><Link legacyBehavior href="non-profit"><a>Non-Profits​</a></Link></li>
+              <li><Link legacyBehavior href="/retails"><a>Retails</a></Link></li>
+              <li><Link legacyBehavior href="/telecom"><a>Telecom</a></Link></li>
+              <li><Link legacyBehavior href="/utilities"><a>Utilities</a></Link></li>
             </ul>
           </div>
         </div>

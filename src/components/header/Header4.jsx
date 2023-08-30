@@ -203,42 +203,42 @@ function Header4() {
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/faq">
+                <Link legacyBehavior href="/financial">
                   <a>Financial</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/healthcare">
                   <a>Healthcare</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/hospitality">
                   <a>Hospitality</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/insurance">
                   <a>Insurance</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Non-Profit​</a>
+                <Link legacyBehavior href="/non-profit">
+                  <a>Non-Profits​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Retail</a>
+                <Link legacyBehavior href="/retails">
+                  <a>Retails</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/telecom">
                   <a>Telecom​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/utilities">
                   <a>Utilities</a>
                 </Link>
               </li>
