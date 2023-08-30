@@ -97,7 +97,7 @@ function Footer2() {
               <li><Link legacyBehavior href="/healthcare"><a>Healthcare​</a></Link></li>
               <li><Link legacyBehavior href="/hospitality"><a>Hospitality</a></Link></li>
               <li><Link legacyBehavior href="/insurance"><a>Insurance</a></Link></li>
-              <li><Link legacyBehavior href="non-profit"><a>Non-Profits​</a></Link></li>
+              <li><Link legacyBehavior href="non-profits"><a>Non-Profits​</a></Link></li>
               <li><Link legacyBehavior href="/retails"><a>Retails</a></Link></li>
               <li><Link legacyBehavior href="/telecom"><a>Telecom</a></Link></li>
               <li><Link legacyBehavior href="/utilities"><a>Utilities</a></Link></li>
