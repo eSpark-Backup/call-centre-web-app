@@ -24,7 +24,7 @@ function Automotive() {
               <div className="case-big-img magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/industries/automotive/3.jpg"
+                  src="/assets/img/industries/automotive/3.jpg"
                   alt=""
                 />
               </div>
@@ -35,7 +35,7 @@ function Automotive() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={automotiveInformationHeading} informationPara={automotiveInformationPara} imagePath={"assets/img/industries/automotive/4.jpg"}  headingTwo={automotiveInformationHeadingTwo} informationParaTwo={automotiveInformationParaTwo} imagePathTwo={"assets/img/industries/automotive/5.jpg"} imagePathThree={"assets/img/industries/automotive/1.jpg"} headingThree={automotiveInformationHeadingThree} informationParaThree={automotiveInformationParaThree} imagePathFour={"assets/img/industries/automotive/2.jpg"} headingFour={automotiveInformationHeadingFour} informationParaFour={automotiveInformationParaFour} />
+      <IndutriesInformation heading={automotiveInformationHeading} informationPara={automotiveInformationPara} imagePath={"/assets/img/industries/automotive/4.jpg"}  headingTwo={automotiveInformationHeadingTwo} informationParaTwo={automotiveInformationParaTwo} imagePathTwo={"/assets/img/industries/automotive/5.jpg"} imagePathThree={"/assets/img/industries/automotive/1.jpg"} headingThree={automotiveInformationHeadingThree} informationParaThree={automotiveInformationParaThree} imagePathFour={"/assets/img/industries/automotive/2.jpg"} headingFour={automotiveInformationHeadingFour} informationParaFour={automotiveInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>
