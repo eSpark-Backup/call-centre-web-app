@@ -24,7 +24,7 @@ function NonProfit() {
               <div className="case-big-img magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/industries/non-profits/1.jpg"
+                  src="assets/img/Industries/non-profits/1.jpg"
                   alt=""
                 />
               </div>
@@ -35,7 +35,7 @@ function NonProfit() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={nonProfitInformationHeading} informationPara={nonProfitInformationPara} imagePath={"assets/img/industries/non-profits/4.jpg"}  headingTwo={nonProfitInformationHeadingTwo} informationParaTwo={nonProfitInformationParaTwo} imagePathTwo={"assets/img/industries/non-profits/2.jpg"} imagePathThree={"assets/img/industries/non-profits/5.jpg"} headingThree={nonProfitInformationHeadingThree} informationParaThree={nonProfitInformationParaThree} imagePathFour={"assets/img/industries/non-profits/3.jpg"} headingFour={nonProfitInformationHeadingFour} informationParaFour={nonProfitInformationParaFour} />
+      <IndutriesInformation heading={nonProfitInformationHeading} informationPara={nonProfitInformationPara} imagePath={"assets/img/Industries/non-profits/4.jpg"}  headingTwo={nonProfitInformationHeadingTwo} informationParaTwo={nonProfitInformationParaTwo} imagePathTwo={"assets/img/Industries/non-profits/2.jpg"} imagePathThree={"assets/img/Industries/non-profits/5.jpg"} headingThree={nonProfitInformationHeadingThree} informationParaThree={nonProfitInformationParaThree} imagePathFour={"assets/img/Industries/non-profits/3.jpg"} headingFour={nonProfitInformationHeadingFour} informationParaFour={nonProfitInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>

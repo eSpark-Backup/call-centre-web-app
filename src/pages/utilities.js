@@ -24,7 +24,7 @@ function Utilities() {
               <div className="case-big-img magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/industries/utilities/3.jpg"
+                  src="assets/img/Industries/utilities/3.jpg"
                   alt=""
                 />
               </div>
@@ -35,7 +35,7 @@ function Utilities() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={utilitiesInformationHeading} informationPara={utilitiesInformationPara} imagePath={"assets/img/industries/utilities/4.jpg"}  headingTwo={utilitiesInformationHeadingTwo} informationParaTwo={utilitiesInformationParaTwo} imagePathTwo={"assets/img/industries/utilities/1.jpg"} imagePathThree={"assets/img/industries/utilities/5.jpg"} headingThree={utilitiesInformationHeadingThree} informationParaThree={utilitiesInformationParaThree} imagePathFour={"assets/img/industries/utilities/2.jpg"} headingFour={utilitiesInformationHeadingFour} informationParaFour={utilitiesInformationParaFour} />
+      <IndutriesInformation heading={utilitiesInformationHeading} informationPara={utilitiesInformationPara} imagePath={"assets/img/Industries/utilities/4.jpg"}  headingTwo={utilitiesInformationHeadingTwo} informationParaTwo={utilitiesInformationParaTwo} imagePathTwo={"assets/img/Industries/utilities/1.jpg"} imagePathThree={"assets/img/Industries/utilities/5.jpg"} headingThree={utilitiesInformationHeadingThree} informationParaThree={utilitiesInformationParaThree} imagePathFour={"assets/img/Industries/utilities/2.jpg"} headingFour={utilitiesInformationHeadingFour} informationParaFour={utilitiesInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>

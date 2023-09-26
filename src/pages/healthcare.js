@@ -24,7 +24,7 @@ function HealthCare() {
               <div className="case-big-img magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/industries/healthcare/4.jpg"
+                  src="assets/img/Industries/healthcare/4.jpg"
                   alt=""
                 />
               </div>
@@ -35,7 +35,7 @@ function HealthCare() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={healthcareInformationHeading} informationPara={healthcareInformationPara} imagePath={"assets/img/industries/healthcare/5.jpg"}  headingTwo={healthcareInformationHeadingTwo} informationParaTwo={healthcareInformationParaTwo} imagePathTwo={"assets/img/industries/healthcare/2.jpg"} imagePathThree={"assets/img/industries/healthcare/3.jpg"} headingThree={healthcareInformationHeadingThree} informationParaThree={healthcareInformationParaThree} imagePathFour={"assets/img/industries/healthcare/1.jpg"} headingFour={healthcareInformationHeadingFour} informationParaFour={healthcareInformationParaFour} />
+      <IndutriesInformation heading={healthcareInformationHeading} informationPara={healthcareInformationPara} imagePath={"assets/img/Industries/healthcare/5.jpg"}  headingTwo={healthcareInformationHeadingTwo} informationParaTwo={healthcareInformationParaTwo} imagePathTwo={"assets/img/Industries/healthcare/2.jpg"} imagePathThree={"assets/img/Industries/healthcare/3.jpg"} headingThree={healthcareInformationHeadingThree} informationParaThree={healthcareInformationParaThree} imagePathFour={"assets/img/Industries/healthcare/1.jpg"} headingFour={healthcareInformationHeadingFour} informationParaFour={healthcareInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>

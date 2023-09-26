@@ -24,7 +24,7 @@ function Telecom() {
               <div className="case-big-img magnetic-item">
                 <img
                   className="img-fluid"
-                  src="assets/img/industries/telecom/4.jpg"
+                  src="assets/img/Industries/telecom/4.jpg"
                   alt=""
                 />
               </div>
@@ -35,7 +35,7 @@ function Telecom() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={telecomInformationHeading} informationPara={telecomInformationPara} imagePath={"assets/img/industries/telecom/1.jpg"}  headingTwo={telecomInformationHeadingTwo} informationParaTwo={telecomInformationParaTwo} imagePathTwo={"assets/img/industries/telecom/3.jpg"} imagePathThree={"assets/img/industries/telecom/5.jpg"} headingThree={telecomInformationHeadingThree} informationParaThree={telecomInformationParaThree} imagePathFour={"assets/img/industries/telecom/2.jpg"} headingFour={telecomInformationHeadingFour} informationParaFour={telecomInformationParaFour} />
+      <IndutriesInformation heading={telecomInformationHeading} informationPara={telecomInformationPara} imagePath={"assets/img/Industries/telecom/1.jpg"}  headingTwo={telecomInformationHeadingTwo} informationParaTwo={telecomInformationParaTwo} imagePathTwo={"assets/img/Industries/telecom/3.jpg"} imagePathThree={"assets/img/Industries/telecom/5.jpg"} headingThree={telecomInformationHeadingThree} informationParaThree={telecomInformationParaThree} imagePathFour={"assets/img/Industries/telecom/2.jpg"} headingFour={telecomInformationHeadingFour} informationParaFour={telecomInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>
