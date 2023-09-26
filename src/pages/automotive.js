@@ -35,7 +35,7 @@ function Automotive() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={automotiveInformationHeading} informationPara={automotiveInformationPara} imagePath={"assets/img/Industries/automotive/4.jpg"}  headingTwo={automotiveInformationHeadingTwo} informationParaTwo={automotiveInformationParaTwo} imagePathTwo={"assets/img/Industries/automotive/5.jpg"} imagePathThree={"assets/img/Industries/automotive/1.jpg"} headingThree={automotiveInformationHeadingThree} informationParaThree={automotiveInformationParaThree} imagePathFour={"assets/img/Industries/automotive/2.jpg"} headingFour={automotiveInformationHeadingFour} informationParaFour={automotiveInformationParaFour} />
+      <IndutriesInformation heading={automotiveInformationHeading} informationPara={automotiveInformationPara} imagePath={"assets/img/Industries/automotive/4.jpg"}  headingTwo={automotiveInformationHeadingTwo} informationParaTwo={automotiveInformationParaTwo} imagePathTwo={"assets/img/Industries/automotive/6.jpg"} imagePathThree={"assets/img/Industries/automotive/1.jpg"} headingThree={automotiveInformationHeadingThree} informationParaThree={automotiveInformationParaThree} imagePathFour={"assets/img/Industries/automotive/2.jpg"} headingFour={automotiveInformationHeadingFour} informationParaFour={automotiveInformationParaFour} />
       <PartnarSlider/>
       <Home3Contact />
     </Layout>
