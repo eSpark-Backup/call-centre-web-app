@@ -1,8 +1,37 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
 import React from "react";
+import * as Yup from "yup";
+import { useFormik } from "formik";
+
+const validationSchema = Yup.object().shape({
+  firstName: Yup.string().required("First name is required"),
+  email: Yup.string()
+    .email("Invalid email format")
+    .matches(
+      /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,320}$/,
+      "Invalid email format"
+    )
+    .required("Email is required"),
+  message: Yup.string().required("Message is required"),
+});
 
 function Contactpage() {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      company: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      // Handle form submission logic here
+      console.log(values);
+    },
+  });
   return (
     <Layout>
       <Breadcrumb
@@ -94,7 +123,19 @@ function Contactpage() {
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
                           <label>first name</label>
-                          <input type="text" />
+                          <input
+                            type="text"
+                            name="firstName"
+                            value={formik.values.firstName}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.firstName &&
+                            formik.errors.firstName && (
+                              <div style={{ color: "red" }}>
+                                {formik.errors.firstName}
+                              </div>
+                            )}
                         </div>
                       </div>
                       <div className="col-md-6 mb-20">
@@ -112,7 +153,18 @@ function Contactpage() {
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Email</label>
-                          <input type="email" />
+                          <input
+                            type="email"
+                            name="email"
+                            value={formik.values.email}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.email && formik.errors.email && (
+                            <div style={{ color: "red" }}>
+                              {formik.errors.email}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
@@ -124,7 +176,18 @@ function Contactpage() {
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Message</label>
-                          <textarea defaultValue={""} />
+                          <textarea
+                            defaultValue={""}
+                            name="message"
+                            value={formik.values.message}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.message && formik.errors.message && (
+                            <div style={{ color: "red" }}>
+                              {formik.errors.message}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="col-lg-12">
