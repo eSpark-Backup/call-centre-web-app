@@ -6,6 +6,8 @@ import { useFormik } from "formik";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("First name is required"),
+  lastName: Yup.string().required("Last name is required"),
+  company: Yup.string().required("Company/Organization is required"),
   email: Yup.string()
     .email("Invalid email format")
     .matches(
@@ -13,6 +15,7 @@ const validationSchema = Yup.object().shape({
       "Invalid email format"
     )
     .required("Email is required"),
+  phone: Yup.string().required("Phone is required"),
   message: Yup.string().required("Message is required"),
 });
 
@@ -141,13 +144,36 @@ function Contactpage() {
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
                           <label>Last name</label>
-                          <input type="text" />
+                          <input
+                            type="text"
+                            name="lastName"
+                            value={formik.values.lastName}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.lastName &&
+                            formik.errors.lastName && (
+                              <div style={{ color: "red" }}>
+                                {formik.errors.lastName}
+                              </div>
+                            )}
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Company/Organization</label>
-                          <input type="text" />
+                          <input
+                            type="text"
+                            name="company"
+                            value={formik.values.company}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.company && formik.errors.company && (
+                            <div style={{ color: "red" }}>
+                              {formik.errors.company}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
@@ -170,7 +196,21 @@ function Contactpage() {
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Phone</label>
-                          <input type="email" />
+                          <input
+                            type="text"
+                            name="phone"
+                            value={formik.values.phone}
+                            onChange={(e) => {
+                              const numericValue = e.target.value.replace(/\D/g, '');
+                              formik.setFieldValue('phone', numericValue);
+                            }}
+                            onBlur={formik.handleBlur}
+                          />
+                          {formik.touched.phone && formik.errors.phone && (
+                            <div style={{ color: "red" }}>
+                              {formik.errors.phone}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="col-lg-12 mb-20">
