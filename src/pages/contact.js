@@ -125,7 +125,7 @@ function Contactpage() {
                     <div className="row">
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
-                          <label>first name</label>
+                          <label>first name *</label>
                           <input
                             type="text"
                             name="firstName"
@@ -143,7 +143,7 @@ function Contactpage() {
                       </div>
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
-                          <label>Last name</label>
+                          <label>Last name *</label>
                           <input
                             type="text"
                             name="lastName"
@@ -161,7 +161,7 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label>Company/Organization</label>
+                          <label>Company/Organization *</label>
                           <input
                             type="text"
                             name="company"
@@ -178,7 +178,7 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label>Email</label>
+                          <label>Email *</label>
                           <input
                             type="email"
                             name="email"
@@ -195,7 +195,7 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label>Phone</label>
+                          <label>Phone *</label>
                           <input
                             type="text"
                             name="phone"
@@ -215,7 +215,7 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
-                          <label>Message</label>
+                          <label>Message *</label>
                           <textarea
                             defaultValue={""}
                             name="message"
