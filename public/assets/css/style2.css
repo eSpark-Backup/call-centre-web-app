@@ -7505,8 +7505,13 @@ footer .footer-btm .footer-btn-content {
     justify-content: center;
   }
 }
+@media (max-width: 991px){
+.block{
+  display: block!important;
+}
+}
 .size{
-  padding-right: 70px;
+  padding-right: 50px;
 }
 footer .footer-btm .footer-btn-content .copyright-area p {
   margin-bottom: 0;
@@ -9899,6 +9904,13 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   color: var(--white-color);
   margin-bottom: 0;
   text-align: center;
+}
+
+@media screen and (max-width:400px) {
+  .case-study-details .case-study-title h2{
+    font-size: 35px;
+  }
+  
 }
 .case-study-details .case-big-img {
   border-radius: 5px;

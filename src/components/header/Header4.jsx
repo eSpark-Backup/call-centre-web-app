@@ -108,7 +108,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Inbound" ? "d-block" : ""
+                state.activeMenu === "Inbound" ? "block" : ""
               }`}
             >
               <li>
@@ -162,7 +162,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Outbound" ? "d-block" : ""
+                state.activeMenu === "Outbound" ? "block" : ""
               }`}
             >
               <li>
@@ -194,7 +194,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Industries" ? "d-block" : ""
+                state.activeMenu === "Industries" ? "block" : ""
               }`}
             >
               <li>
@@ -298,10 +298,11 @@ function Header4() {
               </div>
             </div>
           </form>
-          <div className="header-btn5">
+          <div className="header-btn mt-5">
             <Link legacyBehavior href="/contact">
-              <a className="primary-btn3">Get A Quote</a>
+            <a>Connect with us​</a>
             </Link>
+           
           </div>
         </div>
       </div>

@@ -1041,7 +1041,7 @@
   .bi-plus-square-dotted::before { content: "\f4fb"; }
   .bi-plus-square-fill::before { content: "\f4fc"; }
   .bi-plus-square::before { content: "\f4fd"; }
-  .bi-plus::before { content: "\f4fe"; }
+  /* .bi-plus::before { content: "\f4fe"; } */
   .bi-power::before { content: "\f4ff"; }
   .bi-printer-fill::before { content: "\f500"; }
   .bi-printer::before { content: "\f501"; }
