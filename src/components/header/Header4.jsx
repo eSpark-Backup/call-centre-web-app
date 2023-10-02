@@ -108,7 +108,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Inbound" ? "d-block" : ""
+                state.activeMenu === "Inbound" ? "block" : ""
               }`}
             >
               <li>
@@ -162,7 +162,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Outbound" ? "d-block" : ""
+                state.activeMenu === "Outbound" ? "block" : ""
               }`}
             >
               <li>
@@ -194,51 +194,51 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Industries" ? "d-block" : ""
+                state.activeMenu === "Industries" ? "block" : ""
               }`}
             >
               <li>
-                <Link legacyBehavior href="/contact">
+                <Link legacyBehavior href="/automotive">
                   <a>Automotive</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/faq">
+                <Link legacyBehavior href="/financial">
                   <a>Financial</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/healthcare">
                   <a>Healthcare</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/hospitality">
                   <a>Hospitality</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/insurance">
                   <a>Insurance</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Non-Profit​</a>
+                <Link legacyBehavior href="/non-profits">
+                  <a>Non-Profits​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Retail</a>
+                <Link legacyBehavior href="/retails">
+                  <a>Retails</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/telecom">
                   <a>Telecom​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/utilities">
                   <a>Utilities</a>
                 </Link>
               </li>
@@ -298,10 +298,11 @@ function Header4() {
               </div>
             </div>
           </form>
-          <div className="header-btn5">
+          <div className="header-btn mt-5">
             <Link legacyBehavior href="/contact">
-              <a className="primary-btn3">Get A Quote</a>
+            <a>Connect with us​</a>
             </Link>
+           
           </div>
         </div>
       </div>

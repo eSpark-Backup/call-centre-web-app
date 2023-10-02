@@ -4,7 +4,7 @@ import ContactUsSection from "@/components/contact/ContactUsSection";
 import Feature4 from "@/components/features/Feature4";
 import Footer2 from "@/components/footer/Footer2";
 import Header4 from "@/components/header/Header4";
-import Partnar4 from "@/components/partner/Partnar4";
+import PartnarSlider from "@/components/partner/PartnarSlider";
 import Service4 from "@/components/services/Service4";
 import useBodyClass from "@/hooks/useBodyClass";
 import Head from "next/head";
@@ -26,7 +26,7 @@ function Homepage2() {
       <About4 />
       <Service4 />
       <Feature4 />
-      <Partnar4 />
+      <PartnarSlider />
       <ContactUsSection />
       <Footer2 />
     </>
