@@ -35,6 +35,20 @@ function Contactpage() {
       // Handle form submission logic here
       console.log(values);
     },
+    validationSchema: validationSchema,
+  onSubmit: async (values, { resetForm, setSubmitting }) => {
+    // Handle form submission logic here
+    console.log("Form values:", values);
+
+    // Simulate an asynchronous operation (e.g., API request)
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    // Reset the form after successful submission
+    resetForm();
+
+    // Set submitting state back to false
+    setSubmitting(false);
+  },
   });
   return (
     <Layout>
@@ -120,7 +134,7 @@ function Contactpage() {
                   <h5>Make a Free Consulting</h5>
                 </div>
                 <div className="contact-form">
-                  <form>
+                  <form onSubmit={formik.handleSubmit}>
                     <div className="row">
                       <div className="col-md-6 mb-20">
                         <div className="form-inner">
@@ -231,8 +245,11 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12">
                         <div className="form-inner">
-                          <button className="primary-btn3" type="submit">
-                            Submit
+                        <button
+      className="primary-btn3"
+      type="submit"
+      disabled={!formik.isValid || formik.isSubmitting}
+    >                            Submit
                           </button>
                         </div>
                       </div>
