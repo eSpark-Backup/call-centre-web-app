@@ -1,10 +1,10 @@
 import About4 from "@/components/about/About4";
 import Banner4 from "@/components/bannner/Banner4";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ContactUsSection from "@/components/contact/ContactUsSection";
 import Feature4 from "@/components/features/Feature4";
 import Footer2 from "@/components/footer/Footer2";
 import Header4 from "@/components/header/Header4";
-import Partnar4 from "@/components/partner/Partnar4";
+import PartnarSlider from "@/components/partner/PartnarSlider";
 import Service4 from "@/components/services/Service4";
 import useBodyClass from "@/hooks/useBodyClass";
 import Head from "next/head";
@@ -26,8 +26,8 @@ function Homepage2() {
       <About4 />
       <Service4 />
       <Feature4 />
-      <Partnar4 />
-      <Home3Contact />
+      <PartnarSlider />
+      <ContactUsSection />
       <Footer2 />
     </>
   );

@@ -34,7 +34,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/active-assistance.png"
+                        src="assets/img/inbound/icons/active-assistance.png"
                         alt=""
                       />
                     </div>
@@ -54,7 +54,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/rapid-response.png"
+                        src="assets/img/inbound/icons/rapid-response.png"
                         alt=""
                       />
                     </div>
@@ -74,7 +74,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/online-chat.png"
+                        src="assets/img/inbound/icons/online-chat.png"
                         alt=""
                       />
                     </div>
@@ -94,7 +94,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/pocket-friendly.png"
+                        src="assets/img/inbound/icons/pocket-friendly.png"
                         alt=""
                       />
                     </div>
@@ -114,7 +114,7 @@ function OurWork() {
                   <div className="single-work">
                     <div className="work-icon">
                       <img
-                        src="assets/img/outbound/icons/profitable.png"
+                        src="assets/img/inbound/icons/profitable.png"
                         alt=""
                       />
                     </div>
