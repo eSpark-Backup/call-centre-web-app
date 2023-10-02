@@ -515,10 +515,10 @@ video {
   padding: 25px 0;
 }
 
-.container-style{
+.container-style {
   background-size: cover;
-  background-position:  center; 
-  margin-bottom:-10px;
+  background-position: center;
+  margin-bottom: -10px;
 }
 
 @media (max-width: 1199px) {
@@ -2171,17 +2171,15 @@ video {
   }
 }
 
-@media screen and (min-width: 1000px){
-  .banner-area4 .banner-content .banner-btn{
+@media screen and (min-width: 1000px) {
+  .banner-area4 .banner-content .banner-btn {
     margin-left: 380px;
   }
 }
 
-
 .banner-area4 .banner-content .banner-btn {
   position: relative;
   z-index: 1;
-  
 }
 .banner-area4 .banner-img {
   position: relative;
@@ -2198,7 +2196,7 @@ video {
   }
 }
 
-@media screen and (max-width: 535px){
+@media screen and (max-width: 535px) {
   .banner-area4 .banner-img {
     margin-left: 20px;
   }
@@ -2207,9 +2205,8 @@ video {
   }
 }
 
-@media screen and (max-width: 650px) and (min-width: 500px){
+@media screen and (max-width: 650px) and (min-width: 500px) {
   .banner-area4 .banner-img {
-    
   }
   .banner-area4 .banner-img .banner-big-img img {
     width: 250px;
@@ -2276,7 +2273,6 @@ video {
   }
 }
 
-
 .banner-area4 .banner-img .banner-sm-img::after {
   content: "";
   height: 100%;
@@ -2323,9 +2319,8 @@ video {
   width: 100%;
 }
 
-.banner-area4 .background-text-slider h2 .space
-{
-  padding-right: 35px; 
+.banner-area4 .background-text-slider h2 .space {
+  padding-right: 35px;
 }
 
 .banner-area4 .background-text-slider h2 {
@@ -3945,7 +3940,6 @@ video {
   padding: 40px 30px;
   transition: 0.5s;
   height: 100%;
-  
 }
 @media (max-width: 576px) {
   .home4-services-section .single-service-card {
@@ -3961,7 +3955,7 @@ video {
 .home4-services-section .single-service-card .services-content h3 {
   margin-bottom: 10px;
   height: 100%;
-      overflow: hidden;
+  overflow: hidden;
 }
 .home4-services-section .single-service-card .services-content h3 a {
   font-family: var(--font-saira);
@@ -3981,9 +3975,9 @@ video {
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #E4E4E4;
-  margin-bottom: 0; 
-  max-height: 100%; 
+  color: #e4e4e4;
+  margin-bottom: 0;
+  max-height: 100%;
   overflow: hidden;
 }
 .home4-services-section .single-service-card .services-content .services-btn {
@@ -8182,12 +8176,6 @@ footer .footer-btm .footer-btn-content .footer-social ul li a {
 footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   color: var(--white-color);
   background-color: var(--theme-color);
-}
-
-@media (max-width:990px) and (min-width:500px) {
-  .footer-size{
-    margin-top: -100px;
-  }
 }
 
 .bg-6 {

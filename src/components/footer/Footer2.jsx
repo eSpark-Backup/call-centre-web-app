@@ -1,6 +1,6 @@
-import { Address } from '@/constants/Constants'
-import Link from 'next/link'
-import React from 'react'
+import { Address } from "@/constants/Constants";
+import Link from "next/link";
+import React from "react";
 
 function Footer2() {
   return (
@@ -14,9 +14,10 @@ function Footer2() {
                   <Link legacyBehavior href="/">
                     <a>
                       <img
+                        alt="image"
                         className="img-fluid"
-                        src="assets/img/logo.svg"
-                        alt=""
+                        src="assets/img/Logos.png"
+                        width="120px"
                       />
                     </a>
                   </Link>
@@ -39,7 +40,7 @@ function Footer2() {
                   <div className="content">
                     <span>Call Any Time</span>
                     <h6>
-                      <a href="tel: 29658718617">2-965-871-8617</a>
+                      <a href="tel:  03232788259">+92-323-2788259</a>
                     </h6>
                   </div>
                 </div>
@@ -49,7 +50,7 @@ function Footer2() {
         </div>
       </div>
       <div className="container">
-        <div className="row g-lg-4 gy-5" >
+        <div className="row g-lg-4 gy-5">
           <div className="col-lg-4 col-sm-6 d-flex">
             <div className="footer-widget">
               <div className="footer-contact mb-40">
