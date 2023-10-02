@@ -66,12 +66,12 @@ function Footer2() {
           <h6 className="style">Inbound</h6>
           <div className="menu-container">
             <ul>
-              <li><Link legacyBehavior href="#"><a>Business Call Screening​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Customer Services​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Direct Response Call Center​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Event Registration​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Help Desk Call Center​</a></Link></li>
-              <li><Link legacyBehavior href="#"><a>Live Chat Outsourcing​</a></Link></li>
+              <li><Link legacyBehavior href="business-call-screening"><a>Business Call Screening​</a></Link></li>
+              <li><Link legacyBehavior href="customer-service"><a>Customer Services​</a></Link></li>
+              <li><Link legacyBehavior href="direct-response"><a>Direct Response Call Center​</a></Link></li>
+              <li><Link legacyBehavior href="event-registration"><a>Event Registration​</a></Link></li>
+              <li><Link legacyBehavior href="help-desk"><a>Help Desk Call Center​</a></Link></li>
+              <li><Link legacyBehavior href="live-chat"><a>Live Chat Outsourcing​</a></Link></li>
             </ul> 
           </div>
           <br></br>
@@ -85,9 +85,9 @@ function Footer2() {
               </div>
         </div>
       </div>
-      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center footer-size">
-        <div className="footer-widget">
-          <div className="widget-title ">
+      <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
+        <div className="footer-widget footer-size">
+          <div className="widget-title">
             <h4>Industries</h4>
           </div>
           <div className="menu-container">
