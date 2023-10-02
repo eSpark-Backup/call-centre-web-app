@@ -1,3 +1,4 @@
+import { Address } from "@/constants/Constants";
 import Link from "next/link";
 import React from "react";
 
@@ -13,9 +14,10 @@ function Footer2() {
                   <Link legacyBehavior href="/">
                     <a>
                       <img
+                        alt="image"
                         className="img-fluid"
-                        src="assets/img/logo.svg"
-                        alt=""
+                        src="assets/img/Logos.png"
+                        width="120px"
                       />
                     </a>
                   </Link>
@@ -38,7 +40,7 @@ function Footer2() {
                   <div className="content">
                     <span>Call Any Time</span>
                     <h6>
-                      <a href="tel: 29658718617">2-965-871-8617</a>
+                      <a href="tel:  03232788259">+92-323-2788259</a>
                     </h6>
                   </div>
                 </div>
@@ -68,7 +70,7 @@ function Footer2() {
                   1 Gulistan-e-Johar, Karachi, 74300
                 </a>
               </div>
-              <div className="footer-contact mb-40">
+              <div className="footer-contact">
                 <h4>
                   <svg
                     width={20}
@@ -84,25 +86,6 @@ function Footer2() {
                 <br />
                 <a href="mailto:Sales@espark.com">Sales@espark.com</a>
               </div>
-              <div className="footer-contact">
-                <h6>See Our New updates</h6>
-                <form>
-                  <div className="form-inner">
-                    <input type="text" placeholder="Email here..." />
-                    <button type="submit">
-                      <svg
-                        width={17}
-                        height={17}
-                        viewBox="0 0 13 13"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 1H12M12 1V13M12 1L0.5 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </form>
-              </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 d-flex justify-content-lg-start justify-content-sm-end">
@@ -114,32 +97,32 @@ function Footer2() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/business-call-screening">
                       <a>Business Call Screening​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/customer-service">
                       <a>Customer Services​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/direct-response">
                       <a>Direct Response Call Center​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/event-registration">
                       <a>Event Registration​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/help-desk">
                       <a>Help Desk Call Center​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/live-chat">
                       <a>Live Chat Outsourcing​</a>
                     </Link>
                   </li>
@@ -150,17 +133,17 @@ function Footer2() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/B2B">
                       <a>B2B Telemarketing​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/customer-winback">
                       <a>Customer Winback​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/lead-generation">
                       <a>Lead Generation​</a>
                     </Link>
                   </li>
@@ -168,55 +151,55 @@ function Footer2() {
               </div>
             </div>
           </div>
-          <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center">
-            <div className="footer-widget">
+          <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center footer-size">
+            <div className="footer-widget footer-size">
               <div className="widget-title">
                 <h4>Industries</h4>
               </div>
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/automotive">
                       <a>Automotive​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/financial">
                       <a>Financial</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/healthcare">
                       <a>Healthcare​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/hospitality">
                       <a>Hospitality</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/insurance">
                       <a>Insurance</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/non-profit">
                       <a>Non-Profit​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/retail">
                       <a>Retail</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/telecom">
                       <a>Telecom</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/utilities">
                       <a>Utilities</a>
                     </Link>
                   </li>
