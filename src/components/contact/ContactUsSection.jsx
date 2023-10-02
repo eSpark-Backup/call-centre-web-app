@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import React from 'react'
 import Marquee from "react-fast-marquee";
-function Home3Contact() {
+function ContactUsSection() {
+  const containerStyle = {
+    marginBottom:"-10px",
+    
+};
   return (
-    <div className="home3-contact-area sec-mar">
-  <div className="container-fluid">
+    <div className="home3-contact-area sec-mar "style={containerStyle}>
+  <div className="container-fluid " >
     <div className="row">
       <div className="col-lg-12">
         <div className="contact-wrapper text-center">
@@ -28,4 +32,4 @@ function Home3Contact() {
   )
 }
 
-export default Home3Contact
+export default ContactUsSection
