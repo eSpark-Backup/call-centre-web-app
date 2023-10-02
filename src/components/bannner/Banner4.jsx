@@ -7,7 +7,7 @@ function Banner4() {
   return (
     <div className="banner-area4">
       <div className="background-text-slider">
-       <Marquee> <h2 className="marquee_text">Our agency make your happyness</h2> </Marquee>
+       <Marquee> <h2 className="marquee_text"> Our agency make your <span className="space">happiness.</span>    </h2> </Marquee>
       </div>
       <div className="container-fluid">
         <div className="row">

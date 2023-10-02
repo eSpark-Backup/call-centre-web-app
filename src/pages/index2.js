@@ -3,7 +3,7 @@ import About3 from "@/components/about/About3";
 import Banner3 from "@/components/bannner/Banner3";
 import Home3Blog from "@/components/blog/Home3Blog";
 import Preloader from "@/components/common/Preloader";
-import Home3Contact from "@/components/contact/Home3Contact";
+import Home3Contact from "@/components/contact/ContactUsSection";
 import Footer3 from "@/components/footer/Footer3";
 import Header3 from "@/components/header/Header3";
 import Partner3 from "@/components/partner/Partner3";

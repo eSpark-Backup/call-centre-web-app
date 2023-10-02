@@ -108,36 +108,36 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Inbound" ? "d-block" : ""
+                state.activeMenu === "Inbound" ? "block" : ""
               }`}
             >
               <li>
-                <Link legacyBehavior href="/">
+                <Link legacyBehavior href="/business-call-screening">
                   <a>Business Call Screening​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="#">
+                <Link legacyBehavior href="/customer-service">
                   <a className={`menu-item-has-children`}>Customer Services​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/index3">
+                <Link legacyBehavior href="/direct-response">
                   <a>Direct Response Call Center​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/index4">
+                <Link legacyBehavior href="/event-registration">
                   <a>Event Registration​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/index4">
+                <Link legacyBehavior href="/help-desk">
                   <a>Help Desk Call Center​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/index4">
+                <Link legacyBehavior href="/live-chat">
                   <a>Live Chat Outsourcing​​</a>
                 </Link>
               </li>
@@ -162,7 +162,7 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Outbound" ? "d-block" : ""
+                state.activeMenu === "Outbound" ? "block" : ""
               }`}
             >
               <li>
@@ -194,51 +194,51 @@ function Header4() {
             />
             <ul
               className={`sub-menu ${
-                state.activeMenu === "Industries" ? "d-block" : ""
+                state.activeMenu === "Industries" ? "block" : ""
               }`}
             >
               <li>
-                <Link legacyBehavior href="/contact">
+                <Link legacyBehavior href="/automotive">
                   <a>Automotive</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/faq">
+                <Link legacyBehavior href="/financial">
                   <a>Financial</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/healthcare">
                   <a>Healthcare</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/hospitality">
                   <a>Hospitality</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/insurance">
                   <a>Insurance</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Non-Profit​</a>
+                <Link legacyBehavior href="/non-profits">
+                  <a>Non-Profits​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
-                  <a>Retail</a>
+                <Link legacyBehavior href="/retails">
+                  <a>Retails</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/telecom">
                   <a>Telecom​</a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="/error">
+                <Link legacyBehavior href="/utilities">
                   <a>Utilities</a>
                 </Link>
               </li>
@@ -273,7 +273,7 @@ function Header4() {
               <div className="hotline-info">
                 <span>Call Us Now</span>
                 <h6>
-                  <a href="tel:29658718617">2-965-871-8617</a>
+                  <a href="tel:3232788259">+92-323-2788259</a>
                 </h6>
               </div>
             </div>
@@ -293,15 +293,17 @@ function Header4() {
               <div className="email-info">
                 <span>Email Now</span>
                 <h6>
-                  <a href="mailto:example@gmail.com">example@gmail.com</a>
+                  <a href="mailto:info@epark.com">info@epark.com</a><br />
+                  <a href="mailto:Sales@espark.com">Sales@espark.com</a>
                 </h6>
               </div>
             </div>
           </form>
-          <div className="header-btn5">
+          <div className="header-btn5 header-btn ">
             <Link legacyBehavior href="/contact">
-              <a className="primary-btn3">Get A Quote</a>
+              <a>Connect with us</a>
             </Link>
+           
           </div>
         </div>
       </div>

@@ -1,15 +1,16 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About5 from "@/components/about/About5";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import OurWork from "@/components/work/OurWork";
-import Information1 from "@/components/details/Information1";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Active_Management, Affordable_Telemarketing_Campaigns, Call_Recording, Customer_Retention_Campaigns, Inviting_Scripts, Tele_Sales } from "@/constants/Constants";
+import { activeManagement, affordableTelemarketingCampaigns, b2BAboutHeading, b2BAboutPara, b2BAboutParaTwo, b2BInformationHeading, b2BInformationHeadingTwo, b2BInformationPara, b2BInformationParaFour, b2BInformationParaThree, b2BInformationParaTwo, b2B_Heading, b2B_Para, callRecording, convincingProductPitches, customerRetentionCampaigns, invitingScripts, modernDialerExperts, positiveBrandMassage, profitGuaranteed, teleSales } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
 
+const aboutUsPoints = [profitGuaranteed, modernDialerExperts, positiveBrandMassage, convincingProductPitches ];
+const servicePoints = [activeManagement, customerRetentionCampaigns, callRecording, invitingScripts, teleSales, affordableTelemarketingCampaigns ];
 function ServicePage() {
   return (
     <Layout>
@@ -18,72 +19,52 @@ function ServicePage() {
         title="B2B Telemarketing​"
         pageName="Outbound"
       />
-      <div className="service-details ">
-        <div className="about-services sec-mar">
-          <div className="container">
-            <div className="row gy-5">
-              <div
-                className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
-                data-wow-delay="200ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="about-content">
-                  <div className="section-title-5">
-                    <h2>How Do We Spread Network Through B2B Telemarketing?</h2>
-                  </div>
-                  <p>
-                  Our team builds convincing conversations to market the offered services or products of our clients. With the updated features of B2B telemarketing, we ensure the running of successful campaigns involving welcoming regards, product info, and sales speech. Today’s market demands various services, and our platform is packed with customer-grabbing strategies and tools.​
-                  </p>
-                  <ul className="about-featue">
-                    <li>
+      <div className="service-details">
+      <div className="about-services sec-mar">
+        <div className="container">
+          <div className="row gy-5">
+            <div
+              className="col-lg-6 d-flex align-items-center wow animate fadeInLeft"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+            >
+              <div className="about-content">
+                <div className="section-title-5">
+                  <h2>{b2B_Heading}</h2>
+                </div>
+                <p>{b2B_Para}</p>
+                <ul className="about-featue">
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
                       <ListSvg />
-                  {Active_Management}
-                   </li>
-                    <li>
-                    <ListSvg />
-                    {Customer_Retention_Campaigns}
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                      {Call_Recording}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Inviting_Scripts}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Tele_Sales}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Affordable_Telemarketing_Campaigns}
-                    </li>
-                  </ul>
-                </div>
+                  ))}
+                </ul>
               </div>
-              <div
-                className="col-lg-6 wow animate fadeInRight"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="service-img magnetic-item">
-                  <img
-                    className="img-fluid"
-                    src="assets/img/outbound/B2B/support.jpg"
-                    alt=""
-                  />
-                </div>
+            </div>
+            <div
+              className="col-lg-6 wow animate fadeInRight"
+              data-wow-delay="300ms"
+              data-wow-duration="1500ms"
+            >
+              <div className="service-img magnetic-item">
+                <img
+                  className="img-fluid"
+                  src="assets/img/outbound/B2B/support.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
-        </div>
-        <About5 />
-  <Information1 />
+      </div>
+    </div>
+      <AboutSection heading={b2BAboutHeading} aboutPara1={b2BAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={b2BAboutParaTwo} imagePath={"assets/img/outbound/B2B/colleagues.jpg"} />
+      <Information heading={b2BInformationHeading} informationPara={b2BInformationPara} informationParaTwo={b2BInformationParaTwo} imagePath={"assets/img/outbound/B2B/businesswoman.jpg"} imagePath2={"assets/img/outbound/B2B/people-working.jpg"} headingTwo={b2BInformationHeadingTwo} informationParaThree={b2BInformationParaThree} informationParaFour={b2BInformationParaFour}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }
