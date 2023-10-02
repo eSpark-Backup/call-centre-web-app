@@ -7,7 +7,7 @@ function ContactUsSection() {
     
 };
   return (
-    <div className="home3-contact-area sec-mar "style={containerStyle}>
+    <div className="home3-contact-area sec-mar ">
   <div className="container-fluid " >
     <div className="row">
       <div className="col-lg-12">
