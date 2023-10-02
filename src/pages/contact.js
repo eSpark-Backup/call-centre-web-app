@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
+import { Address, Contact_H2, Contact_p, Get_in_Touch } from "@/constants/Constants";
 import React from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -38,21 +39,19 @@ function Contactpage() {
   return (
     <Layout>
       <Breadcrumb
-        pageList="Contact"
-        title="For Any Querry"
-        pageName="CONTACT"
+        pageList="Contact Us"
+        title="Talk to Us & Get The Services​"
+        pageName="CONTACT US"
       />
       <div className="contact-page-wrap sec-mar">
         <div className="container">
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-6">
               <div className="contact-content">
-                <span>CONTACT WITH US</span>
-                <h2>LET’S WORK TOGETHER?</h2>
+                <span>{Get_in_Touch}</span>
+                <h2>{Contact_H2}</h2>
                 <p>
-                  I have worls-class, flexible support via live chat, email and
-                  hone. I guarantee that you’ll be able to have any issue
-                  resolved within 24 hours.
+                {Contact_p}
                 </p>
                 <div className="informations">
                   <div className="single-info">
@@ -61,8 +60,7 @@ function Contactpage() {
                     </div>
                     <div className="info">
                       <p>
-                        168/170, Avenue 01, Old York <br /> Drive Rich Mirpur
-                        DOHS, Bangladesh
+                      {Address}
                       </p>
                     </div>
                   </div>
@@ -71,8 +69,8 @@ function Contactpage() {
                       <i className="fas fa-phone-alt" />
                     </div>
                     <div className="info">
-                      <a href="tel:05661111985">+880 566 1111 985</a>
-                      <a href="tel:06571111576">+880 657 1111 576</a>
+                      <a href="tel:03232788259">+92(323-2788259)</a>
+                      <a href="tel:00442032865975">+44(20 3286 5975)​</a>
                     </div>
                   </div>
                   <div className="single-info">
@@ -80,8 +78,9 @@ function Contactpage() {
                       <i className="far fa-envelope" />
                     </div>
                     <div className="info">
-                      <a href="mailto: info@example.com">info@example.com</a>
-                      <a href="mailto: info@support.com">info@support.com</a>
+                      <a href="mailto: info@esparktalent.com​​">info@esparktalent.com​​</a>
+                      <a href="mailto: hr@esparktalent.com​​​">hr@esparktalent.com​​​</a>
+                      <a href="mailto: support@esparktalent.com​​​">support@esparktalent.com​​​​​</a>
                     </div>
                   </div>
                 </div>
