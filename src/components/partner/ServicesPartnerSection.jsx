@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Partner5() {
+function ServicesPartnerSection() {
   return (
     <div className="home5-partner-area mb-130">
     <div className="container">
@@ -34,4 +34,4 @@ function Partner5() {
   )
 }
 
-export default Partner5
+export default ServicesPartnerSection

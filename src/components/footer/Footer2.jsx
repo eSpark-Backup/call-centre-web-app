@@ -150,54 +150,54 @@ function Footer2() {
             </div>
           </div>
           <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center footer-size">
-            <div className="footer-widget ">
+            <div className="footer-widget footer-size">
               <div className="widget-title">
                 <h4>Industries</h4>
               </div>
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/automotive">
                       <a>Automotive​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/financial">
                       <a>Financial</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/healthcare">
                       <a>Healthcare​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/hospitality">
                       <a>Hospitality</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/insurance">
                       <a>Insurance</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/non-profit">
                       <a>Non-Profit​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/retail">
                       <a>Retail</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/telecom">
                       <a>Telecom</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/utilities">
                       <a>Utilities</a>
                     </Link>
                   </li>

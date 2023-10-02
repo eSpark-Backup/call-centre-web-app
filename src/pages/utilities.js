@@ -1,9 +1,9 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
 import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { retailsHeading, retailsInformationHeading, retailsInformationHeadingFour, retailsInformationHeadingThree, retailsInformationHeadingTwo, retailsInformationPara, retailsInformationParaFour, retailsInformationParaThree, retailsInformationParaTwo, retailsPara, telecomHeading, telecomInformationHeading, telecomInformationHeadingFour, telecomInformationHeadingThree, telecomInformationHeadingTwo, telecomInformationPara, telecomInformationParaFour, telecomInformationParaThree, telecomInformationParaTwo, telecomPara, utilitiesHeading, utilitiesInformationHeading, utilitiesInformationHeadingFour, utilitiesInformationHeadingThree, utilitiesInformationHeadingTwo, utilitiesInformationPara, utilitiesInformationParaFour, utilitiesInformationParaThree, utilitiesInformationParaTwo, utilitiesPara } from "@/constants/Constants";
+import { utilitiesHeading, utilitiesInformationHeading, utilitiesInformationHeadingFour, utilitiesInformationHeadingThree, utilitiesInformationHeadingTwo, utilitiesInformationPara, utilitiesInformationParaFour, utilitiesInformationParaThree, utilitiesInformationParaTwo, utilitiesPara } from "@/constants/Constants";
 import React from "react";
 
 function Utilities() {
@@ -37,7 +37,7 @@ function Utilities() {
       </div>
       <IndutriesInformation heading={utilitiesInformationHeading} informationPara={utilitiesInformationPara} imagePath={"assets/img/Industries/utilities/4.jpg"}  headingTwo={utilitiesInformationHeadingTwo} informationParaTwo={utilitiesInformationParaTwo} imagePathTwo={"assets/img/Industries/utilities/1.jpg"} imagePathThree={"assets/img/Industries/utilities/5.jpg"} headingThree={utilitiesInformationHeadingThree} informationParaThree={utilitiesInformationParaThree} imagePathFour={"assets/img/Industries/utilities/2.jpg"} headingFour={utilitiesInformationHeadingFour} informationParaFour={utilitiesInformationParaFour} />
       <PartnarSlider/>
-      <Home3Contact />
+      <ContactUsSection />
     </Layout>
   );
 }

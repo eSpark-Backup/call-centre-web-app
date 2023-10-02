@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
 import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
@@ -37,7 +37,7 @@ function Insurance() {
       </div>
       <IndutriesInformation heading={insuranceInformationHeading} informationPara={insuranceInformationPara} imagePath={"assets/img/Industries/insurance/4.jpg"}  headingTwo={insuranceInformationHeadingTwo} informationParaTwo={insuranceInformationParaTwo} imagePathTwo={"assets/img/Industries/insurance/2.jpg"} imagePathThree={"assets/img/Industries/insurance/1.jpg"} headingThree={insuranceInformationHeadingThree} informationParaThree={insuranceInformationParaThree} imagePathFour={"assets/img/Industries/insurance/5.jpg"} headingFour={insuranceInformationHeadingFour} informationParaFour={insuranceInformationParaFour} />
       <PartnarSlider/>
-      <Home3Contact />
+      <ContactUsSection />
     </Layout>
   );
 }

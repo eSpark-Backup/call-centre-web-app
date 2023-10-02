@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
 import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
@@ -37,7 +37,7 @@ function NonProfit() {
       </div>
       <IndutriesInformation heading={nonProfitInformationHeading} informationPara={nonProfitInformationPara} imagePath={"assets/img/Industries/non-profits/4.jpg"}  headingTwo={nonProfitInformationHeadingTwo} informationParaTwo={nonProfitInformationParaTwo} imagePathTwo={"assets/img/Industries/non-profits/2.jpg"} imagePathThree={"assets/img/Industries/non-profits/5.jpg"} headingThree={nonProfitInformationHeadingThree} informationParaThree={nonProfitInformationParaThree} imagePathFour={"assets/img/Industries/non-profits/3.jpg"} headingFour={nonProfitInformationHeadingFour} informationParaFour={nonProfitInformationParaFour} />
       <PartnarSlider/>
-      <Home3Contact />
+      <ContactUsSection />
     </Layout>
   );
 }

@@ -1,13 +1,16 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About7 from "@/components/about/About7";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import OurWork from "@/components/work/OurWork";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Audience_Segmentation, Brand_Awareness, High_Quality_Leads, Lead_Generation_Strategies, Lead_Lifecycle, Lead_Nurturing } from "@/constants/Constants";
+import {  audienceSegmentation, brandAwareness, highQualityLeads, landingPages, leadAboutHeading, leadAboutPara, leadAboutParaTwo, leadCapture, leadGenerationStrategies, leadHeading, leadInformationHeading, leadInformationHeadingTwo, leadInformationPara, leadInformationParaFour, leadInformationParaThree, leadInformationParaTwo, leadLifecycle, leadMagnets, leadNurturing, leadPara, leadScoring } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+import AboutSection from "@/components/about/AboutSection";
+
+const aboutUsPoints = [leadCapture, landingPages, leadMagnets, leadScoring ];
+const servicePoints = [brandAwareness, highQualityLeads, leadGenerationStrategies, audienceSegmentation, leadNurturing, leadLifecycle ];
 
 function LeadGeneration() {
   return (
@@ -28,37 +31,17 @@ function LeadGeneration() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>Let’s Reach Out to Your Company’s Potential Customers Through Our Lead Generation Services.</h2>
+                    <h2>{leadHeading}</h2>
                   </div>
-                  <p>
-                  Newly established privately owned companies need instant leads to expand their network and be stable in the market. The rapid flow of leads creates a colossal impact on the growth of agencies. That is the reason the demand for our offered service of lead generation is increasing every passing day. We employ modern techniques to reach out to potential customers and promote products and services.
-                  </p>
+                  <p>{leadPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                      {Brand_Awareness}
-                   </li>
-                    <li>
-                    <ListSvg />
-                      {High_Quality_Leads}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Generation_Strategies}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Audience_Segmentation}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Nurturing}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Lead_Lifecycle}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,10 +61,11 @@ function LeadGeneration() {
           </div>
         </div>
         </div>
-        <About7 />
+        <AboutSection heading={leadAboutHeading} aboutPara1={leadAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={leadAboutParaTwo} imagePath={"assets/img/outbound/lead-generation/good-news.jpg"} />
+        <Information heading={leadInformationHeading} informationPara={leadInformationPara} informationParaTwo={leadInformationParaTwo} imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"} imagePath2={"assets/img/outbound/lead-generation/focused-team-leader.jpg"} headingTwo={leadInformationHeadingTwo} informationParaThree={leadInformationParaThree} informationParaFour={leadInformationParaFour}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }

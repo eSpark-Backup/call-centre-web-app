@@ -1,13 +1,16 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import Partner5 from "@/components/partner/Partner5";
-import About6 from "@/components/about/About6";
-import Home3Contact from "@/components/contact/Home3Contact";
+import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
+import AboutSection from "@/components/about/AboutSection";
 import OurWork from "@/components/work/OurWork";
-import Link from "next/link";
+import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { Hot_Leads, Loyalty_Programs, Outbound_Campaigns, Product_Updates, Special_Offers, Unlimited_Calls } from "@/constants/Constants";
+import {b2BCampaigns, customerHeading, customerPara, customerRetention, customerWinbackAboutHeading, customerWinbackAboutPara, customerWinbackAboutParaTwo, customerWinbackInformationHeading, customerWinbackInformationHeadingTwo, customerWinbackInformationPara, customerWinbackInformationParaFour, customerWinbackInformationParaThree, customerWinbackInformationParaTwo, discountOffers, hotLeads, loyaltyPrograms, outboundCampaigns, productUpdates, rejoiningRewards, specialOffers, unlimitedCalls } from "@/constants/Constants";
+import ContactUsSection from "@/components/contact/ContactUsSection";
+
+const aboutUsPoints = [customerRetention, b2BCampaigns, discountOffers, rejoiningRewards ];
+const servicePoints = [unlimitedCalls, outboundCampaigns, hotLeads, productUpdates, loyaltyPrograms, specialOffers ];
 
 function CustomerWinback() {
   return (
@@ -28,37 +31,17 @@ function CustomerWinback() {
               >
                 <div className="about-content">
                   <div className="section-title-5">
-                    <h2>How Do We Acquire Approvals With Customer Winback Service?</h2>
+                    <h2>{customerHeading}</h2>
                   </div>
-                  <p>
-                  Winning the respected approval of old clients is one of the toughest tasks. Companies aim for experienced customer service platforms to get their ex-customers back. The reconnection with old customers will always need time and patience. We have a team of specialists who offer the utmost customer winback services that not only get back the consumers but also sell the services and products at a high value. 
-                  </p>
+                  <p>{customerPara}</p>
                   <ul className="about-featue">
-                    <li>
-                    <ListSvg />
-                      {Unlimited_Calls}
-                   </li>
-                    <li>
-                    <ListSvg />
-                      {Outbound_Campaigns}
+                  {servicePoints.map((point, index) => (
+                    <li key={index}>
+                      <ListSvg />
+                      {point}
                     </li>
-                    <li>
-                    <ListSvg />
-                     {Hot_Leads}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Product_Updates}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Loyalty_Programs}
-                    </li>
-                    <li>
-                    <ListSvg />
-                      {Special_Offers}
-                    </li>
-                  </ul>
+                  ))}
+                </ul>
                 </div>
               </div>
               <div
@@ -78,10 +61,11 @@ function CustomerWinback() {
           </div>
         </div>
         </div>
-        <About6 />
+      <AboutSection heading={customerWinbackAboutHeading} aboutPara1={customerWinbackAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={customerWinbackAboutParaTwo} imagePath={"assets/img/outbound/customer-winback/making-deal.jpg"} />
+      <Information heading={customerWinbackInformationHeading} informationPara={customerWinbackInformationPara} informationParaTwo={customerWinbackInformationParaTwo} imagePath={"assets/img/outbound/customer-winback/two-business-men.jpg"} imagePath2={"assets/img/outbound/customer-winback/customer-service.jpg"} headingTwo={customerWinbackInformationHeadingTwo} informationParaThree={customerWinbackInformationParaThree} informationParaFour={customerWinbackInformationParaFour}  />
       <OurWork />
-      <Partner5 />
-      <Home3Contact />
+      <ServicesPartnerSection />
+      <ContactUsSection />
     </Layout>
   );
 }
