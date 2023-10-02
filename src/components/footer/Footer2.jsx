@@ -1,5 +1,6 @@
-import Link from "next/link";
-import React from "react";
+import { Address } from '@/constants/Constants'
+import Link from 'next/link'
+import React from 'react'
 
 function Footer2() {
   return (
@@ -95,32 +96,32 @@ function Footer2() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/business-call-screening">
                       <a>Business Call Screening​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/customer-service">
                       <a>Customer Services​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/direct-response">
                       <a>Direct Response Call Center​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/event-registration">
                       <a>Event Registration​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/help-desk">
                       <a>Help Desk Call Center​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/live-chat">
                       <a>Live Chat Outsourcing​</a>
                     </Link>
                   </li>
@@ -131,17 +132,17 @@ function Footer2() {
               <div className="menu-container">
                 <ul>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/B2B">
                       <a>B2B Telemarketing​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/customer-winback">
                       <a>Customer Winback​</a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="#">
+                    <Link legacyBehavior href="/lead-generation">
                       <a>Lead Generation​</a>
                     </Link>
                   </li>
