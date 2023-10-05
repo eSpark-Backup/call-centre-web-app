@@ -2210,8 +2210,7 @@ video {
 }
 
 @media screen and (max-width: 650px) and (min-width: 500px) {
-  .banner-area4 .banner-img {
-  }
+ 
   .banner-area4 .banner-img .banner-big-img img {
     width: 250px;
   }
