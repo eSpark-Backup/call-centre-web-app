@@ -11692,6 +11692,28 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   background: #292929;
 }
 
+.Toastify__toast {
+  background-color: #2F3032 !important; /* Green background color */
+  color: #fff; /* White text color */
+  font-family: 'Arial', sans-serif;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Toastify__close-button--light{
+  color:#06D889 !important ;
+  opacity: 1 !important;
+}
+
+.Toastify__progress-bar--success{
+  background-color: #06D889 !important;
+}
+
+.Toastify__toast-icon svg {
+  fill: #06D889 !important; /* change the fill color of the icon */
+  /* add more styles as needed */
+}
+
 .contact-page-wrap .contact-content > span {
   font-family: var(--font-saira);
   font-weight: 500;

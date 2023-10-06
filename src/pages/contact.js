@@ -9,6 +9,8 @@ import {
 import React from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("First name is required"),
@@ -26,35 +28,46 @@ const validationSchema = Yup.object().shape({
 });
 
 function Contactpage() {
-  const formik = useFormik({
-    initialValues: {
-      firstName: "",
-      lastName: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-    validationSchema: validationSchema,
-    onSubmit: (values) => {
-      // Handle form submission logic here
-      console.log(values);
-    },
-    validationSchema: validationSchema,
-    onSubmit: async (values, { resetForm, setSubmitting }) => {
-      // Handle form submission logic here
-      console.log("Form values:", values);
+    const formik = useFormik({
+      initialValues: {
+        firstName: "",
+        lastName: "",
+        company: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      validationSchema: validationSchema,
+      onSubmit: async (values, { resetForm, setSubmitting }) => {
+        if (Object.keys(formik.errors).length === 0) {
+          console.log("Form values:", values);
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+          resetForm();
+          setSubmitting(false);
 
-      // Simulate an asynchronous operation (e.g., API request)
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+          const successMessage = "Thank you!";
+        const additionalMessage = "We will contact you soon.";
 
-      // Reset the form after successful submission
-      resetForm();
-
-      // Set submitting state back to false
-      setSubmitting(false);
-    },
-  });
+        // Combine messages into a single string
+        const combinedMessage = `${successMessage}\n${additionalMessage}`;
+  
+          // Show toast message
+          toast.success(
+            <>
+              <div style={{color:"#06D889", fontSize:"18px", fontWeight:"800"}}>{successMessage}</div>
+              <div style={{color:"#ffffff", fontSize:"13px"}}>{additionalMessage}</div>
+            </>,
+            {
+            position: "top-center",
+            autoClose: 3000, // Close the toast after 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+        }
+      },
+    });
   return (
     <Layout>
       <Breadcrumb
@@ -261,6 +274,7 @@ function Contactpage() {
                           </button>
                         </div>
                       </div>
+                      <ToastContainer />
                     </div>
                   </form>
                 </div>
