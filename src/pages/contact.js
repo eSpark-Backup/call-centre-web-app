@@ -1,6 +1,11 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Layout from "@/components/layout/Layout";
-import { Address, Contact_H2, Contact_p, Get_in_Touch } from "@/constants/Constants";
+import {
+  Address,
+  Contact_H2,
+  Contact_p,
+  Get_in_Touch,
+} from "@/constants/Constants";
 import React from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -36,19 +41,19 @@ function Contactpage() {
       console.log(values);
     },
     validationSchema: validationSchema,
-  onSubmit: async (values, { resetForm, setSubmitting }) => {
-    // Handle form submission logic here
-    console.log("Form values:", values);
+    onSubmit: async (values, { resetForm, setSubmitting }) => {
+      // Handle form submission logic here
+      console.log("Form values:", values);
 
-    // Simulate an asynchronous operation (e.g., API request)
-    await new Promise(resolve => setTimeout(resolve, 1000));
+      // Simulate an asynchronous operation (e.g., API request)
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    // Reset the form after successful submission
-    resetForm();
+      // Reset the form after successful submission
+      resetForm();
 
-    // Set submitting state back to false
-    setSubmitting(false);
-  },
+      // Set submitting state back to false
+      setSubmitting(false);
+    },
   });
   return (
     <Layout>
@@ -64,18 +69,14 @@ function Contactpage() {
               <div className="contact-content">
                 <span>{Get_in_Touch}</span>
                 <h2>{Contact_H2}</h2>
-                <p>
-                {Contact_p}
-                </p>
+                <p>{Contact_p}</p>
                 <div className="informations">
                   <div className="single-info">
                     <div className="icon">
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="info">
-                      <p>
-                      {Address}
-                      </p>
+                      <p>{Address}</p>
                     </div>
                   </div>
                   <div className="single-info">
@@ -92,9 +93,15 @@ function Contactpage() {
                       <i className="far fa-envelope" />
                     </div>
                     <div className="info">
-                      <a href="mailto: info@esparktalent.com​​">info@esparktalent.com​​</a>
-                      <a href="mailto: hr@esparktalent.com​​​">hr@esparktalent.com​​​</a>
-                      <a href="mailto: support@esparktalent.com​​​">support@esparktalent.com​​​​​</a>
+                      <a href="mailto: info@esparktalent.com​​">
+                        info@esparktalent.com​​
+                      </a>
+                      <a href="mailto: hr@esparktalent.com​​​">
+                        hr@esparktalent.com​​​
+                      </a>
+                      <a href="mailto: support@esparktalent.com​​​">
+                        support@esparktalent.com​​​​​
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -147,7 +154,7 @@ function Contactpage() {
                             onBlur={formik.handleBlur}
                           />
                           {formik.touched.firstName &&
-                            formik.errors.firstName && (
+                            !formik.values.firstName && (
                               <div style={{ color: "red" }}>
                                 {formik.errors.firstName}
                               </div>
@@ -165,7 +172,7 @@ function Contactpage() {
                             onBlur={formik.handleBlur}
                           />
                           {formik.touched.lastName &&
-                            formik.errors.lastName && (
+                            !formik.values.lastName && (
                               <div style={{ color: "red" }}>
                                 {formik.errors.lastName}
                               </div>
@@ -182,7 +189,7 @@ function Contactpage() {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                           />
-                          {formik.touched.company && formik.errors.company && (
+                          {formik.touched.company && !formik.values.company && (
                             <div style={{ color: "red" }}>
                               {formik.errors.company}
                             </div>
@@ -199,7 +206,7 @@ function Contactpage() {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                           />
-                          {formik.touched.email && formik.errors.email && (
+                          {formik.touched.email && !formik.values.email && (
                             <div style={{ color: "red" }}>
                               {formik.errors.email}
                             </div>
@@ -214,12 +221,15 @@ function Contactpage() {
                             name="phone"
                             value={formik.values.phone}
                             onChange={(e) => {
-                              const numericValue = e.target.value.replace(/\D/g, '');
-                              formik.setFieldValue('phone', numericValue);
+                              const numericValue = e.target.value.replace(
+                                /\D/g,
+                                ""
+                              );
+                              formik.setFieldValue("phone", numericValue);
                             }}
                             onBlur={formik.handleBlur}
                           />
-                          {formik.touched.phone && formik.errors.phone && (
+                          {formik.touched.phone && !formik.values.phone && (
                             <div style={{ color: "red" }}>
                               {formik.errors.phone}
                             </div>
@@ -236,7 +246,7 @@ function Contactpage() {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                           />
-                          {formik.touched.message && formik.errors.message && (
+                          {formik.touched.message && !formik.values.message && (
                             <div style={{ color: "red" }}>
                               {formik.errors.message}
                             </div>
@@ -245,11 +255,9 @@ function Contactpage() {
                       </div>
                       <div className="col-lg-12">
                         <div className="form-inner">
-                        <button
-      className="primary-btn3"
-      type="submit"
-      disabled={!formik.isValid || formik.isSubmitting}
-    >                            Submit
+                          <button className="primary-btn3" type="submit">
+                            {" "}
+                            Submit
                           </button>
                         </div>
                       </div>
