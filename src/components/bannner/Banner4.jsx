@@ -19,7 +19,7 @@ function Banner4() {
               <p>
               Meet with an expert team that offers on-time B2B telemarketing, live chat outsourcing, and various customer support services. Time to avail the finest assistance of the best in the business!​
               </p>
-              <div className="banner-btn">
+              {/* <div className="banner-btn">
                 <Link legacyBehavior href="https://calendly.com/esparkconnect/60min?month=2023-09">
                   <a className="primary-btn5">
                     <svg
@@ -35,7 +35,7 @@ function Banner4() {
                     </div>
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-5 d-flex jsutify-content-center">
