@@ -240,8 +240,10 @@ function Footer2() {
               <div className="footer-btn-content">
                 <div className="copyright-area">
                   <p>
-                    ©Copyright 2023 <a href="#">Softconic</a> | Design By{" "}
-                    <a href="https://www.egenslab.com/">Egens Lab</a>
+                    {/* ©Copyright 2023 <a href="#">Softconic</a> | Design By{" "}
+                    <a href="https://www.egenslab.com/">Egens Lab</a> */}
+                    © 2023 <a href="/">eSpark Connect</a> | All Rights
+                    Reserved
                   </p>
                 </div>
                 <div className="footer-social">

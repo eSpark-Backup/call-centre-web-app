@@ -244,11 +244,11 @@ function Header4() {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <Link legacyBehavior href="/company">
               <a>Company</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link legacyBehavior href="/contact">
               <a>Contact Us​</a>
