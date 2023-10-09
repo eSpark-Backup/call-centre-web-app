@@ -11,63 +11,109 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from 'emailjs-com';
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("First name is required"),
   lastName: Yup.string().required("Last name is required"),
   company: Yup.string().required("Company/Organization is required"),
   email: Yup.string()
-    .email("Invalid email format")
-    .matches(
-      /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,320}$/,
-      "Invalid email format"
-    )
-    .required("Email is required"),
+  .email("Invalid email format")
+  .matches(
+    /^[A-Za-z0-9]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,320}$/,
+    "Invalid email format"
+  )
+  .min(5, "Email must be at least 5 characters")
+  .max(230, "Email must not exceed 230 characters")
+  .required("Email is required"),
   phone: Yup.string().required("Phone is required"),
   message: Yup.string().required("Message is required"),
 });
 
 function Contactpage() {
-    const formik = useFormik({
-      initialValues: {
-        firstName: "",
-        lastName: "",
-        company: "",
-        email: "",
-        phone: "",
-        message: "",
-      },
-      validationSchema: validationSchema,
-      onSubmit: async (values, { resetForm, setSubmitting }) => {
-        if (Object.keys(formik.errors).length === 0) {
-          console.log("Form values:", values);
-          await new Promise((resolve) => setTimeout(resolve, 1000));
-          resetForm();
-          setSubmitting(false);
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      company: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: async (values, { resetForm, setSubmitting }) => {
+      try {
+        const emailjsParams = {
+          service_id: 'service_gi7wob8',
+          template_id: 'template_malxyyp',
+          template_params: {
+            first_name: values.firstName,
+            last_name: values.lastName,
+            company_name: values.company,
+            email: values.email,
+            phone: values.phone,
+            message: values.message,
+          },
+        };
 
-          const successMessage = "Thank you!";
+        const response = await emailjs.send(
+          emailjsParams.service_id,
+          emailjsParams.template_id,
+          emailjsParams.template_params,
+          emailjsParams.user_id
+        );
+
+        if (response.status === 200) {
+          // Handle success
+          console.log('Email sent successfully');
+          toast.success(/* ... */);
+        } else {
+          // Handle error
+          console.error('Error sending email');
+          toast.error(/* ... */);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      } finally {
+        resetForm();
+        setSubmitting(false);
+      }
+      if (Object.keys(formik.errors).length === 0) {
+        console.log("Form values:", values);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        resetForm();
+        setSubmitting(false);
+
+        const successMessage = "Thank you!";
         const additionalMessage = "We will contact you soon.";
 
         // Combine messages into a single string
         const combinedMessage = `${successMessage}\n${additionalMessage}`;
-  
-          // Show toast message
-          toast.success(
-            <>
-              <div style={{color:"#06D889", fontSize:"18px", fontWeight:"800"}}>{successMessage}</div>
-              <div style={{color:"#ffffff", fontSize:"13px"}}>{additionalMessage}</div>
-            </>,
-            {
+
+        // Show toast message
+        toast.success(
+          <>
+            <div
+              style={{ color: "#06D889", fontSize: "18px", fontWeight: "800" }}
+            >
+              {successMessage}
+            </div>
+            <div style={{ color: "#ffffff", fontSize: "13px" }}>
+              {additionalMessage}
+            </div>
+          </>,
+          {
             position: "top-center",
             autoClose: 3000, // Close the toast after 3 seconds
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-          });
-        }
-      },
-    });
+          }
+        );
+      }
+    },
+  });
   return (
     <Layout>
       <Breadcrumb
@@ -219,13 +265,24 @@ function Contactpage() {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                           />
-                          {formik.touched.email && !formik.values.email && (
+                          {formik.touched.email && formik.errors.email && (
                             <div style={{ color: "red" }}>
                               {formik.errors.email}
+                              {formik.errors.email ===
+                                "Invalid email format" && (
+                                <>
+                                  <br />
+                                  <span style={{ color: "red" }}>
+                                    Your email should match the format
+                                    user@example.com.
+                                  </span>
+                                </>
+                              )}
                             </div>
                           )}
                         </div>
                       </div>
+
                       <div className="col-lg-12 mb-20">
                         <div className="form-inner">
                           <label>Phone *</label>
