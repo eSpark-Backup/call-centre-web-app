@@ -82,9 +82,12 @@ function Footer2() {
                   </svg>
                   Say Hello
                 </h4>
-                <a href="mailto: info@epark.com"> info@epark.com</a>
-                <br />
-                <a href="mailto:Sales@espark.com">Sales@espark.com</a>
+                <a href="mailto: info@esparkconnect.com​">
+                  info@esparkconnect.com​​
+                </a>
+                <a href="mailto: support@esparkconnect.com​">
+                  support@esparkconnect.com
+                </a>
               </div>
             </div>
           </div>
@@ -242,24 +245,35 @@ function Footer2() {
                   <p>
                     {/* ©Copyright 2023 <a href="#">Softconic</a> | Design By{" "}
                     <a href="https://www.egenslab.com/">Egens Lab</a> */}
-                    © 2023 <a href="/">eSpark Connect</a> | All Rights
-                    Reserved
+                    © 2023 <a href="/">eSpark Connect</a> | All Rights Reserved
                   </p>
                 </div>
                 <div className="footer-social">
-                  <ul>
+                  <ul className="">
                     <li>
-                      <a href="https://www.facebook.com/espark.connect">
+                      <a
+                        href="https://www.facebook.com/espark.connect"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <i className="bx bxl-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/esparkconnect/">
+                      <a
+                        href="https://www.instagram.com/esparkconnect/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <i className="bx bxl-instagram" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/company/espark-connect/">
+                      <a
+                        href="https://www.linkedin.com/company/espark-connect/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <i className="bx bxl-linkedin" />
                       </a>
                     </li>
