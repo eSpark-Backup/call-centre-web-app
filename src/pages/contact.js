@@ -4,6 +4,7 @@ import {
   Address,
   Contact_H2,
   Contact_p,
+  Email_Send,
   Get_in_Touch,
 } from "@/constants/Constants";
 import React from "react";
@@ -31,6 +32,7 @@ const validationSchema = Yup.object().shape({
 });
 
 function Contactpage() {
+  
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -46,6 +48,7 @@ function Contactpage() {
         const emailjsParams = {
           service_id: 'service_gi7wob8',
           template_id: 'template_malxyyp',
+          user_id: 'TjsPySruVhn5xaxn6',
           template_params: {
             first_name: values.firstName,
             last_name: values.lastName,
@@ -53,9 +56,11 @@ function Contactpage() {
             email: values.email,
             phone: values.phone,
             message: values.message,
-          },
+            reply_to: values.email,
+            from_email: Email_Send
+          }
         };
-
+        
         const response = await emailjs.send(
           emailjsParams.service_id,
           emailjsParams.template_id,
