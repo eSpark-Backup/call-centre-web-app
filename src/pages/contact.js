@@ -46,9 +46,8 @@ function Contactpage() {
                       <i className="far fa-envelope" />
                     </div>
                     <div className="info">
-                      <a href="mailto: info@esparktalent.com​​">info@esparktalent.com​​</a>
-                      <a href="mailto: hr@esparktalent.com​​​">hr@esparktalent.com​​​</a>
-                      <a href="mailto: support@esparktalent.com​​​">support@esparktalent.com​​​​​</a>
+                      <a href="mailto: info@esparkconnect.com​">info@esparkconnect.com​​</a>
+                      <a href="mailto: support@esparkconnect.com​">support@esparkconnect.com</a>
                     </div>
                   </div>
                 </div>
@@ -58,23 +57,18 @@ function Contactpage() {
                   <div className="blog-widget-body">
                     <ul className="follow-list d-flex flex-row align-items-start gap-4">
                       <li>
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/espark.connect" target="_blank" rel="noopener noreferrer">
                           <i className="bx bxl-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/esparkconnect/" target="_blank" rel="noopener noreferrer">
                           <i className="bx bxl-instagram" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.pinterest.com/">
-                          <i className="bx bxl-pinterest" />
+                        <a href="https://www.linkedin.com/company/espark-connect/" target="_blank" rel="noopener noreferrer">
+                          <i className="bx bxl-linkedin" />
                         </a>
                       </li>
                     </ul>

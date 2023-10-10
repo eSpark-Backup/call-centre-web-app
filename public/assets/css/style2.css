@@ -951,7 +951,7 @@ video {
     visibility: hidden;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 990px) {
   .header-area2 .main-menu ul > li:hover > ul.sub-menu {
     display: block;
     animation: fade-up 0.45s linear;
@@ -1088,12 +1088,12 @@ video {
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .header-area2.two .main-menu ul > li a {
-    padding: 32px 14px;
+    padding: 0px 14px;
   }
 }
 @media (max-width: 1399px) {
   .header-area2.two .main-menu ul > li a {
-    padding: 32px 8px;
+    padding: 0px 8px;
   }
 }
 @media (max-width: 991px) {
@@ -1104,11 +1104,13 @@ video {
 @media (min-width: 1400px) and (max-width: 1599px) {
   .header-area2.two .main-menu ul > li.menu-item-has-children::after {
     right: 6px;
+    top: 3px;
   }
 }
 @media (max-width: 1399px) {
   .header-area2.two .main-menu ul > li.menu-item-has-children::after {
     right: 1px;
+    top: 3px;
   }
 }
 
@@ -2193,6 +2195,7 @@ video {
 @media (max-width: 800px) {
   .banner-area4 .banner-img {
     margin-left: 200px;
+    margin-top: 50px;
   }
 }
 
@@ -2206,8 +2209,6 @@ video {
 }
 
 @media screen and (max-width: 650px) and (min-width: 500px) {
-  .banner-area4 .banner-img {
-  }
   .banner-area4 .banner-img .banner-big-img img {
     width: 250px;
   }
@@ -6127,6 +6128,7 @@ video {
   position: relative;
   z-index: 1;
   margin-bottom: -10px;
+  top: 1px;
 }
 .home3-contact-area::after {
   content: "";

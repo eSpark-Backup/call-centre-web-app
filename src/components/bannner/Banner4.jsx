@@ -14,12 +14,12 @@ function Banner4() {
           <div className="col-lg-7">
             <div className="banner-content">
               <h1>
-              Say Yes to the 24/7 Active <a href="#">Customer Service</a> Support​
+              Say Yes to the 24/7 Active <span style={{textDecoration:"underline", color:"var(--theme-color)"}}>Customer Service</span> Support​
               </h1>
               <p>
               Meet with an expert team that offers on-time B2B telemarketing, live chat outsourcing, and various customer support services. Time to avail the finest assistance of the best in the business!​
               </p>
-              <div className="banner-btn">
+              {/* <div className="banner-btn">
                 <Link legacyBehavior href="/service">
                   <a className="primary-btn5">
                     <svg
@@ -35,7 +35,7 @@ function Banner4() {
                     </div>
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-5 d-flex jsutify-content-center">

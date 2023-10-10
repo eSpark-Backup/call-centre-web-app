@@ -75,22 +75,36 @@ function Header4() {
       <div className="header-logo">
         <Link legacyBehavior href="/">
           <a>
-            <img alt="image" className="img-fluid" src="assets/img/Logos.png" width="120px"  />
+            <img
+              alt="image"
+              className="img-fluid"
+              src="assets/img/Logos.png"
+              width="120px"
+            />
           </a>
         </Link>
       </div>
       <div className={`main-menu ${state.isSidebarOpen ? "show-menu" : ""}`}>
-        <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+        <div className="mobile-logo-area d-lg-none justify-content-between align-items-center">
           <div className="mobile-logo-wrap">
             <Link legacyBehavior href="/">
               <a>
-                <img alt="image" src="assets/img/logo.svg" />
+                <img
+                  alt="image"
+                  className="img-fluid"
+                  src="assets/img/Logos.png"
+                  width="150px"
+                />
               </a>
             </Link>
           </div>
         </div>
         <ul className="menu-list">
-          <li className={`menu-item-has-children ${currentRoute === "/index2"?"active":""}`}>
+          <li
+            className={`menu-item-has-children ${
+              currentRoute === "/index2" ? "active" : ""
+            }`}
+          >
             <a
               href="#"
               className={`drop-down ${
@@ -98,7 +112,7 @@ function Header4() {
               }`}
               onClick={() => toggleMenu("Inbound")}
             >
-              Inbound 
+              Inbound
             </a>
             <i
               className={`bi bi-plus dropdown-icon ${
@@ -143,7 +157,7 @@ function Header4() {
               </li>
             </ul>
           </li>
-         
+
           <li className="menu-item-has-children">
             <a
               href="#"
@@ -184,7 +198,7 @@ function Header4() {
           </li>
           <li className="menu-item-has-children">
             <a href="#" className="drop-down">
-            Industries
+              Industries
             </a>
             <i
               className={`bi bi-plus dropdown-icon ${
@@ -244,11 +258,11 @@ function Header4() {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <Link legacyBehavior href="/company">
               <a>Company</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link legacyBehavior href="/contact">
               <a>Contact Us​</a>
@@ -293,17 +307,20 @@ function Header4() {
               <div className="email-info">
                 <span>Email Now</span>
                 <h6>
-                  <a href="mailto:info@epark.com">info@epark.com</a><br />
-                  <a href="mailto:Sales@espark.com">Sales@espark.com</a>
+                  <a href="mailto: info@esparkconnect.com​">
+                    info@esparkconnect.com​​
+                  </a>
+                  <a href="mailto: support@esparkconnect.com​">
+                    support@esparkconnect.com
+                  </a>
                 </h6>
               </div>
             </div>
           </form>
-          <div className="header-btn5 header-btn ">
+          <div className="header-btn5 ">
             <Link legacyBehavior href="/contact">
-              <a>Connect with us</a>
+              <a className="primary-btn3">Connect with us</a>
             </Link>
-           
           </div>
         </div>
       </div>
