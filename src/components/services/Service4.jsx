@@ -263,13 +263,13 @@ function Service4() {
             </div>
           </div>
         </div>
-        <div className="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+        {/* <div className="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
         <div className="col-lg-12 d-flex justify-content-center">
           <div className="view-btn">
             <Link legacyBehavior href="/service"><a className="primary-btn3">View All Services</a></Link>
           </div>
         </div>
-      </div>
+      </div> */}
       </div>
     </div>
   </div>
