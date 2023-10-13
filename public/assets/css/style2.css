@@ -3830,10 +3830,6 @@ video {
   height: 100%;
 }
 
-
-.home4-about-section{
-  background-color: #22262A;
-}
 .home4-about-section .about-left-img-wrap .big-img img {
   border-radius: 190px;
 }
@@ -5026,7 +5022,7 @@ video {
 }
 
 .home-dark2 {
-  background: #0f0f0f;
+  background: #22262A;
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
