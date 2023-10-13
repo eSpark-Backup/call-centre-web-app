@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React, { useState } from "react";
 import data from "../data/mesonaryData";
@@ -14,7 +13,7 @@ function ProjectMasonaryPage() {
       ? data
       : data.filter((project) => project.category === selectedCategory);
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Projects Masonary"
         title="Our Complited Projects"
@@ -95,7 +94,7 @@ function ProjectMasonaryPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

@@ -1,20 +1,53 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import {billingInquiries, escalationManagement, helpAboutHeading, helpAboutPara, helpAboutParaTwo, helpDeskHeading, helpDeskPara, helpInformationHeading, helpInformationHeadingTwo, helpInformationPara, helpInformationParaFour, helpInformationParaThree, helpInformationParaTwo, iTSolutions, ioTRelatedAssistance, logisticSupport, productInformation, serviceInformation, technicalSupport, technicalTroubleshooting, warrantySupport } from "@/constants/Constants";
+import {
+  billingInquiries,
+  escalationManagement,
+  helpAboutHeading,
+  helpAboutPara,
+  helpAboutParaTwo,
+  helpDeskHeading,
+  helpDeskPara,
+  helpInformationHeading,
+  helpInformationHeadingTwo,
+  helpInformationPara,
+  helpInformationParaFour,
+  helpInformationParaThree,
+  helpInformationParaTwo,
+  iTSolutions,
+  ioTRelatedAssistance,
+  logisticSupport,
+  productInformation,
+  serviceInformation,
+  technicalSupport,
+  technicalTroubleshooting,
+  warrantySupport,
+} from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [productInformation, serviceInformation, technicalTroubleshooting, escalationManagement ];
-const servicePoints = [iTSolutions, ioTRelatedAssistance, billingInquiries, logisticSupport, technicalSupport, warrantySupport ];
+const aboutUsPoints = [
+  productInformation,
+  serviceInformation,
+  technicalTroubleshooting,
+  escalationManagement,
+];
+const servicePoints = [
+  iTSolutions,
+  ioTRelatedAssistance,
+  billingInquiries,
+  logisticSupport,
+  technicalSupport,
+  warrantySupport,
+];
 
 function HelpDesk() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Inbound"
         title="Help Desk Call Center​"
@@ -35,13 +68,13 @@ function HelpDesk() {
                   </div>
                   <p>{helpDeskPara}</p>
                   <ul className="about-featue">
-                  {servicePoints.map((point, index) => (
-                    <li key={index}>
-                      <ListSvg />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                    {servicePoints.map((point, index) => (
+                      <li key={index}>
+                        <ListSvg />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div
@@ -60,14 +93,29 @@ function HelpDesk() {
             </div>
           </div>
         </div>
-        </div>
-      <AboutSection heading={helpAboutHeading} aboutPara1={helpAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={helpAboutParaTwo} imagePath={"assets/img/inbound/help-desk/3.png"} />
-      <Information heading={helpInformationHeading} informationPara={helpInformationPara} informationParaTwo={helpInformationParaTwo} imagePath={"assets/img/inbound/help-desk/4.png"} imagePath2={"assets/img/inbound/help-desk/2.png"} headingTwo={helpInformationHeadingTwo} informationParaThree={helpInformationParaThree} informationParaFour={helpInformationParaFour}  />
+      </div>
+      <AboutSection
+        heading={helpAboutHeading}
+        aboutPara1={helpAboutPara}
+        aboutUsPoints={aboutUsPoints}
+        aboutPara2={helpAboutParaTwo}
+        imagePath={"assets/img/inbound/help-desk/3.png"}
+      />
+      <Information
+        heading={helpInformationHeading}
+        informationPara={helpInformationPara}
+        informationParaTwo={helpInformationParaTwo}
+        imagePath={"assets/img/inbound/help-desk/4.png"}
+        imagePath2={"assets/img/inbound/help-desk/2.png"}
+        headingTwo={helpInformationHeadingTwo}
+        informationParaThree={helpInformationParaThree}
+        informationParaFour={helpInformationParaFour}
+      />
       <OurWork />
       <ServicesPartnerSection />
-      <ContactUsSection /> 
-    </Layout>
+      <ContactUsSection />
+    </>
   );
 }
 
-export default  HelpDesk;
+export default HelpDesk;

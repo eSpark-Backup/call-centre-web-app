@@ -1,11 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function Service4Page() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Servives"
         title="Our Providing Services"
@@ -685,7 +684,7 @@ function Service4Page() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

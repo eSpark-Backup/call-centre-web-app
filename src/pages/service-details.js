@@ -1,11 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function ServiceDetailsPage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Servives Details"
         title="Software Development"
@@ -470,7 +469,7 @@ function ServiceDetailsPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

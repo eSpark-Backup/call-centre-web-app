@@ -1,20 +1,53 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { activeChat, automatedResponse, broadbandDevices, broadbandInternet, feedbackSurveyTools, humanCommunication, liveChatAboutHeading, liveChatAboutPara, liveChatAboutParaTwo, liveChatHeading, liveChatInformationHeading, liveChatInformationHeadingTwo, liveChatInformationPara, liveChatInformationParaFour, liveChatInformationParaThree, liveChatInformationParaTwo, liveChatPara, naturalConversation, onlineCommunicationSystem, reportingDashboard, timelyResponse } from "@/constants/Constants";
+import {
+  activeChat,
+  automatedResponse,
+  broadbandDevices,
+  broadbandInternet,
+  feedbackSurveyTools,
+  humanCommunication,
+  liveChatAboutHeading,
+  liveChatAboutPara,
+  liveChatAboutParaTwo,
+  liveChatHeading,
+  liveChatInformationHeading,
+  liveChatInformationHeadingTwo,
+  liveChatInformationPara,
+  liveChatInformationParaFour,
+  liveChatInformationParaThree,
+  liveChatInformationParaTwo,
+  liveChatPara,
+  naturalConversation,
+  onlineCommunicationSystem,
+  reportingDashboard,
+  timelyResponse,
+} from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [humanCommunication, activeChat, timelyResponse, broadbandDevices ];
-const servicePoints = [naturalConversation, automatedResponse, onlineCommunicationSystem, reportingDashboard, broadbandInternet, feedbackSurveyTools ];
+const aboutUsPoints = [
+  humanCommunication,
+  activeChat,
+  timelyResponse,
+  broadbandDevices,
+];
+const servicePoints = [
+  naturalConversation,
+  automatedResponse,
+  onlineCommunicationSystem,
+  reportingDashboard,
+  broadbandInternet,
+  feedbackSurveyTools,
+];
 
 function LiveChat() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Inbound"
         title="Live Chat Outsourcing​​"
@@ -35,13 +68,13 @@ function LiveChat() {
                   </div>
                   <p>{liveChatPara}</p>
                   <ul className="about-featue">
-                  {servicePoints.map((point, index) => (
-                    <li key={index}>
-                      <ListSvg />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                    {servicePoints.map((point, index) => (
+                      <li key={index}>
+                        <ListSvg />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div
@@ -60,14 +93,29 @@ function LiveChat() {
             </div>
           </div>
         </div>
-        </div>
-      <AboutSection heading={liveChatAboutHeading} aboutPara1={liveChatAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={liveChatAboutParaTwo} imagePath={"assets/img/inbound/live-chat/2.png"} />
-      <Information heading={liveChatInformationHeading} informationPara={liveChatInformationPara} informationParaTwo={liveChatInformationParaTwo} imagePath={"assets/img/inbound/live-chat/1.png"} imagePath2={"assets/img/inbound/live-chat/3.png"} headingTwo={liveChatInformationHeadingTwo} informationParaThree={liveChatInformationParaThree} informationParaFour={liveChatInformationParaFour}  />
+      </div>
+      <AboutSection
+        heading={liveChatAboutHeading}
+        aboutPara1={liveChatAboutPara}
+        aboutUsPoints={aboutUsPoints}
+        aboutPara2={liveChatAboutParaTwo}
+        imagePath={"assets/img/inbound/live-chat/2.png"}
+      />
+      <Information
+        heading={liveChatInformationHeading}
+        informationPara={liveChatInformationPara}
+        informationParaTwo={liveChatInformationParaTwo}
+        imagePath={"assets/img/inbound/live-chat/1.png"}
+        imagePath2={"assets/img/inbound/live-chat/3.png"}
+        headingTwo={liveChatInformationHeadingTwo}
+        informationParaThree={liveChatInformationParaThree}
+        informationParaFour={liveChatInformationParaFour}
+      />
       <OurWork />
       <ServicesPartnerSection />
-      <ContactUsSection /> 
-    </Layout>
+      <ContactUsSection />
+    </>
   );
 }
 
-export default  LiveChat;
+export default LiveChat;

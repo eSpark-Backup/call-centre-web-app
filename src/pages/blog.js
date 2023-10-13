@@ -1,12 +1,11 @@
 import BlogBanner from "@/components/blog/BlogBanner";
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import React from "react";
 import blogData from "../data/blogData.json";
 import Link from "next/link";
 function BlogPgage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Blog Grid"
         title="Exploring The Softconic Blog"
@@ -139,7 +138,7 @@ function BlogPgage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

@@ -1,11 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function ProjectPage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Projects"
         title="Our Complited Projects"
@@ -276,7 +275,7 @@ function ProjectPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

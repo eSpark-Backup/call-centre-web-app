@@ -12,6 +12,7 @@ import "../../public/assets/css/animate.min.css";
 import "../../public/assets/css/style2.css";
 import "node_modules/react-modal-video/css/modal-video.css";
 import Preloader from "@/components/common/Preloader";
+import Layout from "@/components/layout/Layout";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -29,8 +30,13 @@ export default function App({ Component, pageProps }) {
     <>
       {loading ? (
         <>
-          <Component {...pageProps} />
-          <Script id="wow" src="/js/wow.min.js"></Script>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+          <Script
+            id="wow"
+            src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"
+          ></Script>
           <Script
             id="initWow"
             strategy="lazyOnload"

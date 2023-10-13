@@ -1,10 +1,9 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import React from "react";
 
 function Pricing2Page() {
   return (
-    <Layout>
+    <>
       <Breadcrumb pageList="Pricing" title="Pricing Plan" pageName="PRICING" />
       <div className="home4-pricing-plan">
         <div className="container-fluid">
@@ -322,7 +321,7 @@ function Pricing2Page() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

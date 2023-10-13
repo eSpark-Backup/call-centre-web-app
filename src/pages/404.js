@@ -1,10 +1,9 @@
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function CustomError() {
   return (
-    <Layout>
+    <>
       <div className="error-page-bg">
         <div className="container">
           <div className="row">
@@ -45,7 +44,7 @@ function CustomError() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

@@ -1,14 +1,24 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { automotiveHeading, automotiveInformationHeading, automotiveInformationHeadingFour, automotiveInformationHeadingThree, automotiveInformationHeadingTwo, automotiveInformationPara, automotiveInformationParaFour, automotiveInformationParaThree, automotiveInformationParaTwo, automotivePara } from "@/constants/Constants";
+import {
+  automotiveHeading,
+  automotiveInformationHeading,
+  automotiveInformationHeadingFour,
+  automotiveInformationHeadingThree,
+  automotiveInformationHeadingTwo,
+  automotiveInformationPara,
+  automotiveInformationParaFour,
+  automotiveInformationParaThree,
+  automotiveInformationParaTwo,
+  automotivePara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Automotive() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Industries"
         title="Automotive"
@@ -35,10 +45,23 @@ function Automotive() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={automotiveInformationHeading} informationPara={automotiveInformationPara} imagePath={"assets/img/Industries/automotive/4.jpg"}  headingTwo={automotiveInformationHeadingTwo} informationParaTwo={automotiveInformationParaTwo} imagePathTwo={"assets/img/Industries/automotive/5.jpg"} imagePathThree={"assets/img/Industries/automotive/1.jpg"} headingThree={automotiveInformationHeadingThree} informationParaThree={automotiveInformationParaThree} imagePathFour={"assets/img/Industries/automotive/2.jpg"} headingFour={automotiveInformationHeadingFour} informationParaFour={automotiveInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={automotiveInformationHeading}
+        informationPara={automotiveInformationPara}
+        imagePath={"assets/img/Industries/automotive/4.jpg"}
+        headingTwo={automotiveInformationHeadingTwo}
+        informationParaTwo={automotiveInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/automotive/5.jpg"}
+        imagePathThree={"assets/img/Industries/automotive/1.jpg"}
+        headingThree={automotiveInformationHeadingThree}
+        informationParaThree={automotiveInformationParaThree}
+        imagePathFour={"assets/img/Industries/automotive/2.jpg"}
+        headingFour={automotiveInformationHeadingFour}
+        informationParaFour={automotiveInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

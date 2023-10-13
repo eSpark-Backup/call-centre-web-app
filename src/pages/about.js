@@ -5,13 +5,12 @@ import Choose6 from "../components/choose/Choose6";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Home3Contact from "../components/contact/ContactUsSection";
 import Feature4 from "../components/features/Feature4";
-import Layout from "../components/layout/Layout";
 import Partnar4 from "../components/partner/PartnarSlider";
 import Testimonial3 from "../components/testimonial/Testimonial3";
 
 function AboutPage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="About"
         title="Get To Know About Softconic"
@@ -25,7 +24,7 @@ function AboutPage() {
       <Home3Team />
       <Home3Contact />
       <Home3Blog />
-    </Layout>
+    </>
   );
 }
 

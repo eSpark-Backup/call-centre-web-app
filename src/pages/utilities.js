@@ -1,14 +1,24 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { utilitiesHeading, utilitiesInformationHeading, utilitiesInformationHeadingFour, utilitiesInformationHeadingThree, utilitiesInformationHeadingTwo, utilitiesInformationPara, utilitiesInformationParaFour, utilitiesInformationParaThree, utilitiesInformationParaTwo, utilitiesPara } from "@/constants/Constants";
+import {
+  utilitiesHeading,
+  utilitiesInformationHeading,
+  utilitiesInformationHeadingFour,
+  utilitiesInformationHeadingThree,
+  utilitiesInformationHeadingTwo,
+  utilitiesInformationPara,
+  utilitiesInformationParaFour,
+  utilitiesInformationParaThree,
+  utilitiesInformationParaTwo,
+  utilitiesPara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Utilities() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Industries"
         title="Utilities"
@@ -35,10 +45,23 @@ function Utilities() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={utilitiesInformationHeading} informationPara={utilitiesInformationPara} imagePath={"assets/img/Industries/utilities/4.jpg"}  headingTwo={utilitiesInformationHeadingTwo} informationParaTwo={utilitiesInformationParaTwo} imagePathTwo={"assets/img/Industries/utilities/1.jpg"} imagePathThree={"assets/img/Industries/utilities/5.jpg"} headingThree={utilitiesInformationHeadingThree} informationParaThree={utilitiesInformationParaThree} imagePathFour={"assets/img/Industries/utilities/2.jpg"} headingFour={utilitiesInformationHeadingFour} informationParaFour={utilitiesInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={utilitiesInformationHeading}
+        informationPara={utilitiesInformationPara}
+        imagePath={"assets/img/Industries/utilities/4.jpg"}
+        headingTwo={utilitiesInformationHeadingTwo}
+        informationParaTwo={utilitiesInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/utilities/1.jpg"}
+        imagePathThree={"assets/img/Industries/utilities/5.jpg"}
+        headingThree={utilitiesInformationHeadingThree}
+        informationParaThree={utilitiesInformationParaThree}
+        imagePathFour={"assets/img/Industries/utilities/2.jpg"}
+        headingFour={utilitiesInformationHeadingFour}
+        informationParaFour={utilitiesInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

@@ -1,14 +1,24 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import {  insuranceHeading, insuranceInformationHeading, insuranceInformationHeadingFour, insuranceInformationHeadingThree, insuranceInformationHeadingTwo, insuranceInformationPara, insuranceInformationParaFour, insuranceInformationParaThree, insuranceInformationParaTwo, insurancePara } from "@/constants/Constants";
+import {
+  insuranceHeading,
+  insuranceInformationHeading,
+  insuranceInformationHeadingFour,
+  insuranceInformationHeadingThree,
+  insuranceInformationHeadingTwo,
+  insuranceInformationPara,
+  insuranceInformationParaFour,
+  insuranceInformationParaThree,
+  insuranceInformationParaTwo,
+  insurancePara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Insurance() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Industries"
         title="Insurance"
@@ -35,10 +45,23 @@ function Insurance() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={insuranceInformationHeading} informationPara={insuranceInformationPara} imagePath={"assets/img/Industries/insurance/4.jpg"}  headingTwo={insuranceInformationHeadingTwo} informationParaTwo={insuranceInformationParaTwo} imagePathTwo={"assets/img/Industries/insurance/2.jpg"} imagePathThree={"assets/img/Industries/insurance/1.jpg"} headingThree={insuranceInformationHeadingThree} informationParaThree={insuranceInformationParaThree} imagePathFour={"assets/img/Industries/insurance/5.jpg"} headingFour={insuranceInformationHeadingFour} informationParaFour={insuranceInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={insuranceInformationHeading}
+        informationPara={insuranceInformationPara}
+        imagePath={"assets/img/Industries/insurance/4.jpg"}
+        headingTwo={insuranceInformationHeadingTwo}
+        informationParaTwo={insuranceInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/insurance/2.jpg"}
+        imagePathThree={"assets/img/Industries/insurance/1.jpg"}
+        headingThree={insuranceInformationHeadingThree}
+        informationParaThree={insuranceInformationParaThree}
+        imagePathFour={"assets/img/Industries/insurance/5.jpg"}
+        headingFour={insuranceInformationHeadingFour}
+        informationParaFour={insuranceInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

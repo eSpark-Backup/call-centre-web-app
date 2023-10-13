@@ -1,10 +1,9 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import React from "react";
 
 function team3() {
   return (
-    <Layout>
+    <>
       <Breadcrumb pageList="Team" title="Meet Our Expertis" pageName="TEAM" />
       <div className="home5-team-section sec-mar">
         <div className="container">
@@ -356,7 +355,7 @@ function team3() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

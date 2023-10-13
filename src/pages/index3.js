@@ -5,7 +5,6 @@ import Home5Blog from "@/components/blog/Home5Blog";
 import CaseStudy5 from "@/components/caseStudy/CaseStudy5";
 import WhatWeDo5 from "@/components/choose/WhatWeDo5";
 import Sidebar from "@/components/common/Sidebar";
-import Footer5 from "@/components/footer/Footer5";
 import Service5 from "@/components/services/Service5";
 import Testimonial5 from "@/components/testimonial/Testimonial5";
 import useBodyClass from "@/hooks/useBodyClass";
@@ -73,7 +72,6 @@ function HomepageThree() {
           <Award5 />
           <Home5Team />
           <Home5Blog />
-          <Footer5 />
         </div>
       </div>
     </>

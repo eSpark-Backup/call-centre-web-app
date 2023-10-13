@@ -1,14 +1,25 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { hospitalityHeading, hospitalityInformationHeading, hospitalityInformationHeadingFour, hospitalityInformationHeadingThree, hospitalityInformationHeadingTwo, hospitalityInformationPara, hospitalityInformationParaFour, hospitalityInformationParaThree, hospitalityInformationParaTwo, hospitalityInformationParaTwp, hospitalityPara } from "@/constants/Constants";
+import {
+  hospitalityHeading,
+  hospitalityInformationHeading,
+  hospitalityInformationHeadingFour,
+  hospitalityInformationHeadingThree,
+  hospitalityInformationHeadingTwo,
+  hospitalityInformationPara,
+  hospitalityInformationParaFour,
+  hospitalityInformationParaThree,
+  hospitalityInformationParaTwo,
+  hospitalityInformationParaTwp,
+  hospitalityPara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Hospitality() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Industries"
         title="Hospitality"
@@ -35,10 +46,23 @@ function Hospitality() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={hospitalityInformationHeading} informationPara={hospitalityInformationPara} imagePath={"assets/img/Industries/hospitality/4.jpg"}  headingTwo={hospitalityInformationHeadingTwo} informationParaTwo={hospitalityInformationParaTwo} imagePathTwo={"assets/img/Industries/hospitality/3.jpg"} imagePathThree={"assets/img/Industries/hospitality/5.jpg"} headingThree={hospitalityInformationHeadingThree} informationParaThree={hospitalityInformationParaThree} imagePathFour={"assets/img/Industries/hospitality/1.jpg"} headingFour={hospitalityInformationHeadingFour} informationParaFour={hospitalityInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={hospitalityInformationHeading}
+        informationPara={hospitalityInformationPara}
+        imagePath={"assets/img/Industries/hospitality/4.jpg"}
+        headingTwo={hospitalityInformationHeadingTwo}
+        informationParaTwo={hospitalityInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/hospitality/3.jpg"}
+        imagePathThree={"assets/img/Industries/hospitality/5.jpg"}
+        headingThree={hospitalityInformationHeadingThree}
+        informationParaThree={hospitalityInformationParaThree}
+        imagePathFour={"assets/img/Industries/hospitality/1.jpg"}
+        headingFour={hospitalityInformationHeadingFour}
+        informationParaFour={hospitalityInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

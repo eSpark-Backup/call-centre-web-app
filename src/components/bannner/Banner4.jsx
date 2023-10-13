@@ -1,23 +1,41 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
-import ModalVideo from 'react-modal-video'
+import ModalVideo from "react-modal-video";
 function Banner4() {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="banner-area4">
       <div className="background-text-slider">
-       <Marquee> <h2 className="marquee_text"> Our agency make your <span className="space">happiness.</span>    </h2> </Marquee>
+        <Marquee>
+          {" "}
+          <h2 className="marquee_text">
+            {" "}
+            Our agency make your <span className="space">happiness.</span>{" "}
+          </h2>{" "}
+        </Marquee>
       </div>
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-7">
             <div className="banner-content">
               <h1>
-              Say Yes to the 24/7 Active <span style={{textDecoration:"underline", color:"var(--theme-color)"}}>Customer Service</span> Support​
+                Say Yes to the 24/7 Active{" "}
+                <span
+                  style={{
+                    textDecoration: "underline",
+                    color: "var(--theme-color)",
+                  }}
+                >
+                  Customer Service
+                </span>{" "}
+                Support​
               </h1>
               <p>
-              Meet with an expert team that offers on-time B2B telemarketing, live chat outsourcing, and various customer support services. Time to avail the finest assistance of the best in the business!​
+                Meet with an expert team that offers on-time B2B telemarketing,
+                live chat outsourcing, and various customer support services.
+                Time to avail the finest assistance of the best in the
+                business!​
               </p>
               {/* <div className="banner-btn">
                 <Link legacyBehavior href="/service">

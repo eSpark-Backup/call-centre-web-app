@@ -1,20 +1,53 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import {cTACampaigns, callAction, directAboutHeading, directAboutPara, directAboutParaTwo, directInformationHeading, directInformationHeadingTwo, directInformationPara, directInformationParaFour, directInformationParaThree, directInformationParaTwo, directLeads, directResponseAds, directResponseBroadcasting, directResponseHeading, directResponsePara, easyPerformanceTracking, effortlessCampaign, instantCallPickup, quickROI, searchAdvertising } from "@/constants/Constants";
+import {
+  cTACampaigns,
+  callAction,
+  directAboutHeading,
+  directAboutPara,
+  directAboutParaTwo,
+  directInformationHeading,
+  directInformationHeadingTwo,
+  directInformationPara,
+  directInformationParaFour,
+  directInformationParaThree,
+  directInformationParaTwo,
+  directLeads,
+  directResponseAds,
+  directResponseBroadcasting,
+  directResponseHeading,
+  directResponsePara,
+  easyPerformanceTracking,
+  effortlessCampaign,
+  instantCallPickup,
+  quickROI,
+  searchAdvertising,
+} from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [directLeads, quickROI, easyPerformanceTracking, effortlessCampaign ];
-const servicePoints = [directResponseAds, callAction, instantCallPickup, searchAdvertising, cTACampaigns, directResponseBroadcasting ];
+const aboutUsPoints = [
+  directLeads,
+  quickROI,
+  easyPerformanceTracking,
+  effortlessCampaign,
+];
+const servicePoints = [
+  directResponseAds,
+  callAction,
+  instantCallPickup,
+  searchAdvertising,
+  cTACampaigns,
+  directResponseBroadcasting,
+];
 
 function DirectResponse() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Inbound"
         title="Direct Response Call Center​"
@@ -35,13 +68,13 @@ function DirectResponse() {
                   </div>
                   <p>{directResponsePara}</p>
                   <ul className="about-featue">
-                  {servicePoints.map((point, index) => (
-                    <li key={index}>
-                      <ListSvg />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                    {servicePoints.map((point, index) => (
+                      <li key={index}>
+                        <ListSvg />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div
@@ -60,14 +93,29 @@ function DirectResponse() {
             </div>
           </div>
         </div>
-        </div>
-        <AboutSection  heading={directAboutHeading} aboutPara1={directAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={directAboutParaTwo} imagePath={"assets/img/inbound/direct-response/3.png"} />
-        <Information heading={directInformationHeading} informationPara={directInformationPara} informationParaTwo={directInformationParaTwo} imagePath={"assets/img/inbound/direct-response/2.png"} imagePath2={"assets/img/inbound/direct-response/4.png"} headingTwo={directInformationHeadingTwo} informationParaThree={directInformationParaThree} informationParaFour={directInformationParaFour}  />
+      </div>
+      <AboutSection
+        heading={directAboutHeading}
+        aboutPara1={directAboutPara}
+        aboutUsPoints={aboutUsPoints}
+        aboutPara2={directAboutParaTwo}
+        imagePath={"assets/img/inbound/direct-response/3.png"}
+      />
+      <Information
+        heading={directInformationHeading}
+        informationPara={directInformationPara}
+        informationParaTwo={directInformationParaTwo}
+        imagePath={"assets/img/inbound/direct-response/2.png"}
+        imagePath2={"assets/img/inbound/direct-response/4.png"}
+        headingTwo={directInformationHeadingTwo}
+        informationParaThree={directInformationParaThree}
+        informationParaFour={directInformationParaFour}
+      />
       <OurWork />
       <ServicesPartnerSection />
-      <ContactUsSection /> 
-    </Layout>
+      <ContactUsSection />
+    </>
   );
 }
 
-export default  DirectResponse;
+export default DirectResponse;

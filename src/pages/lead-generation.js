@@ -1,20 +1,48 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import React from "react";
 import { ListSvg } from "@/components/svg/ListSvg";
-import {  audienceSegmentation, brandAwareness, highQualityLeads, landingPages, leadAboutHeading, leadAboutPara, leadAboutParaTwo, leadCapture, leadGenerationStrategies, leadHeading, leadInformationHeading, leadInformationHeadingTwo, leadInformationPara, leadInformationParaFour, leadInformationParaThree, leadInformationParaTwo, leadLifecycle, leadMagnets, leadNurturing, leadPara, leadScoring } from "@/constants/Constants";
+import {
+  audienceSegmentation,
+  brandAwareness,
+  highQualityLeads,
+  landingPages,
+  leadAboutHeading,
+  leadAboutPara,
+  leadAboutParaTwo,
+  leadCapture,
+  leadGenerationStrategies,
+  leadHeading,
+  leadInformationHeading,
+  leadInformationHeadingTwo,
+  leadInformationPara,
+  leadInformationParaFour,
+  leadInformationParaThree,
+  leadInformationParaTwo,
+  leadLifecycle,
+  leadMagnets,
+  leadNurturing,
+  leadPara,
+  leadScoring,
+} from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-const aboutUsPoints = [leadCapture, landingPages, leadMagnets, leadScoring ];
-const servicePoints = [brandAwareness, highQualityLeads, leadGenerationStrategies, audienceSegmentation, leadNurturing, leadLifecycle ];
+const aboutUsPoints = [leadCapture, landingPages, leadMagnets, leadScoring];
+const servicePoints = [
+  brandAwareness,
+  highQualityLeads,
+  leadGenerationStrategies,
+  audienceSegmentation,
+  leadNurturing,
+  leadLifecycle,
+];
 
 function LeadGeneration() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Outbound"
         title="Lead Generation"
@@ -35,13 +63,13 @@ function LeadGeneration() {
                   </div>
                   <p>{leadPara}</p>
                   <ul className="about-featue">
-                  {servicePoints.map((point, index) => (
-                    <li key={index}>
-                      <ListSvg />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                    {servicePoints.map((point, index) => (
+                      <li key={index}>
+                        <ListSvg />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div
@@ -60,13 +88,30 @@ function LeadGeneration() {
             </div>
           </div>
         </div>
-        </div>
-        <AboutSection heading={leadAboutHeading} aboutPara1={leadAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={leadAboutParaTwo} imagePath={"assets/img/outbound/lead-generation/good-news.jpg"} />
-        <Information heading={leadInformationHeading} informationPara={leadInformationPara} informationParaTwo={leadInformationParaTwo} imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"} imagePath2={"assets/img/outbound/lead-generation/focused-team-leader.jpg"} headingTwo={leadInformationHeadingTwo} informationParaThree={leadInformationParaThree} informationParaFour={leadInformationParaFour}  />
+      </div>
+      <AboutSection
+        heading={leadAboutHeading}
+        aboutPara1={leadAboutPara}
+        aboutUsPoints={aboutUsPoints}
+        aboutPara2={leadAboutParaTwo}
+        imagePath={"assets/img/outbound/lead-generation/good-news.jpg"}
+      />
+      <Information
+        heading={leadInformationHeading}
+        informationPara={leadInformationPara}
+        informationParaTwo={leadInformationParaTwo}
+        imagePath={"assets/img/outbound/lead-generation/computer-lab.jpg"}
+        imagePath2={
+          "assets/img/outbound/lead-generation/focused-team-leader.jpg"
+        }
+        headingTwo={leadInformationHeadingTwo}
+        informationParaThree={leadInformationParaThree}
+        informationParaFour={leadInformationParaFour}
+      />
       <OurWork />
       <ServicesPartnerSection />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

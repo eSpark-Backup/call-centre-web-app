@@ -1,14 +1,24 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { financialHeading, financialInformationHeading, financialInformationHeadingFour, financialInformationHeadingThree, financialInformationHeadingTwo, financialInformationPara, financialInformationParaFour, financialInformationParaThree, financialInformationParaTwo, financialPara } from "@/constants/Constants";
+import {
+  financialHeading,
+  financialInformationHeading,
+  financialInformationHeadingFour,
+  financialInformationHeadingThree,
+  financialInformationHeadingTwo,
+  financialInformationPara,
+  financialInformationParaFour,
+  financialInformationParaThree,
+  financialInformationParaTwo,
+  financialPara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Financial() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Industries"
         title="Financial"
@@ -35,10 +45,23 @@ function Financial() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={financialInformationHeading} informationPara={financialInformationPara} imagePath={"assets/img/Industries/financial/2.jpg"}  headingTwo={financialInformationHeadingTwo} informationParaTwo={financialInformationParaTwo} imagePathTwo={"assets/img/Industries/financial/3.jpg"} imagePathThree={"assets/img/Industries/financial/5.jpg"} headingThree={financialInformationHeadingThree} informationParaThree={financialInformationParaThree} imagePathFour={"assets/img/Industries/financial/4.jpg"} headingFour={financialInformationHeadingFour} informationParaFour={financialInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={financialInformationHeading}
+        informationPara={financialInformationPara}
+        imagePath={"assets/img/Industries/financial/2.jpg"}
+        headingTwo={financialInformationHeadingTwo}
+        informationParaTwo={financialInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/financial/3.jpg"}
+        imagePathThree={"assets/img/Industries/financial/5.jpg"}
+        headingThree={financialInformationHeadingThree}
+        informationParaThree={financialInformationParaThree}
+        imagePathFour={"assets/img/Industries/financial/4.jpg"}
+        headingFour={financialInformationHeadingFour}
+        informationParaFour={financialInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

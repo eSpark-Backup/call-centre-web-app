@@ -1,19 +1,25 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import IndutriesInformation from "@/components/details/IndustriesInformation";
-import Layout from "@/components/layout/Layout";
 import PartnarSlider from "@/components/partner/PartnarSlider";
-import { retailsHeading, retailsInformationHeading, retailsInformationHeadingFour, retailsInformationHeadingThree, retailsInformationHeadingTwo, retailsInformationPara, retailsInformationParaFour, retailsInformationParaThree, retailsInformationParaTwo, retailsPara } from "@/constants/Constants";
+import {
+  retailsHeading,
+  retailsInformationHeading,
+  retailsInformationHeadingFour,
+  retailsInformationHeadingThree,
+  retailsInformationHeadingTwo,
+  retailsInformationPara,
+  retailsInformationParaFour,
+  retailsInformationParaThree,
+  retailsInformationParaTwo,
+  retailsPara,
+} from "@/constants/Constants";
 import React from "react";
 
 function Retails() {
   return (
-    <Layout>
-      <Breadcrumb
-        pageList="Industries"
-        title="Retails"
-        pageName="Industries"
-      />
+    <>
+      <Breadcrumb pageList="Industries" title="Retails" pageName="Industries" />
       <div className="case-study-details sec-mar">
         <div className="container">
           <div className="row">
@@ -35,10 +41,23 @@ function Retails() {
           </div>
         </div>
       </div>
-      <IndutriesInformation heading={retailsInformationHeading} informationPara={retailsInformationPara} imagePath={"assets/img/Industries/retails/1.jpg"}  headingTwo={retailsInformationHeadingTwo} informationParaTwo={retailsInformationParaTwo} imagePathTwo={"assets/img/Industries/retails/3.jpg"} imagePathThree={"assets/img/Industries/retails/4.jpg"} headingThree={retailsInformationHeadingThree} informationParaThree={retailsInformationParaThree} imagePathFour={"assets/img/Industries/retails/5.jpg"} headingFour={retailsInformationHeadingFour} informationParaFour={retailsInformationParaFour} />
-      <PartnarSlider/>
+      <IndutriesInformation
+        heading={retailsInformationHeading}
+        informationPara={retailsInformationPara}
+        imagePath={"assets/img/Industries/retails/1.jpg"}
+        headingTwo={retailsInformationHeadingTwo}
+        informationParaTwo={retailsInformationParaTwo}
+        imagePathTwo={"assets/img/Industries/retails/3.jpg"}
+        imagePathThree={"assets/img/Industries/retails/4.jpg"}
+        headingThree={retailsInformationHeadingThree}
+        informationParaThree={retailsInformationParaThree}
+        imagePathFour={"assets/img/Industries/retails/5.jpg"}
+        headingFour={retailsInformationHeadingFour}
+        informationParaFour={retailsInformationParaFour}
+      />
+      <PartnarSlider />
       <ContactUsSection />
-    </Layout>
+    </>
   );
 }
 

@@ -4,8 +4,6 @@ import Banner3 from "@/components/bannner/Banner3";
 import Home3Blog from "@/components/blog/Home3Blog";
 import Preloader from "@/components/common/Preloader";
 import Home3Contact from "@/components/contact/ContactUsSection";
-import Footer3 from "@/components/footer/Footer3";
-import Header3 from "@/components/header/Header3";
 import Partner3 from "@/components/partner/Partner3";
 import PricingPlan3 from "@/components/pricingplan/PricingPlan3";
 import Solution3 from "@/components/solutions/Solution3";
@@ -27,8 +25,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/img/sm-logo.svg" />
       </Head>
-
-      <Header3 />
       <Banner3 />
       <Partner3 />
       <Solution3 />
@@ -39,7 +35,6 @@ export default function Home() {
       <Home3Contact />
       <Home3Team />
       <Home3Blog />
-      <Footer3 />
     </>
   );
 }

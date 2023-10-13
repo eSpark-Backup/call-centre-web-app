@@ -1,12 +1,11 @@
 import BlogBanner from "../components/blog/BlogBanner";
 import Breadcrumb from "../components/common/Breadcrumb";
-import Layout from "../components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function BlogSidebarPage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="BLOG SIDEBAR"
         title="Exploring The Softconic Blog"
@@ -753,7 +752,7 @@ function BlogSidebarPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

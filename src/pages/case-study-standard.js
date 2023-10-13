@@ -1,11 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import React from "react";
 
 function CaseStudyStandardPage() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Case Study Standard"
         title="From Challenge To Triumph"
@@ -176,7 +175,7 @@ function CaseStudyStandardPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
 

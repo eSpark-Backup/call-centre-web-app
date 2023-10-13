@@ -1,21 +1,53 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Layout from "@/components/layout/Layout";
 import ServicesPartnerSection from "@/components/partner/ServicesPartnerSection";
 import React from "react";
 import OurWork from "@/components/work/OurWork";
 import Information from "@/components/details/Information";
 import { ListSvg } from "@/components/svg/ListSvg";
-import { cRMSystem, convincingProductPitches, customerAboutHeading, customerAboutPara, customerAboutParaTwo, customerInformationHeading, customerInformationHeadingTwo, customerInformationPara, customerInformationParaFour, customerInformationParaThree, customerInformationParaTwo, customerServiceHeading, customerServicePara, friendlyResponse, inboundCallTracking, inboundDialing, inboundLeads, inboundSalesStrategies, liveChatSoftware, positiveBrandMassage, trainedAgents } from "@/constants/Constants";
+import {
+  cRMSystem,
+  convincingProductPitches,
+  customerAboutHeading,
+  customerAboutPara,
+  customerAboutParaTwo,
+  customerInformationHeading,
+  customerInformationHeadingTwo,
+  customerInformationPara,
+  customerInformationParaFour,
+  customerInformationParaThree,
+  customerInformationParaTwo,
+  customerServiceHeading,
+  customerServicePara,
+  friendlyResponse,
+  inboundCallTracking,
+  inboundDialing,
+  inboundLeads,
+  inboundSalesStrategies,
+  liveChatSoftware,
+  positiveBrandMassage,
+  trainedAgents,
+} from "@/constants/Constants";
 import ContactUsSection from "@/components/contact/ContactUsSection";
 import AboutSection from "@/components/about/AboutSection";
 
-
-const aboutUsPoints = [friendlyResponse, inboundSalesStrategies, positiveBrandMassage, convincingProductPitches ];
-const servicePoints = [trainedAgents, cRMSystem, liveChatSoftware, inboundDialing, inboundCallTracking, inboundLeads ];
+const aboutUsPoints = [
+  friendlyResponse,
+  inboundSalesStrategies,
+  positiveBrandMassage,
+  convincingProductPitches,
+];
+const servicePoints = [
+  trainedAgents,
+  cRMSystem,
+  liveChatSoftware,
+  inboundDialing,
+  inboundCallTracking,
+  inboundLeads,
+];
 
 function CustomerService() {
   return (
-    <Layout>
+    <>
       <Breadcrumb
         pageList="Inbound"
         title=" Customer Service​​"
@@ -36,13 +68,13 @@ function CustomerService() {
                   </div>
                   <p>{customerServicePara}</p>
                   <ul className="about-featue">
-                  {servicePoints.map((point, index) => (
-                    <li key={index}>
-                      <ListSvg />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                    {servicePoints.map((point, index) => (
+                      <li key={index}>
+                        <ListSvg />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <div
@@ -61,14 +93,29 @@ function CustomerService() {
             </div>
           </div>
         </div>
-        </div>
-      <AboutSection heading={customerAboutHeading} aboutPara1={customerAboutPara} aboutUsPoints={aboutUsPoints} aboutPara2={customerAboutParaTwo} imagePath={"assets/img/inbound/customer-service/2.png"}/>
-      <Information heading={customerInformationHeading} informationPara={customerInformationPara} informationParaTwo={customerInformationParaTwo} imagePath={"assets/img/inbound/customer-service/3.png"} imagePath2={"assets/img/inbound/customer-service/4.png"} headingTwo={customerInformationHeadingTwo} informationParaThree={customerInformationParaThree} informationParaFour={customerInformationParaFour}  />      
+      </div>
+      <AboutSection
+        heading={customerAboutHeading}
+        aboutPara1={customerAboutPara}
+        aboutUsPoints={aboutUsPoints}
+        aboutPara2={customerAboutParaTwo}
+        imagePath={"assets/img/inbound/customer-service/2.png"}
+      />
+      <Information
+        heading={customerInformationHeading}
+        informationPara={customerInformationPara}
+        informationParaTwo={customerInformationParaTwo}
+        imagePath={"assets/img/inbound/customer-service/3.png"}
+        imagePath2={"assets/img/inbound/customer-service/4.png"}
+        headingTwo={customerInformationHeadingTwo}
+        informationParaThree={customerInformationParaThree}
+        informationParaFour={customerInformationParaFour}
+      />
       <OurWork />
       <ServicesPartnerSection />
-      <ContactUsSection /> 
-    </Layout>
+      <ContactUsSection />
+    </>
   );
 }
 
-export default  CustomerService;
+export default CustomerService;
