@@ -7,7 +7,7 @@ import {
   Email_Send,
   Get_in_Touch,
 } from "@/constants/Constants";
-import React from "react";
+import React, { useEffect } from "react";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
@@ -67,53 +67,55 @@ function Contactpage() {
           emailjsParams.user_id
         );
 
-        if (response.status === 200) {
-          // Handle success
-          console.log("Email sent successfully");
-          toast.success(
-            <>
-              <div
-                style={{
-                  color: "#06D889",
-                  fontSize: "18px",
-                  fontWeight: "800",
-                }}
-              >
-                Thank you!
-              </div>
-              <div style={{ color: "#ffffff", fontSize: "13px" }}>
-                We will contact you soon.
-              </div>
-            </>,
-            {
-              position: "top-center",
-              autoClose: 3000, // Close the toast after 3 seconds
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-            }
-          );
-        } else {
-          // Handle error
-          console.error("Error sending email");
-          toast.error(/* ... */);
-        }
-      } catch (error) {
-        console.error("Error:", error);
-
-        // Check if the error is due to internet connectivity
-        if (!navigator.onLine) {
-          toast.error(
-            "No internet connection. Please check your connection and try again."
-          );
-        } else {
-          toast.error("An error occurred. Please try again later.");
-        }
-      } finally {
-        resetForm();
-        setSubmitting(false);
+       
+      if (response.status === 200) {
+        // Handle success
+        console.log("Email sent successfully");
+        toast.success( <>
+          <div
+            style={{
+              color: "#06D889",
+              fontSize: "18px",
+              fontWeight: "800",
+            }}
+          >
+            Thank you!
+          </div>
+          <div style={{ color: "#ffffff", fontSize: "13px" }}>
+            We will contact you soon.
+          </div>
+        </>,
+        {
+          position: "top-center",
+          autoClose: 3000, // Close the toast after 3 seconds
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+      } else {
+        // Handle error
+        console.error("Error sending email");
+        toast.error(/* ... */);
       }
+    } catch (error) {
+      console.error("Error:", error);
+  
+      // Check if the error is due to internet connectivity
+      if (!navigator.onLine) {
+        // Save form values to local storage
+        localStorage.setItem("pendingFormValues", JSON.stringify(values));
+  
+        toast.error(
+          "No internet connection. Form data has been saved. Please check your connection and submit again."
+        );
+      } else {
+        toast.error("An error occurred. Please try again later.");
+      }
+    } finally {
+      resetForm();
+      setSubmitting(false);
+    }
 
       // if (Object.keys(formik.errors).length === 0) {
       //   console.log("Form values:", values);
@@ -151,6 +153,17 @@ function Contactpage() {
       // }
     },
   });
+  useEffect(() => {
+    const savedFormValues = localStorage.getItem("pendingFormValues");
+
+    if (savedFormValues) {
+      const parsedValues = JSON.parse(savedFormValues);
+      formik.setValues(parsedValues);
+
+      // Clear saved form values from local storage
+      localStorage.removeItem("pendingFormValues");
+    }
+  }, [formik]);
   return (
     <Layout>
       <Breadcrumb
