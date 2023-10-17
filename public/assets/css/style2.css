@@ -11716,6 +11716,10 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   /* add more styles as needed */
 }
 
+.Toastify__toast-body{
+  color: #ffffff;
+}
+
 .contact-page-wrap .contact-content > span {
   font-family: var(--font-saira);
   font-weight: 500;

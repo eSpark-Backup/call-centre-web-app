@@ -12,27 +12,26 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("First name is required"),
   lastName: Yup.string().required("Last name is required"),
   company: Yup.string().required("Company/Organization is required"),
   email: Yup.string()
-  .email("Invalid email format")
-  .matches(
-    /^[A-Za-z0-9]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,320}$/,
-    "Invalid email format"
-  )
-  .min(5, "Email must be at least 5 characters")
-  .max(230, "Email must not exceed 230 characters")
-  .required("Email is required"),
+    .email("Invalid email format")
+    .matches(
+      /^[A-Za-z0-9]+[A-Za-z0-9._]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,320}$/,
+      "Invalid email format"
+    )
+    .min(5, "Email must be at least 5 characters")
+    .max(320, "Email must not exceed 320 characters")
+    .required("Email is required"),
   phone: Yup.string().required("Phone is required"),
   message: Yup.string().required("Message is required"),
 });
 
 function Contactpage() {
-  
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -46,9 +45,9 @@ function Contactpage() {
     onSubmit: async (values, { resetForm, setSubmitting }) => {
       try {
         const emailjsParams = {
-          service_id: 'service_gi7wob8',
-          template_id: 'template_malxyyp',
-          user_id: 'TjsPySruVhn5xaxn6',
+          service_id: "service_gi7wob8",
+          template_id: "template_malxyyp",
+          user_id: "TjsPySruVhn5xaxn6",
           template_params: {
             first_name: values.firstName,
             last_name: values.lastName,
@@ -57,10 +56,10 @@ function Contactpage() {
             phone: values.phone,
             message: values.message,
             reply_to: values.email,
-            from_email: Email_Send
-          }
+            from_email: Email_Send,
+          },
         };
-        
+
         const response = await emailjs.send(
           emailjsParams.service_id,
           emailjsParams.template_id,
@@ -70,53 +69,86 @@ function Contactpage() {
 
         if (response.status === 200) {
           // Handle success
-          console.log('Email sent successfully');
-          toast.success(/* ... */);
+          console.log("Email sent successfully");
+          toast.success(
+            <>
+              <div
+                style={{
+                  color: "#06D889",
+                  fontSize: "18px",
+                  fontWeight: "800",
+                }}
+              >
+                Thank you!
+              </div>
+              <div style={{ color: "#ffffff", fontSize: "13px" }}>
+                We will contact you soon.
+              </div>
+            </>,
+            {
+              position: "top-center",
+              autoClose: 3000, // Close the toast after 3 seconds
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+            }
+          );
         } else {
           // Handle error
-          console.error('Error sending email');
+          console.error("Error sending email");
           toast.error(/* ... */);
         }
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
+
+        // Check if the error is due to internet connectivity
+        if (!navigator.onLine) {
+          toast.error(
+            "No internet connection. Please check your connection and try again."
+          );
+        } else {
+          toast.error("An error occurred. Please try again later.");
+        }
       } finally {
         resetForm();
         setSubmitting(false);
       }
-      if (Object.keys(formik.errors).length === 0) {
-        console.log("Form values:", values);
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        resetForm();
-        setSubmitting(false);
 
-        const successMessage = "Thank you!";
-        const additionalMessage = "We will contact you soon.";
+      // if (Object.keys(formik.errors).length === 0) {
+      //   console.log("Form values:", values);
+      //   await new Promise((resolve) => setTimeout(resolve, 1000));
+      //   resetForm();
+      //   setSubmitting(false);
 
-        // Combine messages into a single string
-        const combinedMessage = `${successMessage}\n${additionalMessage}`;
+      //   const successMessage = "Thank you!";
+      //   const additionalMessage = "We will contact you soon.";
 
-        // Show toast message
-        toast.success(
-          <>
-            <div
-              style={{ color: "#06D889", fontSize: "18px", fontWeight: "800" }}
-            >
-              {successMessage}
-            </div>
-            <div style={{ color: "#ffffff", fontSize: "13px" }}>
-              {additionalMessage}
-            </div>
-          </>,
-          {
-            position: "top-center",
-            autoClose: 3000, // Close the toast after 3 seconds
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-          }
-        );
-      }
+      //   // Combine messages into a single string
+      //   const combinedMessage = `${successMessage}\n${additionalMessage}`;
+
+      //   // Show toast message
+      //   toast.success(
+      //     <>
+      //       <div
+      //         style={{ color: "#06D889", fontSize: "18px", fontWeight: "800" }}
+      //       >
+      //         {successMessage}
+      //       </div>
+      //       <div style={{ color: "#ffffff", fontSize: "13px" }}>
+      //         {additionalMessage}
+      //       </div>
+      //     </>,
+      //     {
+      //       position: "top-center",
+      //       autoClose: 3000, // Close the toast after 3 seconds
+      //       hideProgressBar: false,
+      //       closeOnClick: true,
+      //       pauseOnHover: true,
+      //       draggable: true,
+      //     }
+      //   );
+      // }
     },
   });
   return (
@@ -157,8 +189,12 @@ function Contactpage() {
                       <i className="far fa-envelope" />
                     </div>
                     <div className="info">
-                      <a href="mailto: info@esparkconnect.com​">info@esparkconnect.com​​</a>
-                      <a href="mailto: support@esparkconnect.com​">support@esparkconnect.com</a>
+                      <a href="mailto: info@esparkconnect.com​">
+                        info@esparkconnect.com​​
+                      </a>
+                      <a href="mailto: support@esparkconnect.com​">
+                        support@esparkconnect.com
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -168,17 +204,29 @@ function Contactpage() {
                   <div className="blog-widget-body">
                     <ul className="follow-list d-flex flex-row align-items-start gap-4">
                       <li>
-                        <a href="https://www.facebook.com/espark.connect" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href="https://www.facebook.com/espark.connect"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="bx bxl-facebook" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/esparkconnect/" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href="https://www.instagram.com/esparkconnect/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="bx bxl-instagram" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/company/espark-connect/" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href="https://www.linkedin.com/company/espark-connect/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <i className="bx bxl-linkedin" />
                         </a>
                       </li>
