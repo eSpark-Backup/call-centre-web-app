@@ -24,7 +24,7 @@
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
     "react-modal-video": "^2.0.2",
-    "swiper": "^12.2.0",
+    "swiper": "^14.0.0",
     "use-count-up": "^3.0.1",
     "wowjs": "^1.1.3"
   }
